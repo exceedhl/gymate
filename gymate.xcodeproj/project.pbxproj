@@ -10,6 +10,9 @@
 		BA6A05AA1532B5840007E136 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A05A91532B5840007E136 /* Parse.framework */; };
 		BA6A05AF1532B5A30007E136 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA6A05AE1532B5A30007E136 /* LoginView.xib */; };
 		BA6A05B31532B5BF0007E136 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6A05B21532B5BF0007E136 /* LoginViewController.m */; };
+		BA6A05B51532B61C0007E136 /* SignupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA6A05B41532B61C0007E136 /* SignupView.xib */; };
+		BA6A05B81532B8520007E136 /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6A05B71532B8520007E136 /* SignupViewController.m */; };
+		BA6A05BC1532C84D0007E136 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6A05BB1532C84D0007E136 /* User.m */; };
 		BA6A0B6C1532A3260010E596 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B6B1532A3260010E596 /* UIKit.framework */; };
 		BA6A0B6E1532A3260010E596 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B6D1532A3260010E596 /* Foundation.framework */; };
 		BA6A0B701532A3260010E596 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B6F1532A3260010E596 /* CoreGraphics.framework */; };
@@ -30,6 +33,11 @@
 		BA6A05AE1532B5A30007E136 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		BA6A05B11532B5BF0007E136 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		BA6A05B21532B5BF0007E136 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		BA6A05B41532B61C0007E136 /* SignupView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignupView.xib; sourceTree = "<group>"; };
+		BA6A05B61532B8520007E136 /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
+		BA6A05B71532B8520007E136 /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
+		BA6A05BA1532C84D0007E136 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		BA6A05BB1532C84D0007E136 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		BA6A0B671532A3260010E596 /* gymate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gymate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6A0B6B1532A3260010E596 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BA6A0B6D1532A3260010E596 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -75,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				BA6A05AE1532B5A30007E136 /* LoginView.xib */,
+				BA6A05B41532B61C0007E136 /* SignupView.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -84,8 +93,19 @@
 			children = (
 				BA6A05B11532B5BF0007E136 /* LoginViewController.h */,
 				BA6A05B21532B5BF0007E136 /* LoginViewController.m */,
+				BA6A05B61532B8520007E136 /* SignupViewController.h */,
+				BA6A05B71532B8520007E136 /* SignupViewController.m */,
 			);
 			path = controller;
+			sourceTree = "<group>";
+		};
+		BA6A05B91532C8380007E136 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				BA6A05BA1532C84D0007E136 /* User.h */,
+				BA6A05BB1532C84D0007E136 /* User.m */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		BA6A0B5C1532A3260010E596 = {
@@ -126,6 +146,7 @@
 		BA6A0B711532A3260010E596 /* gymate */ = {
 			isa = PBXGroup;
 			children = (
+				BA6A05B91532C8380007E136 /* model */,
 				BA6A05B01532B5BF0007E136 /* controller */,
 				BA6A05AD1532B5A30007E136 /* view */,
 				BA6A0B7A1532A3260010E596 /* AppDelegate.h */,
@@ -198,6 +219,7 @@
 			files = (
 				BA6A0B761532A3260010E596 /* InfoPlist.strings in Resources */,
 				BA6A05AF1532B5A30007E136 /* LoginView.xib in Resources */,
+				BA6A05B51532B61C0007E136 /* SignupView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +233,8 @@
 				BA6A0B781532A3260010E596 /* main.m in Sources */,
 				BA6A0B7C1532A3260010E596 /* AppDelegate.m in Sources */,
 				BA6A05B31532B5BF0007E136 /* LoginViewController.m in Sources */,
+				BA6A05B81532B8520007E136 /* SignupViewController.m in Sources */,
+				BA6A05BC1532C84D0007E136 /* User.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

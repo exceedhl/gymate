@@ -1,10 +1,10 @@
 #import "LoginViewController.h"
-#import <Parse/Parse.h>
+#import "SignupViewController.h"
+#import "User.h"
 
 @implementation LoginViewController
 
-@synthesize email;
-@synthesize passsword;
+@synthesize email, password;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -16,18 +16,32 @@
 }
 
 
-- (IBAction)login:(id)sender {
-    NSLog(@"login prssed");
-    NSLog(@"%@", email.text);
-    NSLog(@"%@", passsword.text);
-    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
-    [testObject setObject:@"bar" forKey:@"foo"];
-    [testObject save];
+- (IBAction)login:(id)sender 
+{
+    NSLog(@"password: %@", self.password.text);
+    User *user = [User logInWithEmail:self.email.text password:self.password.text];
+    if (user) {
+        NSLog(@"first: %@", user.firstName);
+        NSLog(@"%@", [user objectForKey:@"firstName"]);
+        NSLog(@"last: %@", user.lastName);
+        NSLog(@"email: %@", user.email);
+        NSLog(@"password: %@", user.password);
+        NSLog(@"username: %@", user.username);
+        NSLog(@"gender: %@", user.gender);
+    }
+
 }
 
-- (void)dealloc {
+- (IBAction)signUp:(id)sender 
+{
+    SignupViewController *controller = [[[SignupViewController alloc] initWithNibName:@"signupView" bundle:nil] autorelease];    
+    [self.navigationController pushViewController:controller animated:YES];
+}
+
+- (void)dealloc 
+{
     [email release];
-    [passsword release];
+    [password release];
     [super dealloc];
 }
 @end

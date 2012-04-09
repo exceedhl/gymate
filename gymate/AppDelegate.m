@@ -16,6 +16,7 @@
 - (void)dealloc
 {
     [_window release];
+    [navigationController release];
     [super dealloc];
 }
 
@@ -26,7 +27,10 @@
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     LoginViewController *loginViewController = [[LoginViewController alloc] initWithNibName:@"loginView" bundle:nil];
-    [self.window addSubview:loginViewController.view];
+    navigationController = [[UINavigationController alloc] initWithRootViewController:loginViewController];
+    [navigationController setNavigationBarHidden:YES];
+    [loginViewController release];
+    [self.window addSubview:navigationController.view];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

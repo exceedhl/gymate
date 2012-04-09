@@ -6,7 +6,8 @@
 }
 
 @property (nonatomic, retain) IBOutlet UITextField *email;
-@property (nonatomic, retain) IBOutlet UITextField *passsword;
+@property (nonatomic, retain) IBOutlet UITextField *password;
 
 - (IBAction)login:(id)sender;
+- (IBAction)signUp:(id)sender;
 @end
