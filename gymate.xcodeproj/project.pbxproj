@@ -7,17 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA6A05AA1532B5840007E136 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A05A91532B5840007E136 /* Parse.framework */; };
+		BA6A05AF1532B5A30007E136 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA6A05AE1532B5A30007E136 /* LoginView.xib */; };
+		BA6A05B31532B5BF0007E136 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6A05B21532B5BF0007E136 /* LoginViewController.m */; };
 		BA6A0B6C1532A3260010E596 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B6B1532A3260010E596 /* UIKit.framework */; };
 		BA6A0B6E1532A3260010E596 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B6D1532A3260010E596 /* Foundation.framework */; };
 		BA6A0B701532A3260010E596 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B6F1532A3260010E596 /* CoreGraphics.framework */; };
 		BA6A0B761532A3260010E596 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA6A0B741532A3260010E596 /* InfoPlist.strings */; };
 		BA6A0B781532A3260010E596 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6A0B771532A3260010E596 /* main.m */; };
 		BA6A0B7C1532A3260010E596 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6A0B7B1532A3260010E596 /* AppDelegate.m */; };
-		BA6A0B871532A4B90010E596 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA6A0B861532A4B90010E596 /* LoginView.xib */; };
-		BA6A0B8B1532ABD20010E596 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6A0B8A1532ABD20010E596 /* LoginViewController.m */; };
+		BA6A0B8F1532B1D80010E596 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B8E1532B1D80010E596 /* AudioToolbox.framework */; };
+		BA6A0B911532B1E00010E596 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B901532B1E00010E596 /* CFNetwork.framework */; };
+		BA6A0B931532B1F60010E596 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B921532B1F60010E596 /* SystemConfiguration.framework */; };
+		BA6A0B951532B2110010E596 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B941532B2110010E596 /* MobileCoreServices.framework */; };
+		BA6A0B971532B22A0010E596 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B961532B22A0010E596 /* libz.1.1.3.dylib */; };
+		BA6A0B991532B2340010E596 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B981532B2340010E596 /* Security.framework */; };
+		BA6A0B9B1532B2700010E596 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B9A1532B2700010E596 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA6A05A91532B5840007E136 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = gymate/lib/Parse.framework; sourceTree = "<group>"; };
+		BA6A05AE1532B5A30007E136 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		BA6A05B11532B5BF0007E136 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		BA6A05B21532B5BF0007E136 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		BA6A0B671532A3260010E596 /* gymate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gymate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6A0B6B1532A3260010E596 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BA6A0B6D1532A3260010E596 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -28,9 +40,13 @@
 		BA6A0B791532A3260010E596 /* gymate-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "gymate-Prefix.pch"; sourceTree = "<group>"; };
 		BA6A0B7A1532A3260010E596 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BA6A0B7B1532A3260010E596 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BA6A0B861532A4B90010E596 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
-		BA6A0B891532ABD20010E596 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		BA6A0B8A1532ABD20010E596 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		BA6A0B8E1532B1D80010E596 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		BA6A0B901532B1E00010E596 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		BA6A0B921532B1F60010E596 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BA6A0B941532B2110010E596 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		BA6A0B961532B22A0010E596 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		BA6A0B981532B2340010E596 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		BA6A0B9A1532B2700010E596 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,15 +54,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA6A0B9B1532B2700010E596 /* QuartzCore.framework in Frameworks */,
+				BA6A0B991532B2340010E596 /* Security.framework in Frameworks */,
+				BA6A0B971532B22A0010E596 /* libz.1.1.3.dylib in Frameworks */,
+				BA6A0B701532A3260010E596 /* CoreGraphics.framework in Frameworks */,
+				BA6A0B951532B2110010E596 /* MobileCoreServices.framework in Frameworks */,
+				BA6A0B931532B1F60010E596 /* SystemConfiguration.framework in Frameworks */,
+				BA6A0B911532B1E00010E596 /* CFNetwork.framework in Frameworks */,
+				BA6A0B8F1532B1D80010E596 /* AudioToolbox.framework in Frameworks */,
 				BA6A0B6C1532A3260010E596 /* UIKit.framework in Frameworks */,
 				BA6A0B6E1532A3260010E596 /* Foundation.framework in Frameworks */,
-				BA6A0B701532A3260010E596 /* CoreGraphics.framework in Frameworks */,
+				BA6A05AA1532B5840007E136 /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA6A05AD1532B5A30007E136 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				BA6A05AE1532B5A30007E136 /* LoginView.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		BA6A05B01532B5BF0007E136 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				BA6A05B11532B5BF0007E136 /* LoginViewController.h */,
+				BA6A05B21532B5BF0007E136 /* LoginViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
 		BA6A0B5C1532A3260010E596 = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +108,14 @@
 		BA6A0B6A1532A3260010E596 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BA6A05A91532B5840007E136 /* Parse.framework */,
+				BA6A0B9A1532B2700010E596 /* QuartzCore.framework */,
+				BA6A0B981532B2340010E596 /* Security.framework */,
+				BA6A0B961532B22A0010E596 /* libz.1.1.3.dylib */,
+				BA6A0B941532B2110010E596 /* MobileCoreServices.framework */,
+				BA6A0B921532B1F60010E596 /* SystemConfiguration.framework */,
+				BA6A0B901532B1E00010E596 /* CFNetwork.framework */,
+				BA6A0B8E1532B1D80010E596 /* AudioToolbox.framework */,
 				BA6A0B6B1532A3260010E596 /* UIKit.framework */,
 				BA6A0B6D1532A3260010E596 /* Foundation.framework */,
 				BA6A0B6F1532A3260010E596 /* CoreGraphics.framework */,
@@ -77,12 +126,11 @@
 		BA6A0B711532A3260010E596 /* gymate */ = {
 			isa = PBXGroup;
 			children = (
+				BA6A05B01532B5BF0007E136 /* controller */,
+				BA6A05AD1532B5A30007E136 /* view */,
 				BA6A0B7A1532A3260010E596 /* AppDelegate.h */,
 				BA6A0B7B1532A3260010E596 /* AppDelegate.m */,
 				BA6A0B721532A3260010E596 /* Supporting Files */,
-				BA6A0B861532A4B90010E596 /* LoginView.xib */,
-				BA6A0B891532ABD20010E596 /* LoginViewController.h */,
-				BA6A0B8A1532ABD20010E596 /* LoginViewController.m */,
 			);
 			path = gymate;
 			sourceTree = "<group>";
@@ -149,7 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA6A0B761532A3260010E596 /* InfoPlist.strings in Resources */,
-				BA6A0B871532A4B90010E596 /* LoginView.xib in Resources */,
+				BA6A05AF1532B5A30007E136 /* LoginView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +210,7 @@
 			files = (
 				BA6A0B781532A3260010E596 /* main.m in Sources */,
 				BA6A0B7C1532A3260010E596 /* AppDelegate.m in Sources */,
-				BA6A0B8B1532ABD20010E596 /* LoginViewController.m in Sources */,
+				BA6A05B31532B5BF0007E136 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,9 +274,15 @@
 		BA6A0B801532A3260010E596 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/gymate/lib\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "gymate/gymate-Prefix.pch";
 				INFOPLIST_FILE = "gymate/gymate-Info.plist";
+				OTHER_LDFLAGS = "-fobjc-arc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -237,9 +291,15 @@
 		BA6A0B811532A3260010E596 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/gymate/lib\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "gymate/gymate-Prefix.pch";
 				INFOPLIST_FILE = "gymate/gymate-Info.plist";
+				OTHER_LDFLAGS = "-fobjc-arc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
