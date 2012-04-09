@@ -13,6 +13,8 @@
 		BA6A0B761532A3260010E596 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA6A0B741532A3260010E596 /* InfoPlist.strings */; };
 		BA6A0B781532A3260010E596 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6A0B771532A3260010E596 /* main.m */; };
 		BA6A0B7C1532A3260010E596 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6A0B7B1532A3260010E596 /* AppDelegate.m */; };
+		BA6A0B871532A4B90010E596 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA6A0B861532A4B90010E596 /* LoginView.xib */; };
+		BA6A0B8B1532ABD20010E596 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6A0B8A1532ABD20010E596 /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +22,15 @@
 		BA6A0B6B1532A3260010E596 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BA6A0B6D1532A3260010E596 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BA6A0B6F1532A3260010E596 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		BA6A0B731532A3260010E596 /* gymate-Info.plist */ = {isa = PBXFileReference; path = "gymate-Info.plist"; sourceTree = "<group>"; };
+		BA6A0B731532A3260010E596 /* gymate-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "gymate-Info.plist"; sourceTree = "<group>"; };
 		BA6A0B751532A3260010E596 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BA6A0B771532A3260010E596 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		BA6A0B791532A3260010E596 /* gymate-Prefix.pch */ = {isa = PBXFileReference; path = "gymate-Prefix.pch"; sourceTree = "<group>"; };
-		BA6A0B7A1532A3260010E596 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		BA6A0B791532A3260010E596 /* gymate-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "gymate-Prefix.pch"; sourceTree = "<group>"; };
+		BA6A0B7A1532A3260010E596 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BA6A0B7B1532A3260010E596 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BA6A0B861532A4B90010E596 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		BA6A0B891532ABD20010E596 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		BA6A0B8A1532ABD20010E596 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +80,9 @@
 				BA6A0B7A1532A3260010E596 /* AppDelegate.h */,
 				BA6A0B7B1532A3260010E596 /* AppDelegate.m */,
 				BA6A0B721532A3260010E596 /* Supporting Files */,
+				BA6A0B861532A4B90010E596 /* LoginView.xib */,
+				BA6A0B891532ABD20010E596 /* LoginViewController.h */,
+				BA6A0B8A1532ABD20010E596 /* LoginViewController.m */,
 			);
 			path = gymate;
 			sourceTree = "<group>";
@@ -141,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA6A0B761532A3260010E596 /* InfoPlist.strings in Resources */,
+				BA6A0B871532A4B90010E596 /* LoginView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +162,7 @@
 			files = (
 				BA6A0B781532A3260010E596 /* main.m in Sources */,
 				BA6A0B7C1532A3260010E596 /* AppDelegate.m in Sources */,
+				BA6A0B8B1532ABD20010E596 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +264,7 @@
 				BA6A0B811532A3260010E596 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
