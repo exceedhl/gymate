@@ -18,16 +18,12 @@
 
 - (IBAction)login:(id)sender 
 {
-    NSLog(@"password: %@", self.password.text);
     User *user = [User logInWithEmail:self.email.text password:self.password.text];
     if (user) {
-        NSLog(@"first: %@", user.firstName);
-        NSLog(@"%@", [user objectForKey:@"firstName"]);
-        NSLog(@"last: %@", user.lastName);
-        NSLog(@"email: %@", user.email);
-        NSLog(@"password: %@", user.password);
-        NSLog(@"username: %@", user.username);
-        NSLog(@"gender: %@", user.gender);
+        NSLog(@"User: %@", user);
+        NSLog(@"session token: %@", user.sessionToken);
+        NSLog(@"new user?: %d", user.isNew);
+        NSLog(@"Current User: %@", [User currentUser]);
     }
 
 }

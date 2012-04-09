@@ -1,5 +1,7 @@
+#import <objc/runtime.h>
 #import <Parse/Parse.h>
 #import "User.h"
+
 
 @implementation User
 @synthesize firstName, lastName, gender;
@@ -11,11 +13,11 @@
 
 + (id)userWithPFUser:(PFUser *)pfUser
 {
-    User *user = (User *)pfUser;
-    user.firstName = [pfUser objectForKey:@"firstName"];
-    user.lastName = [pfUser objectForKey:@"lastName"];
-    user.email = [pfUser objectForKey:@"email"];
-    return user;
+    object_setClass(pfUser, [User class]);  
+    [pfUser setFirstName:[pfUser objectForKey:@"firstName"]];
+    [pfUser setLastName:[pfUser objectForKey:@"lastName"]];
+    [pfUser setGender:[pfUser objectForKey:@"gender"]];
+    return pfUser;
 }
 
 + (User *)logInWithEmail:(NSString *)email password:(NSString *)password
