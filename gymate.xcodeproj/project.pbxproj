@@ -1,0 +1,261 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA6A0B6C1532A3260010E596 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B6B1532A3260010E596 /* UIKit.framework */; };
+		BA6A0B6E1532A3260010E596 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B6D1532A3260010E596 /* Foundation.framework */; };
+		BA6A0B701532A3260010E596 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B6F1532A3260010E596 /* CoreGraphics.framework */; };
+		BA6A0B761532A3260010E596 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA6A0B741532A3260010E596 /* InfoPlist.strings */; };
+		BA6A0B781532A3260010E596 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6A0B771532A3260010E596 /* main.m */; };
+		BA6A0B7C1532A3260010E596 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6A0B7B1532A3260010E596 /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BA6A0B671532A3260010E596 /* gymate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gymate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA6A0B6B1532A3260010E596 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BA6A0B6D1532A3260010E596 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BA6A0B6F1532A3260010E596 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BA6A0B731532A3260010E596 /* gymate-Info.plist */ = {isa = PBXFileReference; path = "gymate-Info.plist"; sourceTree = "<group>"; };
+		BA6A0B751532A3260010E596 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BA6A0B771532A3260010E596 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BA6A0B791532A3260010E596 /* gymate-Prefix.pch */ = {isa = PBXFileReference; path = "gymate-Prefix.pch"; sourceTree = "<group>"; };
+		BA6A0B7A1532A3260010E596 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		BA6A0B7B1532A3260010E596 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA6A0B641532A3260010E596 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA6A0B6C1532A3260010E596 /* UIKit.framework in Frameworks */,
+				BA6A0B6E1532A3260010E596 /* Foundation.framework in Frameworks */,
+				BA6A0B701532A3260010E596 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA6A0B5C1532A3260010E596 = {
+			isa = PBXGroup;
+			children = (
+				BA6A0B711532A3260010E596 /* gymate */,
+				BA6A0B6A1532A3260010E596 /* Frameworks */,
+				BA6A0B681532A3260010E596 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA6A0B681532A3260010E596 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA6A0B671532A3260010E596 /* gymate.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA6A0B6A1532A3260010E596 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA6A0B6B1532A3260010E596 /* UIKit.framework */,
+				BA6A0B6D1532A3260010E596 /* Foundation.framework */,
+				BA6A0B6F1532A3260010E596 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA6A0B711532A3260010E596 /* gymate */ = {
+			isa = PBXGroup;
+			children = (
+				BA6A0B7A1532A3260010E596 /* AppDelegate.h */,
+				BA6A0B7B1532A3260010E596 /* AppDelegate.m */,
+				BA6A0B721532A3260010E596 /* Supporting Files */,
+			);
+			path = gymate;
+			sourceTree = "<group>";
+		};
+		BA6A0B721532A3260010E596 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA6A0B731532A3260010E596 /* gymate-Info.plist */,
+				BA6A0B741532A3260010E596 /* InfoPlist.strings */,
+				BA6A0B771532A3260010E596 /* main.m */,
+				BA6A0B791532A3260010E596 /* gymate-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA6A0B661532A3260010E596 /* gymate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA6A0B7F1532A3260010E596 /* Build configuration list for PBXNativeTarget "gymate" */;
+			buildPhases = (
+				BA6A0B631532A3260010E596 /* Sources */,
+				BA6A0B641532A3260010E596 /* Frameworks */,
+				BA6A0B651532A3260010E596 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gymate;
+			productName = gymate;
+			productReference = BA6A0B671532A3260010E596 /* gymate.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA6A0B5E1532A3260010E596 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = BA6A0B611532A3260010E596 /* Build configuration list for PBXProject "gymate" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BA6A0B5C1532A3260010E596;
+			productRefGroup = BA6A0B681532A3260010E596 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA6A0B661532A3260010E596 /* gymate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA6A0B651532A3260010E596 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA6A0B761532A3260010E596 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA6A0B631532A3260010E596 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA6A0B781532A3260010E596 /* main.m in Sources */,
+				BA6A0B7C1532A3260010E596 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BA6A0B741532A3260010E596 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA6A0B751532A3260010E596 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA6A0B7D1532A3260010E596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BA6A0B7E1532A3260010E596 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA6A0B801532A3260010E596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "gymate/gymate-Prefix.pch";
+				INFOPLIST_FILE = "gymate/gymate-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BA6A0B811532A3260010E596 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "gymate/gymate-Prefix.pch";
+				INFOPLIST_FILE = "gymate/gymate-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA6A0B611532A3260010E596 /* Build configuration list for PBXProject "gymate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA6A0B7D1532A3260010E596 /* Debug */,
+				BA6A0B7E1532A3260010E596 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA6A0B7F1532A3260010E596 /* Build configuration list for PBXNativeTarget "gymate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA6A0B801532A3260010E596 /* Debug */,
+				BA6A0B811532A3260010E596 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA6A0B5E1532A3260010E596 /* Project object */;
+}
