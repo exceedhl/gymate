@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3ED4662515345D6300E9CEDC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B6B1532A3260010E596 /* UIKit.framework */; };
+		3ED4662615345D6300E9CEDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B6D1532A3260010E596 /* Foundation.framework */; };
+		3ED4662C15345D6300E9CEDC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3ED4662A15345D6300E9CEDC /* InfoPlist.strings */; };
+		3ED4663715345E2C00E9CEDC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ED4663515345DE900E9CEDC /* SenTestingKit.framework */; };
+		3ED4663F15345F6D00E9CEDC /* UserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED4663E15345F6D00E9CEDC /* UserTest.m */; };
+		3ED466441534618C00E9CEDC /* OCHamcrestIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ED466421534614800E9CEDC /* OCHamcrestIOS.framework */; };
+		3ED466471534677700E9CEDC /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A05A91532B5840007E136 /* Parse.framework */; };
 		BA6A05AA1532B5840007E136 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A05A91532B5840007E136 /* Parse.framework */; };
 		BA6A05AF1532B5A30007E136 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA6A05AE1532B5A30007E136 /* LoginView.xib */; };
 		BA6A05B31532B5BF0007E136 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6A05B21532B5BF0007E136 /* LoginViewController.m */; };
@@ -29,6 +36,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3ED4662215345D6300E9CEDC /* gymateTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gymateTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ED4662915345D6300E9CEDC /* gymateTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "gymateTests-Info.plist"; sourceTree = "<group>"; };
+		3ED4662B15345D6300E9CEDC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3ED4663015345D6300E9CEDC /* gymateTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "gymateTests-Prefix.pch"; sourceTree = "<group>"; };
+		3ED4663515345DE900E9CEDC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		3ED4663D15345F6D00E9CEDC /* UserTest.h */ = {isa = PBXFileReference; fileEncoding = 4; path = UserTest.h; sourceTree = "<group>"; };
+		3ED4663E15345F6D00E9CEDC /* UserTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTest.m; sourceTree = "<group>"; };
+		3ED466421534614800E9CEDC /* OCHamcrestIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCHamcrestIOS.framework; path = gymateTests/lib/OCHamcrestIOS.framework; sourceTree = "<group>"; };
 		BA6A05A91532B5840007E136 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = gymate/lib/Parse.framework; sourceTree = "<group>"; };
 		BA6A05AE1532B5A30007E136 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		BA6A05B11532B5BF0007E136 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -58,6 +73,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3ED4661E15345D6300E9CEDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ED466471534677700E9CEDC /* Parse.framework in Frameworks */,
+				3ED466441534618C00E9CEDC /* OCHamcrestIOS.framework in Frameworks */,
+				3ED4663715345E2C00E9CEDC /* SenTestingKit.framework in Frameworks */,
+				3ED4662515345D6300E9CEDC /* UIKit.framework in Frameworks */,
+				3ED4662615345D6300E9CEDC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BA6A0B641532A3260010E596 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -79,6 +106,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3ED4662715345D6300E9CEDC /* gymateTests */ = {
+			isa = PBXGroup;
+			children = (
+				3ED4663C15345F6D00E9CEDC /* model */,
+				3ED4662815345D6300E9CEDC /* Supporting Files */,
+			);
+			path = gymateTests;
+			sourceTree = "<group>";
+		};
+		3ED4662815345D6300E9CEDC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3ED4662915345D6300E9CEDC /* gymateTests-Info.plist */,
+				3ED4662A15345D6300E9CEDC /* InfoPlist.strings */,
+				3ED4663015345D6300E9CEDC /* gymateTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3ED4663C15345F6D00E9CEDC /* model */ = {
+			isa = PBXGroup;
+			children = (
+				3ED4663D15345F6D00E9CEDC /* UserTest.h */,
+				3ED4663E15345F6D00E9CEDC /* UserTest.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		BA6A05AD1532B5A30007E136 /* view */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				BA6A0B711532A3260010E596 /* gymate */,
+				3ED4662715345D6300E9CEDC /* gymateTests */,
 				BA6A0B6A1532A3260010E596 /* Frameworks */,
 				BA6A0B681532A3260010E596 /* Products */,
 			);
@@ -121,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				BA6A0B671532A3260010E596 /* gymate.app */,
+				3ED4662215345D6300E9CEDC /* gymateTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,6 +185,8 @@
 		BA6A0B6A1532A3260010E596 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3ED466421534614800E9CEDC /* OCHamcrestIOS.framework */,
+				3ED4663515345DE900E9CEDC /* SenTestingKit.framework */,
 				BA6A05A91532B5840007E136 /* Parse.framework */,
 				BA6A0B9A1532B2700010E596 /* QuartzCore.framework */,
 				BA6A0B981532B2340010E596 /* Security.framework */,
@@ -170,6 +229,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3ED4662115345D6300E9CEDC /* gymateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3ED4663315345D6300E9CEDC /* Build configuration list for PBXNativeTarget "gymateTests" */;
+			buildPhases = (
+				3ED4661D15345D6300E9CEDC /* Sources */,
+				3ED4661E15345D6300E9CEDC /* Frameworks */,
+				3ED4661F15345D6300E9CEDC /* Resources */,
+				3ED4662015345D6300E9CEDC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gymateTests;
+			productName = gymateTests;
+			productReference = 3ED4662215345D6300E9CEDC /* gymateTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		BA6A0B661532A3260010E596 /* gymate */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA6A0B7F1532A3260010E596 /* Build configuration list for PBXNativeTarget "gymate" */;
@@ -208,11 +285,20 @@
 			projectRoot = "";
 			targets = (
 				BA6A0B661532A3260010E596 /* gymate */,
+				3ED4662115345D6300E9CEDC /* gymateTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3ED4661F15345D6300E9CEDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ED4662C15345D6300E9CEDC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BA6A0B651532A3260010E596 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -225,7 +311,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3ED4662015345D6300E9CEDC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		3ED4661D15345D6300E9CEDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ED4663F15345F6D00E9CEDC /* UserTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BA6A0B631532A3260010E596 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -241,6 +351,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		3ED4662A15345D6300E9CEDC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3ED4662B15345D6300E9CEDC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		BA6A0B741532A3260010E596 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -252,6 +370,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3ED4663115345D6300E9CEDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(SRCROOT)/gymateTests/lib\"",
+					"\"$(SRCROOT)/gymate/lib\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "gymateTests/gymateTests-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "gymateTests/gymateTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		3ED4663215345D6300E9CEDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(SRCROOT)/gymateTests/lib\"",
+					"\"$(SRCROOT)/gymate/lib\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "gymateTests/gymateTests-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "gymateTests/gymateTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		BA6A0B7D1532A3260010E596 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -332,6 +494,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3ED4663315345D6300E9CEDC /* Build configuration list for PBXNativeTarget "gymateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3ED4663115345D6300E9CEDC /* Debug */,
+				3ED4663215345D6300E9CEDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		BA6A0B611532A3260010E596 /* Build configuration list for PBXProject "gymate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
