@@ -34,6 +34,11 @@
     [self.navigationController pushViewController:controller animated:YES];
 }
 
+- (IBAction)backgroundTouch:(id)sender {
+    [email resignFirstResponder];
+    [password resignFirstResponder];
+}
+
 - (void)dealloc 
 {
     [email release];

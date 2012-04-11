@@ -16,4 +16,5 @@
 
 - (IBAction)signup:(id)sender;
 - (IBAction)backToLoginView:(id)sender;
+- (IBAction)backgroundTouch:(id)sender;
 @end
