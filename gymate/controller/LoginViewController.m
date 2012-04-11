@@ -24,6 +24,9 @@
         NSLog(@"session token: %@", user.sessionToken);
         NSLog(@"new user?: %d", user.isNew);
         NSLog(@"Current User: %@", [User currentUser]);
+    } else {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Login Failed" message:@"Please try again." delegate:self cancelButtonTitle:@"Close" otherButtonTitles:nil, nil];
+        [alert show];
     }
 
 }
