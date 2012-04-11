@@ -1,24 +1,17 @@
 #import "UserTest.h"
 
-@implementation UserTests
+@implementation UserTest
 
-- (void)setUp
+-(void)setUp
 {
-    [super setUp];
-    
-    // Set-up code here.
+    [Parse setApplicationId:@"LgeuExxvIpU5ZLyXeSwCk4AKj4aD1a5ViPtcef2m" 
+                  clientKey:@"HrEukR6VwxpXOkiwt2XQRiDR92knGg9MguD2MESS"];
 }
 
-- (void)tearDown
+-(void)testLoginWithUserNameAndPassword
 {
-    // Tear-down code here.
-    
-    [super tearDown];
-}
-
-- (void)testUser
-{
-    assertThat(@"1", equalTo(@"1"));
+    User *loggedInUser = [User logInWithEmail:EMAIL_ADDRESS password:PASSWORD];
+    assertThat(loggedInUser, is(notNilValue()));
 }
 
 @end
