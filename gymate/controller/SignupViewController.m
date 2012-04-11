@@ -30,4 +30,11 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+- (IBAction)backgroundTouch:(id)sender {
+    [email resignFirstResponder];
+    [password resignFirstResponder];
+    [firstName resignFirstResponder];
+    [lastName resignFirstResponder];
+}
+
 @end

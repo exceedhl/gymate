@@ -10,4 +10,5 @@
 
 - (IBAction)login:(id)sender;
 - (IBAction)signUp:(id)sender;
+- (IBAction)backgroundTouch:(id)sender;
 @end
