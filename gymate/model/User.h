@@ -11,6 +11,6 @@
 - (NSString *)lastName;
 - (void)setLastName:(NSString *)lastName;
 - (NSNumber *)gender;
-- (void)setGender:(NSString *)gender;
+- (void)setGender:(NSNumber *)gender;
 
 @end

@@ -40,7 +40,7 @@
     return [self objectForKey:@"gender"];
 }
 
-- (void)setGender:(NSString *)gender
+- (void)setGender:(NSNumber *)gender
 {
     [self setObject:gender forKey:@"gender"];
 }
