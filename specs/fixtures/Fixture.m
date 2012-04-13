@@ -1,26 +1,17 @@
 #import "Fixture.h"
-#import "UserFixture.h"
 
 #import <Parse/Parse.h>
 
 @implementation Fixture
 
-@synthesize users;
-
-+ (id)fixture
+- (id)init 
 {
-    [Parse setApplicationId:@"vHejG6VviEbZmluhw9H8Z3BwdOL3IfDrxmRF70eb" 
-                  clientKey:@"NP1GdDSDXSN1oi7YyBTL7BDVpczqLbAEuJqww56N"];
-
-    Fixture *f = [[[Fixture alloc] init] autorelease];
-    f.users = [UserFixture fixture];
-    return f;
+    if (self = [super init]) {
+        [Parse setApplicationId:@"vHejG6VviEbZmluhw9H8Z3BwdOL3IfDrxmRF70eb" 
+                      clientKey:@"NP1GdDSDXSN1oi7YyBTL7BDVpczqLbAEuJqww56N"];        
+    }
+    return self;
 }
 
-- (void)dealloc
-{
-    [self.users release];
-    [super dealloc];
-}
 
 @end

@@ -10,9 +10,11 @@
     return [[User alloc] init];
 }
 
-+ (User *)logInWithEmail:(NSString *)email password:(NSString *)password
++ (id)logInWithEmail:(NSString *)email password:(NSString *)password
 {
-    return (User *)[PFUser logInWithUsername:email password:password];
+    PFUser *user = [PFUser logInWithUsername:email password:password];
+    object_setClass(user, [User class]);
+    return user;
 }
 
 - (NSString *)firstName

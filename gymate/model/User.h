@@ -4,7 +4,7 @@
 @interface User : PFUser
 
 + (id)user;
-+ (User *)logInWithEmail:(NSString *)username password:(NSString *)password;
++ (id)logInWithEmail:(NSString *)username password:(NSString *)password;
 
 - (NSString *)firstName;
 - (void)setFirstName:(NSString *)firstName;

@@ -1,9 +1,10 @@
 @class User;
 
-@interface UserFixture : NSObject
+#import "Fixture.h"
 
-@property (nonatomic, retain) User *user;
+@interface UserFixture : Fixture
 
+- (User *)user;
 + (id)fixture;
-+ (void)deleteAll;
+
 @end

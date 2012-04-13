@@ -2,30 +2,21 @@
 #import "User.h"
 
 @implementation UserFixture
-@synthesize user;
 
-+ (void)deleteAll
+- (User *)user
 {
-    PFQuery *q = [PFQuery queryForUser];
-    NSArray *users = [q findObjects];
-    for (PFUser *user in users) {
-        [PFUser logInWithUsername:user.username password:user.password];
-        [user delete];
-    }
+    User *u = [User user];
+    u.email = @"adam@smith.com";
+    u.password = @"letmein";
+    u.firstName = @"Adam";
+    u.lastName = @"Smith";
+    u.gender = [NSNumber numberWithInt:0];
+    return u;
 }
 
 + (id)fixture
 {
-    [self deleteAll];
     UserFixture *uf = [[[UserFixture alloc] init] autorelease];
-    User *user = [User user];
-    user.firstName = @"Adam";
-    user.lastName = @"Smith";
-    user.gender = [NSNumber numberWithInt:0];
-    user.email = @"adam@smith.com";
-    user.password = @"letmein";
-    [user signUp];
-    uf.user = user;
     return uf;
 }
 

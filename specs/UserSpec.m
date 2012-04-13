@@ -1,14 +1,14 @@
 #import "User.h"
-#import "Fixture.h"
+#import "UserFixture.h"
 
 SPEC_BEGIN(UserSpec)
 
 describe(@"User", ^{
         
-    __block Fixture *f = nil;
+    __block UserFixture *users = nil;
     
     beforeAll(^{
-        f = [Fixture fixture];
+        users = [UserFixture fixture];
     });
     
     it(@"should signup successfully", ^{
@@ -23,8 +23,16 @@ describe(@"User", ^{
         [user delete];
     });
     
-    it(@"", ^{
-        NSLog(@"%@", f.users); 
+    it(@"should login successfully", ^{
+        User *user = [users user];
+        User *loggedInUser = [User logInWithEmail:user.email password:user.password];
+        [[loggedInUser.email should] equal:user.email];
+        [[loggedInUser.firstName should] equal:user.firstName];
+        [[loggedInUser.lastName should] equal:user.lastName];
+        [[loggedInUser.gender should] equal:user.gender];
+        [[loggedInUser.sessionToken should] beNonNil];
+        [[[NSNumber numberWithBool:loggedInUser.isAuthenticated] should] beTrue];
+        [[[[User currentUser] email] should] equal:user.email];
     });
 });
 
