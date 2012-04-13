@@ -7,22 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3E32D3E21535494B00B0D5BB /* UserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E32D3E11535494B00B0D5BB /* UserTest.m */; };
-		3E32D3E31535598600B0D5BB /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6A05BB1532C84D0007E136 /* User.m */; };
-		3E32D3E415355C3000B0D5BB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B9A1532B2700010E596 /* QuartzCore.framework */; };
-		3E32D3E515355C5100B0D5BB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B981532B2340010E596 /* Security.framework */; };
-		3E32D3E615355C6200B0D5BB /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B961532B22A0010E596 /* libz.1.1.3.dylib */; };
-		3E32D3E715355C7200B0D5BB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B6F1532A3260010E596 /* CoreGraphics.framework */; };
-		3E32D3E815355C7F00B0D5BB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B941532B2110010E596 /* MobileCoreServices.framework */; };
-		3E32D3E915355C8B00B0D5BB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B921532B1F60010E596 /* SystemConfiguration.framework */; };
-		3E32D3EA15355C9900B0D5BB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B901532B1E00010E596 /* CFNetwork.framework */; };
-		3E32D3EB15355CA500B0D5BB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B8E1532B1D80010E596 /* AudioToolbox.framework */; };
-		3ED4662515345D6300E9CEDC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B6B1532A3260010E596 /* UIKit.framework */; };
-		3ED4662615345D6300E9CEDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B6D1532A3260010E596 /* Foundation.framework */; };
-		3ED4662C15345D6300E9CEDC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3ED4662A15345D6300E9CEDC /* InfoPlist.strings */; };
-		3ED4663715345E2C00E9CEDC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ED4663515345DE900E9CEDC /* SenTestingKit.framework */; };
-		3ED466441534618C00E9CEDC /* OCHamcrestIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ED466421534614800E9CEDC /* OCHamcrestIOS.framework */; };
-		3ED466471534677700E9CEDC /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A05A91532B5840007E136 /* Parse.framework */; };
 		BA6A05AA1532B5840007E136 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A05A91532B5840007E136 /* Parse.framework */; };
 		BA6A05AF1532B5A30007E136 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA6A05AE1532B5A30007E136 /* LoginView.xib */; };
 		BA6A05B31532B5BF0007E136 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6A05B21532B5BF0007E136 /* LoginViewController.m */; };
@@ -42,17 +26,20 @@
 		BA6A0B971532B22A0010E596 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B961532B22A0010E596 /* libz.1.1.3.dylib */; };
 		BA6A0B991532B2340010E596 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B981532B2340010E596 /* Security.framework */; };
 		BA6A0B9B1532B2700010E596 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B9A1532B2700010E596 /* QuartzCore.framework */; };
+		BA6A6CD6153833BD00ED9261 /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A6CD5153833BD00ED9261 /* libPods-test.a */; };
+		BAF72F78153831B2004469EC /* Pods-test.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BAF72F77153831B2004469EC /* Pods-test.xcconfig */; };
+		BAF72F821538320C004469EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B6B1532A3260010E596 /* UIKit.framework */; };
+		BAF72F831538320C004469EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B6D1532A3260010E596 /* Foundation.framework */; };
+		BAF72F891538320C004469EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BAF72F871538320C004469EC /* InfoPlist.strings */; };
+		BAF72F8C1538320C004469EC /* specs.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF72F8B1538320C004469EC /* specs.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3E32D3E01535494B00B0D5BB /* UserTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserTest.h; sourceTree = "<group>"; };
 		3E32D3E11535494B00B0D5BB /* UserTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTest.m; sourceTree = "<group>"; };
-		3ED4662215345D6300E9CEDC /* gymateTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gymateTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ED4662915345D6300E9CEDC /* gymateTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "gymateTests-Info.plist"; sourceTree = "<group>"; };
 		3ED4662B15345D6300E9CEDC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3ED4663015345D6300E9CEDC /* gymateTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "gymateTests-Prefix.pch"; sourceTree = "<group>"; };
-		3ED4663515345DE900E9CEDC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		3ED466421534614800E9CEDC /* OCHamcrestIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCHamcrestIOS.framework; path = gymateTests/lib/OCHamcrestIOS.framework; sourceTree = "<group>"; };
 		BA6A05A91532B5840007E136 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = gymate/lib/Parse.framework; sourceTree = "<group>"; };
 		BA6A05AE1532B5A30007E136 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		BA6A05B11532B5BF0007E136 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -79,29 +66,17 @@
 		BA6A0B961532B22A0010E596 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
 		BA6A0B981532B2340010E596 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		BA6A0B9A1532B2700010E596 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BA6A6CD5153833BD00ED9261 /* libPods-test.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "libPods-test.a"; path = "Pods/build/Release-iphoneos/libPods-test.a"; sourceTree = "<group>"; };
+		BAF72F77153831B2004469EC /* Pods-test.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-test.xcconfig"; path = "Pods/Pods-test.xcconfig"; sourceTree = "<group>"; };
+		BAF72F7F1538320C004469EC /* specs.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = specs.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAF72F861538320C004469EC /* specs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "specs-Info.plist"; sourceTree = "<group>"; };
+		BAF72F881538320C004469EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BAF72F8A1538320C004469EC /* specs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = specs.h; sourceTree = "<group>"; };
+		BAF72F8B1538320C004469EC /* specs.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = specs.m; sourceTree = "<group>"; };
+		BAF72F8D1538320C004469EC /* specs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "specs-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3ED4661E15345D6300E9CEDC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3E32D3EB15355CA500B0D5BB /* AudioToolbox.framework in Frameworks */,
-				3E32D3EA15355C9900B0D5BB /* CFNetwork.framework in Frameworks */,
-				3E32D3E915355C8B00B0D5BB /* SystemConfiguration.framework in Frameworks */,
-				3E32D3E815355C7F00B0D5BB /* MobileCoreServices.framework in Frameworks */,
-				3E32D3E715355C7200B0D5BB /* CoreGraphics.framework in Frameworks */,
-				3E32D3E615355C6200B0D5BB /* libz.1.1.3.dylib in Frameworks */,
-				3E32D3E515355C5100B0D5BB /* Security.framework in Frameworks */,
-				3E32D3E415355C3000B0D5BB /* QuartzCore.framework in Frameworks */,
-				3ED466471534677700E9CEDC /* Parse.framework in Frameworks */,
-				3ED466441534618C00E9CEDC /* OCHamcrestIOS.framework in Frameworks */,
-				3ED4663715345E2C00E9CEDC /* SenTestingKit.framework in Frameworks */,
-				3ED4662515345D6300E9CEDC /* UIKit.framework in Frameworks */,
-				3ED4662615345D6300E9CEDC /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		BA6A0B641532A3260010E596 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -117,6 +92,16 @@
 				BA6A0B6C1532A3260010E596 /* UIKit.framework in Frameworks */,
 				BA6A0B6E1532A3260010E596 /* Foundation.framework in Frameworks */,
 				BA6A05AA1532B5840007E136 /* Parse.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAF72F7B1538320C004469EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA6A6CD6153833BD00ED9261 /* libPods-test.a in Frameworks */,
+				BAF72F821538320C004469EC /* UIKit.framework in Frameworks */,
+				BAF72F831538320C004469EC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,8 +170,10 @@
 			children = (
 				BA6A0B711532A3260010E596 /* gymate */,
 				3ED4662715345D6300E9CEDC /* gymateTests */,
+				BAF72F841538320C004469EC /* specs */,
 				BA6A0B6A1532A3260010E596 /* Frameworks */,
 				BA6A0B681532A3260010E596 /* Products */,
+				BAF72F77153831B2004469EC /* Pods-test.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -194,7 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				BA6A0B671532A3260010E596 /* gymate.app */,
-				3ED4662215345D6300E9CEDC /* gymateTests.octest */,
+				BAF72F7F1538320C004469EC /* specs.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -202,8 +189,7 @@
 		BA6A0B6A1532A3260010E596 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3ED466421534614800E9CEDC /* OCHamcrestIOS.framework */,
-				3ED4663515345DE900E9CEDC /* SenTestingKit.framework */,
+				BA6A6CD5153833BD00ED9261 /* libPods-test.a */,
 				BA6A05A91532B5840007E136 /* Parse.framework */,
 				BA6A0B9A1532B2700010E596 /* QuartzCore.framework */,
 				BA6A0B981532B2340010E596 /* Security.framework */,
@@ -243,27 +229,29 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BAF72F841538320C004469EC /* specs */ = {
+			isa = PBXGroup;
+			children = (
+				BAF72F8A1538320C004469EC /* specs.h */,
+				BAF72F8B1538320C004469EC /* specs.m */,
+				BAF72F851538320C004469EC /* Supporting Files */,
+			);
+			path = specs;
+			sourceTree = "<group>";
+		};
+		BAF72F851538320C004469EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BAF72F861538320C004469EC /* specs-Info.plist */,
+				BAF72F871538320C004469EC /* InfoPlist.strings */,
+				BAF72F8D1538320C004469EC /* specs-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3ED4662115345D6300E9CEDC /* gymateTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3ED4663315345D6300E9CEDC /* Build configuration list for PBXNativeTarget "gymateTests" */;
-			buildPhases = (
-				3ED4661D15345D6300E9CEDC /* Sources */,
-				3ED4661E15345D6300E9CEDC /* Frameworks */,
-				3ED4661F15345D6300E9CEDC /* Resources */,
-				3ED4662015345D6300E9CEDC /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = gymateTests;
-			productName = gymateTests;
-			productReference = 3ED4662215345D6300E9CEDC /* gymateTests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
 		BA6A0B661532A3260010E596 /* gymate */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA6A0B7F1532A3260010E596 /* Build configuration list for PBXNativeTarget "gymate" */;
@@ -271,6 +259,7 @@
 				BA6A0B631532A3260010E596 /* Sources */,
 				BA6A0B641532A3260010E596 /* Frameworks */,
 				BA6A0B651532A3260010E596 /* Resources */,
+				E076E5F748184C9D86BCED47 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -280,6 +269,25 @@
 			productName = gymate;
 			productReference = BA6A0B671532A3260010E596 /* gymate.app */;
 			productType = "com.apple.product-type.application";
+		};
+		BAF72F7E1538320C004469EC /* specs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAF72F8E1538320C004469EC /* Build configuration list for PBXNativeTarget "specs" */;
+			buildPhases = (
+				BAF72F7A1538320C004469EC /* Sources */,
+				BAF72F7B1538320C004469EC /* Frameworks */,
+				BAF72F7C1538320C004469EC /* Resources */,
+				BA6A6CD41538333E00ED9261 /* Copy Pods Test Resources */,
+				BAF72F7D1538320C004469EC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = specs;
+			productName = specs;
+			productReference = BAF72F7F1538320C004469EC /* specs.octest */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -302,20 +310,12 @@
 			projectRoot = "";
 			targets = (
 				BA6A0B661532A3260010E596 /* gymate */,
-				3ED4662115345D6300E9CEDC /* gymateTests */,
+				BAF72F7E1538320C004469EC /* specs */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3ED4661F15345D6300E9CEDC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3ED4662C15345D6300E9CEDC /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		BA6A0B651532A3260010E596 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -323,13 +323,36 @@
 				BA6A0B761532A3260010E596 /* InfoPlist.strings in Resources */,
 				BA6A05AF1532B5A30007E136 /* LoginView.xib in Resources */,
 				BA6A05B51532B61C0007E136 /* SignupView.xib in Resources */,
+				BAF72F78153831B2004469EC /* Pods-test.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAF72F7C1538320C004469EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAF72F891538320C004469EC /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3ED4662015345D6300E9CEDC /* ShellScript */ = {
+		BA6A6CD41538333E00ED9261 /* Copy Pods Test Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Test Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-test-resources.sh\"";
+		};
+		BAF72F7D1538320C004469EC /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -342,18 +365,23 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
+		E076E5F748184C9D86BCED47 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3ED4661D15345D6300E9CEDC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3E32D3E21535494B00B0D5BB /* UserTest.m in Sources */,
-				3E32D3E31535598600B0D5BB /* User.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		BA6A0B631532A3260010E596 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -363,6 +391,14 @@
 				BA6A05B31532B5BF0007E136 /* LoginViewController.m in Sources */,
 				BA6A05B81532B8520007E136 /* SignupViewController.m in Sources */,
 				BA6A05BC1532C84D0007E136 /* User.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAF72F7A1538320C004469EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAF72F8C1538320C004469EC /* specs.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,53 +421,17 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
+		BAF72F871538320C004469EC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAF72F881538320C004469EC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		3ED4663115345D6300E9CEDC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-					"\"$(SRCROOT)/gymateTests/lib\"",
-					"\"$(SRCROOT)/gymate/lib\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "gymateTests/gymateTests-Prefix.pch";
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				INFOPLIST_FILE = "gymateTests/gymateTests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		3ED4663215345D6300E9CEDC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-					"\"$(SRCROOT)/gymateTests/lib\"",
-					"\"$(SRCROOT)/gymate/lib\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "gymateTests/gymateTests-Prefix.pch";
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				INFOPLIST_FILE = "gymateTests/gymateTests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-lstdc++",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
 		BA6A0B7D1532A3260010E596 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -477,7 +477,9 @@
 		};
 		BA6A0B801532A3260010E596 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAF72F77153831B2004469EC /* Pods-test.xcconfig */;
 			buildSettings = {
+				DSTROOT = /tmp/xcodeproj.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -485,9 +487,11 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "gymate/gymate-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "gymate/gymate-Info.plist";
 				OTHER_LDFLAGS = "-fobjc-arc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -495,6 +499,7 @@
 		BA6A0B811532A3260010E596 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DSTROOT = /tmp/xcodeproj.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -502,25 +507,53 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "gymate/gymate-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "gymate/gymate-Info.plist";
 				OTHER_LDFLAGS = "-fobjc-arc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BAF72F8F1538320C004469EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAF72F77153831B2004469EC /* Pods-test.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "specs/specs-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "specs/specs-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		BAF72F901538320C004469EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "specs/specs-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "specs/specs-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3ED4663315345D6300E9CEDC /* Build configuration list for PBXNativeTarget "gymateTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3ED4663115345D6300E9CEDC /* Debug */,
-				3ED4663215345D6300E9CEDC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		BA6A0B611532A3260010E596 /* Build configuration list for PBXProject "gymate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -535,6 +568,15 @@
 			buildConfigurations = (
 				BA6A0B801532A3260010E596 /* Debug */,
 				BA6A0B811532A3260010E596 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAF72F8E1538320C004469EC /* Build configuration list for PBXNativeTarget "specs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAF72F8F1538320C004469EC /* Debug */,
+				BAF72F901538320C004469EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
