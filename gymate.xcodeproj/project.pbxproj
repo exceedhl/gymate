@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3EA28828153AF55C00897DE1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA28827153AF55C00897DE1 /* libPods.a */; };
 		BA6A05AA1532B5840007E136 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A05A91532B5840007E136 /* Parse.framework */; };
 		BA6A05AF1532B5A30007E136 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA6A05AE1532B5A30007E136 /* LoginView.xib */; };
 		BA6A05B31532B5BF0007E136 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6A05B21532B5BF0007E136 /* LoginViewController.m */; };
@@ -47,6 +48,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3EA28827153AF55C00897DE1 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libPods.a; path = "Pods/build/Release-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		BA6A05A91532B5840007E136 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = gymate/lib/Parse.framework; sourceTree = "<group>"; };
 		BA6A05AE1532B5A30007E136 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		BA6A05B11532B5BF0007E136 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EA28828153AF55C00897DE1 /* libPods.a in Frameworks */,
 				BA6A0B9B1532B2700010E596 /* QuartzCore.framework in Frameworks */,
 				BA6A0B991532B2340010E596 /* Security.framework in Frameworks */,
 				BA6A0B971532B22A0010E596 /* libz.1.1.3.dylib in Frameworks */,
@@ -160,6 +163,7 @@
 		BA6A0B5C1532A3260010E596 = {
 			isa = PBXGroup;
 			children = (
+				3EA28827153AF55C00897DE1 /* libPods.a */,
 				BA6A0B711532A3260010E596 /* gymate */,
 				BAF72F841538320C004469EC /* specs */,
 				BA6A0B6A1532A3260010E596 /* Frameworks */,
@@ -380,7 +384,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-test-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

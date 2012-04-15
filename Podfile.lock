@@ -1,5 +1,7 @@
 PODS:
   - Kiwi (1.0.0)
+  - MBProgressHUD (0.41)
 
 DEPENDENCIES:
   - Kiwi
+  - MBProgressHUD
