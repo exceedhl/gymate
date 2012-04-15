@@ -1,6 +1,7 @@
 #import "LoginViewController.h"
 #import "SignupViewController.h"
 #import "User.h"
+#import "MBProgressHUD.h"
 
 @implementation LoginViewController
 
@@ -18,16 +19,23 @@
 
 - (IBAction)login:(id)sender 
 {
-    User *user = [User logInWithEmail:self.email.text password:self.password.text];
-    if (user) {
-        NSLog(@"User: %@", user);
-        NSLog(@"session token: %@", user.sessionToken);
-        NSLog(@"new user?: %d", user.isNew);
-        NSLog(@"Current User: %@", [User currentUser]);
-    } else {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Login Failed" message:@"Please try again." delegate:self cancelButtonTitle:@"Close" otherButtonTitles:nil, nil];
-        [alert show];
-    }
+    [self backgroundTouch:nil];
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.labelText = @"Logging in...";
+    dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
+        User *user = [User logInWithEmail:self.email.text password:self.password.text];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (user) {
+                NSLog(@"User: %@", user);
+                NSLog(@"session token: %@", user.sessionToken);
+                NSLog(@"new user?: %d", user.isNew);
+                NSLog(@"Current User: %@", [User currentUser]);
+            } else {
+                hud.labelText = @"Login failed...";
+            }
+            [MBProgressHUD hideHUDForView:self.view animated:YES]; 
+        });
+    });
 
 }
 
