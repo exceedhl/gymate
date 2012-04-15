@@ -163,7 +163,6 @@
 		BA6A0B5C1532A3260010E596 = {
 			isa = PBXGroup;
 			children = (
-				3EA28827153AF55C00897DE1 /* libPods.a */,
 				BA6A0B711532A3260010E596 /* gymate */,
 				BAF72F841538320C004469EC /* specs */,
 				BA6A0B6A1532A3260010E596 /* Frameworks */,
@@ -184,6 +183,7 @@
 		BA6A0B6A1532A3260010E596 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3EA28827153AF55C00897DE1 /* libPods.a */,
 				BA6A6CD5153833BD00ED9261 /* libPods-test.a */,
 				BA6A05A91532B5840007E136 /* Parse.framework */,
 				BA6A0B9A1532B2700010E596 /* QuartzCore.framework */,
