@@ -1,6 +1,6 @@
 #import <UIKit/UIKit.h>
 
-@interface SignupViewController : UIViewController {
+@interface SignupViewController : UIViewController <UITextFieldDelegate> {
     UITextField *firstName;
     UITextField *lastName;
     UISegmentedControl *gender;

@@ -47,4 +47,18 @@
     [lastName resignFirstResponder];
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    if ([firstName isFirstResponder]) {
+        [lastName becomeFirstResponder];
+    } else if ([lastName isFirstResponder]) {
+        [lastName resignFirstResponder];
+    } else if ([email isFirstResponder]) {
+        [password becomeFirstResponder];
+    } else if ([password becomeFirstResponder]) {
+        // Enable Join only if all mandatory fields are filled
+        [self signup:nil];
+    }
+    return NO;
+}
+
 @end

@@ -52,6 +52,16 @@
     [password resignFirstResponder];
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    if ([email isFirstResponder]) {
+        [password becomeFirstResponder];
+    } else if ([password becomeFirstResponder]) {
+        // Enable Go only if all mandatory fields are filled
+        [self login:nil];
+    }
+    return NO;
+}
+
 - (void)dealloc 
 {
     [email release];
