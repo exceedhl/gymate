@@ -43,7 +43,8 @@
 
 - (IBAction)signUp:(id)sender 
 {
-    SignupViewController *controller = [[[SignupViewController alloc] initWithNibName:@"signupView" bundle:nil] autorelease];    
+    SignupViewController *controller = [[[SignupViewController alloc] initWithNibName:@"signupView" bundle:nil] autorelease];
+    [self addSlideDownAnimation];
     [self.navigationController pushViewController:controller animated:YES];
 }
 
@@ -60,6 +61,16 @@
         [self login:nil];
     }
     return NO;
+}
+
+- (void)addSlideDownAnimation {
+    CATransition *transition = [CATransition animation];
+    transition.duration = 0.7;
+    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    transition.type = kCATransitionPush;
+    transition.subtype = kCATransitionFromBottom;
+    transition.delegate = self;
+    [self.navigationController.view.layer addAnimation:transition forKey:nil];
 }
 
 - (void)dealloc 

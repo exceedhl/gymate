@@ -37,6 +37,7 @@
 
 - (IBAction)backToLoginView:(id)sender 
 {
+    [self addPullUpAnimation];
     [self.navigationController popViewControllerAnimated:YES];
 }
 
@@ -59,6 +60,16 @@
         [self signup:nil];
     }
     return NO;
+}
+
+- (void)addPullUpAnimation {
+    CATransition *transition = [CATransition animation];
+    transition.duration = 0.7;
+    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    transition.type = kCATransitionPush;
+    transition.subtype = kCATransitionFromTop;
+    transition.delegate = self;
+    [self.navigationController.view.layer addAnimation:transition forKey:nil];
 }
 
 @end
