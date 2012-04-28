@@ -2,16 +2,18 @@
 #import "User.h"
 #import "MBProgressHUD.h"
 
+#define PORTRAIT_KEYBOARD_HEIGHT 216
+#define MIN_GAP_BETWEEN_KEYBOARD_AND_TEXT_FIELD 5
+
+@interface SignupViewController ()
+
+-(void)moveViewUp:(CGFloat)deltaY;
+
+@end
+
 @implementation SignupViewController
 
-@synthesize firstName, lastName, gender, email, password, customNavigationItem;
-
-- (void)viewDidLoad
-{
-    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(backToLoginView:)];
-    [self.customNavigationItem setRightBarButtonItem:backButton];
-    [backButton release];
-}
+@synthesize firstName, lastName, gender, email, password, height, weight;
 
 - (IBAction)signup:(id)sender {
     [self backgroundTouch:nil];
@@ -40,10 +42,7 @@
 }
 
 - (IBAction)backgroundTouch:(id)sender {
-    [email resignFirstResponder];
-    [password resignFirstResponder];
-    [firstName resignFirstResponder];
-    [lastName resignFirstResponder];
+    [self.view endEditing:YES];
 }
 
 
@@ -58,17 +57,47 @@
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
-    if ([firstName isFirstResponder]) {
+    if ([email isFirstResponder]) {
+        [password becomeFirstResponder];
+    } else if ([password isFirstResponder]) {
+        [firstName becomeFirstResponder];
+    } else if ([firstName isFirstResponder]) {
         [lastName becomeFirstResponder];
     } else if ([lastName isFirstResponder]) {
-        [lastName resignFirstResponder];
-    } else if ([email isFirstResponder]) {
-        [password becomeFirstResponder];
-    } else if ([password becomeFirstResponder]) {
-        // Enable Join only if all mandatory fields are filled
+        [height becomeFirstResponder];
+    } else if ([height isFirstResponder]) {
+        [weight becomeFirstResponder];
+    } else if ([weight isFirstResponder]) {
         [self signup:nil];
     }
     return NO;
+}
+
+-(void)moveViewUp:(CGFloat)deltaY
+{
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:0.3];
+    
+    CGRect rect = self.view.frame;
+    rect.origin.y = -(deltaY + MIN_GAP_BETWEEN_KEYBOARD_AND_TEXT_FIELD);
+    self.view.frame = rect;
+    
+    [UIView commitAnimations];
+}
+
+
+- (void)textFieldDidBeginEditing:(UITextField *)sender
+{
+    CGFloat bottomYOfTextField = sender.frame.size.height + sender.frame.origin.y;
+    CGFloat deltaY = PORTRAIT_KEYBOARD_HEIGHT - (self.view.frame.size.height - bottomYOfTextField);
+    if ( deltaY > 0) {
+        [self moveViewUp:deltaY];
+    }
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)sender
+{
+    [self moveViewUp:0];   
 }
 
 @end

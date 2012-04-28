@@ -1,11 +1,7 @@
 #import <UIKit/UIKit.h>
 
 @interface SignupViewController : UIViewController <UITextFieldDelegate> {
-    UITextField *firstName;
-    UITextField *lastName;
-    UISegmentedControl *gender;
-    UITextField *email;
-    UITextField *password;
+
 }
 
 @property (nonatomic, retain) IBOutlet UITextField *firstName;
@@ -13,7 +9,8 @@
 @property (nonatomic, retain) IBOutlet UISegmentedControl *gender;
 @property (nonatomic, retain) IBOutlet UITextField *email;
 @property (nonatomic, retain) IBOutlet UITextField *password;
-@property (nonatomic, retain) IBOutlet UINavigationItem *customNavigationItem;
+@property (nonatomic, retain) IBOutlet UITextField *height;
+@property (nonatomic, retain) IBOutlet UITextField *weight;
 
 - (IBAction)signup:(id)sender;
 - (IBAction)backToLoginView:(id)sender;

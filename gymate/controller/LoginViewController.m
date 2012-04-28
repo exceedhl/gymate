@@ -49,8 +49,7 @@
 }
 
 - (IBAction)backgroundTouch:(id)sender {
-    [email resignFirstResponder];
-    [password resignFirstResponder];
+    [self.view endEditing:YES];
 }
 
 - (void)addPullUpAnimation {
@@ -67,7 +66,7 @@
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     if ([email isFirstResponder]) {
         [password becomeFirstResponder];
-    } else if ([password becomeFirstResponder]) {
+    } else if ([password isFirstResponder]) {
         // Enable Go only if all mandatory fields are filled
         [self login:nil];
     }
