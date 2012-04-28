@@ -29,11 +29,19 @@
         user.gender = [NSNumber numberWithInt:gender.selectedSegmentIndex];
         user.email = email.text;
         user.password = password.text;
-        [user signUp];       
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [MBProgressHUD hideHUDForView:self.view animated:YES];
-            [self backToLoginView:nil]; 
-        });
+        @try {
+            [user signUp];
+        }
+        @catch (NSException *exception) {
+            [self showAlertWithTitle:[exception name] andMessage:[exception reason]];
+            return;
+        }
+        @finally {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [MBProgressHUD hideHUDForView:self.view animated:YES];
+            });            
+        }
+        [self backToLoginView:nil]; 
     });
     
 }
@@ -46,7 +54,7 @@
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     NSArray *textFields = $arr(email, password, firstName, lastName, height, weight);
-    [self handleReturnKeyOfTextFields:textFields withAction:^(void) {
+    [self handleReturnKeyOfTextFields:textFields withAction:^{
         [self signup:nil];
     }];
     return NO;

@@ -1,13 +1,15 @@
 #import <objc/runtime.h>
 #import <Parse/Parse.h>
 #import "User.h"
-
+#import "NSString+Gymate.h"
 
 @implementation User
 
 + (id)user
 {
-    return [[User alloc] init];
+    PFUser *user = [super user];
+    object_setClass(user, [User class]);
+    return user;
 }
 
 + (id)logInWithEmail:(NSString *)email password:(NSString *)password
@@ -47,10 +49,24 @@
     [self setObject:gender forKey:@"gender"];
 }
 
-- (BOOL)signUp
+- (void)validate
+{
+    [$arr(@"firstName", @"lastName", @"email") $each:^(id key) {
+        NSString *value = [self objectForKey:key];
+        if (!value || [value isEmpty]) {
+            @throw [NSException exceptionWithName:@"User validation failed" reason:[NSString stringWithFormat:@"%@ should not be empty", key] userInfo:nil];
+        }
+    }];
+}
+
+- (void)signUp
 {
     self.username = self.email;
-    return [super signUp];
+    [self validate];
+    NSError *error = nil;
+    if (![super signUp:&error]) {
+        @throw [NSException exceptionWithName:@"Sign up failed" reason:[error.userInfo objectForKey:@"error"] userInfo:nil];
+    }
 }
 
 @end

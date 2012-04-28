@@ -20,9 +20,4 @@
     return uf;
 }
 
-- (void)dealloc
-{
-    [self.user release];
-    [super dealloc];
-}
 @end

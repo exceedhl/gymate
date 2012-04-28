@@ -27,4 +27,10 @@
         }
     }
 }
+
+- (void)showAlertWithTitle:(NSString *)title andMessage:(NSString *)message
+{
+    UIAlertView *alert = [[[UIAlertView alloc] initWithTitle:title message:message delegate:nil cancelButtonTitle:@"Close" otherButtonTitles:nil, nil] autorelease];
+    [alert show];
+}
 @end

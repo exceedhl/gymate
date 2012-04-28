@@ -24,8 +24,9 @@
                 NSLog(@"new user?: %d", user.isNew);
                 NSLog(@"Current User: %@", [User currentUser]);
             } else {
-                UIAlertView *alert = [[[UIAlertView alloc] initWithTitle:@"Login Failed" message:@"Wrong Username/Email and password combination. \nPlease try again." delegate:self cancelButtonTitle:@"Close" otherButtonTitles:nil, nil] autorelease];
-                [alert show];
+                NSString *title = @"Login Failed";
+                NSString *message = @"Wrong Username/Email and password combination. \nPlease try again.";
+                [self showAlertWithTitle:title andMessage:message];
             }
              
         });
@@ -41,7 +42,7 @@
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
-    [self handleReturnKeyOfTextFields:$arr(email, password) withAction:^(void) {
+    [self handleReturnKeyOfTextFields:$arr(email, password) withAction:^{
         [self login:nil];
     }];
     return NO;

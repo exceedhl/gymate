@@ -1,11 +1,3 @@
-//
-//  AppDelegate.m
-//  gymate
-//
-//  Created by Liang Huang on 4/9/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
-//
-
 #import "AppDelegate.h"
 #import "LoginViewController.h"
 
@@ -22,6 +14,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    NSLog(@"%@", [$ homePath]);
+    [$arr(@"a", @"b") $each:^(id v) {
+        NSLog(@"%@", v);
+    }];
+    
     [Parse setApplicationId:@"LgeuExxvIpU5ZLyXeSwCk4AKj4aD1a5ViPtcef2m" 
                   clientKey:@"HrEukR6VwxpXOkiwt2XQRiDR92knGg9MguD2MESS"];
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];

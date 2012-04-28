@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		3E1601EA154BD625001F231E /* UIViewController+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1601E9154BD625001F231E /* UIViewController+Extensions.m */; };
 		3E1601F7154BDC16001F231E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1601F6154BDC16001F231E /* BaseViewController.m */; };
+		3E1601FA154C022F001F231E /* NSStringGymateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1601F9154C022F001F231E /* NSStringGymateSpec.m */; };
+		3E1601FD154C04AC001F231E /* NSString+Gymate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1601FC154C04AC001F231E /* NSString+Gymate.m */; };
+		3E1601FE154C04AC001F231E /* NSString+Gymate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1601FC154C04AC001F231E /* NSString+Gymate.m */; };
 		3EA28828153AF55C00897DE1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA28827153AF55C00897DE1 /* libPods.a */; };
 		BA6A05AA1532B5840007E136 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A05A91532B5840007E136 /* Parse.framework */; };
 		BA6A05AF1532B5A30007E136 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA6A05AE1532B5A30007E136 /* LoginView.xib */; };
@@ -54,6 +57,10 @@
 		3E1601E9154BD625001F231E /* UIViewController+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Extensions.m"; sourceTree = "<group>"; };
 		3E1601F5154BDC16001F231E /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		3E1601F6154BDC16001F231E /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		3E1601F8154C022F001F231E /* NSStringGymateSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringGymateSpec.h; sourceTree = "<group>"; };
+		3E1601F9154C022F001F231E /* NSStringGymateSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringGymateSpec.m; sourceTree = "<group>"; };
+		3E1601FB154C04AC001F231E /* NSString+Gymate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Gymate.h"; sourceTree = "<group>"; };
+		3E1601FC154C04AC001F231E /* NSString+Gymate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Gymate.m"; sourceTree = "<group>"; };
 		3EA28827153AF55C00897DE1 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Release-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		BA6A05A91532B5840007E136 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = gymate/lib/Parse.framework; sourceTree = "<group>"; };
 		BA6A05AE1532B5A30007E136 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
@@ -221,6 +228,8 @@
 				BA6A0B7A1532A3260010E596 /* AppDelegate.h */,
 				BA6A0B7B1532A3260010E596 /* AppDelegate.m */,
 				BA6A0B721532A3260010E596 /* Supporting Files */,
+				3E1601FB154C04AC001F231E /* NSString+Gymate.h */,
+				3E1601FC154C04AC001F231E /* NSString+Gymate.m */,
 			);
 			path = gymate;
 			sourceTree = "<group>";
@@ -262,6 +271,8 @@
 				BAF72F851538320C004469EC /* Supporting Files */,
 				BA6A6CD71538363C00ED9261 /* UserSpec.h */,
 				BA6A6CD81538363C00ED9261 /* UserSpec.m */,
+				3E1601F8154C022F001F231E /* NSStringGymateSpec.h */,
+				3E1601F9154C022F001F231E /* NSStringGymateSpec.m */,
 			);
 			path = specs;
 			sourceTree = "<group>";
@@ -420,6 +431,7 @@
 				BA6A05BC1532C84D0007E136 /* User.m in Sources */,
 				3E1601EA154BD625001F231E /* UIViewController+Extensions.m in Sources */,
 				3E1601F7154BDC16001F231E /* BaseViewController.m in Sources */,
+				3E1601FD154C04AC001F231E /* NSString+Gymate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +443,8 @@
 				BAE5503C15383D85007421DE /* User.m in Sources */,
 				BAE55050153851B0007421DE /* Fixture.m in Sources */,
 				BAE55053153851BE007421DE /* UserFixture.m in Sources */,
+				3E1601FA154C022F001F231E /* NSStringGymateSpec.m in Sources */,
+				3E1601FE154C04AC001F231E /* NSString+Gymate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
