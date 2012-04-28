@@ -1,7 +1,6 @@
 #import "SignupViewController.h"
 #import "User.h"
 #import "MBProgressHUD.h"
-#import "ConciseKit.h"
 #import "UIViewController+Extensions.h"
 
 #define PORTRAIT_KEYBOARD_HEIGHT 216

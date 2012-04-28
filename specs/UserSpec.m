@@ -1,6 +1,5 @@
 #import "User.h"
 #import "UserFixture.h"
-#import "ConciseKit.h"
 
 SPEC_BEGIN(UserSpec)
 

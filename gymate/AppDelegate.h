@@ -1,11 +1,3 @@
-//
-//  AppDelegate.h
-//  gymate
-//
-//  Created by Liang Huang on 4/9/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
 
@@ -13,6 +5,6 @@
     UINavigationController *navigationController;
 }
 
-@property (strong, nonatomic) UIWindow *window;
+@property (retain, nonatomic) UIWindow *window;
 
 @end

@@ -3,7 +3,6 @@
 #import "User.h"
 #import "MBProgressHUD.h"
 #import "UIViewController+Extensions.h"
-#import "ConciseKit.h"
 
 @implementation LoginViewController
 
