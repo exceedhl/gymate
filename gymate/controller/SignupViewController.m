@@ -4,15 +4,13 @@
 
 @implementation SignupViewController
 
-@synthesize firstName, lastName, gender, email, password;
+@synthesize firstName, lastName, gender, email, password, customNavigationItem;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (void)viewDidLoad
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(backToLoginView:)];
+    [self.customNavigationItem setRightBarButtonItem:backButton];
+    [backButton release];
 }
 
 - (IBAction)signup:(id)sender {
@@ -38,7 +36,7 @@
 - (IBAction)backToLoginView:(id)sender 
 {
     [self addPullUpAnimation];
-    [self.navigationController popViewControllerAnimated:YES];
+    [self.navigationController popViewControllerAnimated:NO];
 }
 
 - (IBAction)backgroundTouch:(id)sender {
@@ -46,6 +44,17 @@
     [password resignFirstResponder];
     [firstName resignFirstResponder];
     [lastName resignFirstResponder];
+}
+
+
+- (void)addPullUpAnimation {
+    CATransition *transition = [CATransition animation];
+    transition.duration = 0.7;
+    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    transition.type = kCATransitionPush;
+    transition.subtype = kCATransitionFromTop;
+    transition.delegate = self;
+    [self.navigationController.view.layer addAnimation:transition forKey:nil];
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
@@ -60,16 +69,6 @@
         [self signup:nil];
     }
     return NO;
-}
-
-- (void)addPullUpAnimation {
-    CATransition *transition = [CATransition animation];
-    transition.duration = 0.7;
-    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-    transition.type = kCATransitionPush;
-    transition.subtype = kCATransitionFromTop;
-    transition.delegate = self;
-    [self.navigationController.view.layer addAnimation:transition forKey:nil];
 }
 
 @end

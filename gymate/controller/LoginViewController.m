@@ -32,7 +32,7 @@
                 NSLog(@"new user?: %d", user.isNew);
                 NSLog(@"Current User: %@", [User currentUser]);
             } else {
-                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Login Failed" message:@"Please try again." delegate:self cancelButtonTitle:@"Close" otherButtonTitles:nil, nil];
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Login Failed" message:@"Wrong Username/Email and password combination. \nPlease try again." delegate:self cancelButtonTitle:@"Close" otherButtonTitles:nil, nil];
                 [alert show];
             }
              
@@ -44,14 +44,25 @@
 - (IBAction)signUp:(id)sender 
 {
     SignupViewController *controller = [[[SignupViewController alloc] initWithNibName:@"signupView" bundle:nil] autorelease];
-    [self addSlideDownAnimation];
-    [self.navigationController pushViewController:controller animated:YES];
+    [self addPullUpAnimation];
+    [self.navigationController pushViewController:controller animated:NO];
 }
 
 - (IBAction)backgroundTouch:(id)sender {
     [email resignFirstResponder];
     [password resignFirstResponder];
 }
+
+- (void)addPullUpAnimation {
+    CATransition *transition = [CATransition animation];
+    transition.duration = 0.7;
+    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    transition.type = kCATransitionPush;
+    transition.subtype = kCATransitionFromBottom;
+    transition.delegate = self;
+    [self.navigationController.view.layer addAnimation:transition forKey:nil];
+}
+
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     if ([email isFirstResponder]) {
@@ -61,16 +72,6 @@
         [self login:nil];
     }
     return NO;
-}
-
-- (void)addSlideDownAnimation {
-    CATransition *transition = [CATransition animation];
-    transition.duration = 0.7;
-    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-    transition.type = kCATransitionPush;
-    transition.subtype = kCATransitionFromBottom;
-    transition.delegate = self;
-    [self.navigationController.view.layer addAnimation:transition forKey:nil];
 }
 
 - (void)dealloc 

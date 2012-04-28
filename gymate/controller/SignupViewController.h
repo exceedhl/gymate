@@ -13,6 +13,7 @@
 @property (nonatomic, retain) IBOutlet UISegmentedControl *gender;
 @property (nonatomic, retain) IBOutlet UITextField *email;
 @property (nonatomic, retain) IBOutlet UITextField *password;
+@property (nonatomic, retain) IBOutlet UINavigationItem *customNavigationItem;
 
 - (IBAction)signup:(id)sender;
 - (IBAction)backToLoginView:(id)sender;
