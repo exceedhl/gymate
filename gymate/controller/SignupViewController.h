@@ -1,8 +1,7 @@
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface SignupViewController : UIViewController <UITextFieldDelegate> {
-
-}
+@interface SignupViewController : BaseViewController <UITextFieldDelegate> 
 
 @property (nonatomic, retain) IBOutlet UITextField *firstName;
 @property (nonatomic, retain) IBOutlet UITextField *lastName;
@@ -14,5 +13,5 @@
 
 - (IBAction)signup:(id)sender;
 - (IBAction)backToLoginView:(id)sender;
-- (IBAction)backgroundTouch:(id)sender;
+
 @end

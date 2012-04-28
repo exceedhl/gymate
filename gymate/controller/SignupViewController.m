@@ -19,7 +19,7 @@
 @synthesize firstName, lastName, gender, email, password, height, weight;
 
 - (IBAction)signup:(id)sender {
-    [self backgroundTouch:nil];
+    [self hideKeyboard:nil];
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     hud.labelText = @"Signing up...";
     dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{        
@@ -42,10 +42,6 @@
 {
     [self setTransitionAnimation:self.navigationController.view withType:kCATransitionFromTop];
     [self.navigationController popViewControllerAnimated:NO];
-}
-
-- (IBAction)backgroundTouch:(id)sender {
-    [self.view endEditing:YES];
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {

@@ -11,7 +11,7 @@
 
 - (IBAction)login:(id)sender 
 {
-    [self backgroundTouch:nil];
+    [self hideKeyboard:nil];
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     hud.labelText = @"Logging in...";
     dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
@@ -24,7 +24,7 @@
                 NSLog(@"new user?: %d", user.isNew);
                 NSLog(@"Current User: %@", [User currentUser]);
             } else {
-                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Login Failed" message:@"Wrong Username/Email and password combination. \nPlease try again." delegate:self cancelButtonTitle:@"Close" otherButtonTitles:nil, nil];
+                UIAlertView *alert = [[[UIAlertView alloc] initWithTitle:@"Login Failed" message:@"Wrong Username/Email and password combination. \nPlease try again." delegate:self cancelButtonTitle:@"Close" otherButtonTitles:nil, nil] autorelease];
                 [alert show];
             }
              
@@ -40,10 +40,6 @@
     [self.navigationController pushViewController:controller animated:NO];
 }
 
-- (IBAction)backgroundTouch:(id)sender {
-    [self.view endEditing:YES];
-}
-
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [self handleReturnKeyOfTextFields:$arr(email, password) withAction:^(void) {
         [self login:nil];
@@ -51,10 +47,4 @@
     return NO;
 }
 
-- (void)dealloc 
-{
-    [email release];
-    [password release];
-    [super dealloc];
-}
 @end
