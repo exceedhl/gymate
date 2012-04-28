@@ -1,7 +1,9 @@
 PODS:
+  - ConciseKit (0.1.2)
   - Kiwi (1.0.0)
-  - MBProgressHUD (0.41)
+  - MBProgressHUD (0.5)
 
 DEPENDENCIES:
+  - ConciseKit
   - Kiwi
   - MBProgressHUD

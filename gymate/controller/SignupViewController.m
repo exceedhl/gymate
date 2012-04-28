@@ -1,6 +1,7 @@
 #import "SignupViewController.h"
 #import "User.h"
 #import "MBProgressHUD.h"
+#import "ConciseKit.h"
 
 #define PORTRAIT_KEYBOARD_HEIGHT 216
 #define MIN_GAP_BETWEEN_KEYBOARD_AND_TEXT_FIELD 5
@@ -56,20 +57,26 @@
     [self.navigationController.view.layer addAnimation:transition forKey:nil];
 }
 
-- (BOOL)textFieldShouldReturn:(UITextField *)textField {
-    if ([email isFirstResponder]) {
-        [password becomeFirstResponder];
-    } else if ([password isFirstResponder]) {
-        [firstName becomeFirstResponder];
-    } else if ([firstName isFirstResponder]) {
-        [lastName becomeFirstResponder];
-    } else if ([lastName isFirstResponder]) {
-        [height becomeFirstResponder];
-    } else if ([height isFirstResponder]) {
-        [weight becomeFirstResponder];
-    } else if ([weight isFirstResponder]) {
-        [self signup:nil];
+- (void)handleReturnKeyOfTextFields:(NSArray *)textFields withAction:(void (^)(void))action
+{
+    for (int i = 0; i < [textFields count]; i++) {
+        if ([[textFields objectAtIndex:i] isFirstResponder]) {
+            if (i + 1 < [textFields count]) {
+                [[textFields objectAtIndex:(i + 1)] becomeFirstResponder];
+            }
+            else {
+                action();
+            }
+            break;
+        }
     }
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    NSArray *textFields = $arr(email, password, firstName, lastName, height, weight);
+    [self handleReturnKeyOfTextFields:textFields withAction:^(void) {
+        [self signup:nil];
+    }];
     return NO;
 }
 
