@@ -2,20 +2,12 @@
 #import "SignupViewController.h"
 #import "User.h"
 #import "MBProgressHUD.h"
+#import "UIViewController+Extensions.h"
+#import "ConciseKit.h"
 
 @implementation LoginViewController
 
 @synthesize email, password;
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 
 - (IBAction)login:(id)sender 
 {
@@ -44,7 +36,7 @@
 - (IBAction)signUp:(id)sender 
 {
     SignupViewController *controller = [[[SignupViewController alloc] initWithNibName:@"signupView" bundle:nil] autorelease];
-    [self addPullUpAnimation];
+    [self setTransitionAnimation:self.navigationController.view withType:kCATransitionFromBottom];
     [self.navigationController pushViewController:controller animated:NO];
 }
 
@@ -52,24 +44,10 @@
     [self.view endEditing:YES];
 }
 
-- (void)addPullUpAnimation {
-    CATransition *transition = [CATransition animation];
-    transition.duration = 0.7;
-    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-    transition.type = kCATransitionPush;
-    transition.subtype = kCATransitionFromBottom;
-    transition.delegate = self;
-    [self.navigationController.view.layer addAnimation:transition forKey:nil];
-}
-
-
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
-    if ([email isFirstResponder]) {
-        [password becomeFirstResponder];
-    } else if ([password isFirstResponder]) {
-        // Enable Go only if all mandatory fields are filled
+    [self handleReturnKeyOfTextFields:$arr(email, password) withAction:^(void) {
         [self login:nil];
-    }
+    }];
     return NO;
 }
 

@@ -2,6 +2,7 @@
 #import "User.h"
 #import "MBProgressHUD.h"
 #import "ConciseKit.h"
+#import "UIViewController+Extensions.h"
 
 #define PORTRAIT_KEYBOARD_HEIGHT 216
 #define MIN_GAP_BETWEEN_KEYBOARD_AND_TEXT_FIELD 5
@@ -39,38 +40,12 @@
 
 - (IBAction)backToLoginView:(id)sender 
 {
-    [self addPullUpAnimation];
+    [self setTransitionAnimation:self.navigationController.view withType:kCATransitionFromTop];
     [self.navigationController popViewControllerAnimated:NO];
 }
 
 - (IBAction)backgroundTouch:(id)sender {
     [self.view endEditing:YES];
-}
-
-
-- (void)addPullUpAnimation {
-    CATransition *transition = [CATransition animation];
-    transition.duration = 0.7;
-    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-    transition.type = kCATransitionPush;
-    transition.subtype = kCATransitionFromTop;
-    transition.delegate = self;
-    [self.navigationController.view.layer addAnimation:transition forKey:nil];
-}
-
-- (void)handleReturnKeyOfTextFields:(NSArray *)textFields withAction:(void (^)(void))action
-{
-    for (int i = 0; i < [textFields count]; i++) {
-        if ([[textFields objectAtIndex:i] isFirstResponder]) {
-            if (i + 1 < [textFields count]) {
-                [[textFields objectAtIndex:(i + 1)] becomeFirstResponder];
-            }
-            else {
-                action();
-            }
-            break;
-        }
-    }
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
