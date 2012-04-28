@@ -9,6 +9,7 @@
 @interface SignupViewController ()
 
 -(void)moveViewUp:(CGFloat)deltaY;
+- (void)keyboardWillHide:(NSNotification *)notif;
 
 @end
 
@@ -99,12 +100,27 @@
     CGFloat deltaY = PORTRAIT_KEYBOARD_HEIGHT - (self.view.frame.size.height - bottomYOfTextField);
     if ( deltaY > 0) {
         [self moveViewUp:deltaY];
+    } else {
+        [self moveViewUp:0];
     }
 }
 
-- (void)textFieldDidEndEditing:(UITextField *)sender
+- (void)keyboardWillHide:(NSNotification *)notif
 {
     [self moveViewUp:0];   
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    // register for keyboard notifications
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) 
+                                                 name:UIKeyboardWillHideNotification object:self.view.window]; 
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    // unregister for keyboard notifications while not visible.
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil]; 
 }
 
 @end
