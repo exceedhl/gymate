@@ -54,7 +54,7 @@
     [$arr(@"firstName", @"lastName", @"email") $each:^(id key) {
         NSString *value = [self objectForKey:key];
         if (!value || [value isEmpty]) {
-            @throw [NSException exceptionWithName:@"User validation failed" reason:[NSString stringWithFormat:@"%@ should not be empty", key] userInfo:nil];
+            @throw [NSException exceptionWithName:@"Signup failed" reason:[NSString stringWithFormat:@"%@ should not be empty", [key lowercaseString]] userInfo:nil];
         }
     }];
 }
@@ -65,7 +65,7 @@
     [self validate];
     NSError *error = nil;
     if (![super signUp:&error]) {
-        @throw [NSException exceptionWithName:@"Sign up failed" reason:[error.userInfo objectForKey:@"error"] userInfo:nil];
+        @throw [NSException exceptionWithName:@"Signup failed" reason:[error.userInfo objectForKey:@"error"] userInfo:nil];
     }
 }
 

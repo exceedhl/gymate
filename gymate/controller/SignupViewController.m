@@ -32,7 +32,9 @@
             [user signUp];
         }
         @catch (NSException *exception) {
-            [self showAlertWithTitle:[exception name] andMessage:[exception reason]];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self showAlertWithTitle:[exception name] andMessage:[exception reason]];
+            });
             return;
         }
         @finally {
@@ -40,7 +42,9 @@
                 [MBProgressHUD hideHUDForView:self.view animated:YES];
             });            
         }
-        [self backToLoginView:nil]; 
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self backToLoginView:nil]; 
+        });
     });
     
 }

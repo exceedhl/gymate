@@ -31,7 +31,7 @@ describe(@"User", ^{
             user.gender = [NSNumber numberWithInt:0];
             user.email = @"adam@smith.com";
             [user setPassword:@"password"];
-            [[theBlock(^{[user signUp];}) should] raiseWithName:@"Sign up failed" reason:@"username adam@smith.com already taken"];            
+            [[theBlock(^{[user signUp];}) should] raiseWithName:@"Signup failed" reason:@"username adam@smith.com already taken"];            
         });
         
         it(@"should throw exception if firstName or lastName or email are empty", ^{
@@ -45,7 +45,7 @@ describe(@"User", ^{
                 user.password = @"password";
                 
                 [user setObject:@"     \t  \n" forKey:key];
-                [[theBlock(^{[user signUp];}) should] raiseWithName:@"User validation failed" reason:[NSString stringWithFormat:@"%@ should not be empty", key]];                                   
+                [[theBlock(^{[user signUp];}) should] raiseWithName:@"Signup failed" reason:[NSString stringWithFormat:@"%@ should not be empty", [key lowercaseString]]];                                   
              }];
         });
 
