@@ -8,7 +8,7 @@
 
 @interface SignupViewController ()
 
--(void)moveViewUp:(CGFloat)deltaY;
+- (void)moveViewUp:(CGFloat)deltaY;
 - (void)keyboardWillHide:(NSNotification *)notif;
 
 @end
