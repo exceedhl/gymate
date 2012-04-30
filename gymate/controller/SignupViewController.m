@@ -28,6 +28,9 @@
         user.gender = [NSNumber numberWithInt:gender.selectedSegmentIndex];
         user.email = email.text;
         user.password = password.text;
+        //TODO: Should we make height and weight NSNumber? - Yuan
+        user.height = height.text;
+        user.weight = weight.text;
         @try {
             [user signUp];
         }
