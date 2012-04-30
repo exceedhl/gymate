@@ -8,6 +8,17 @@
 
 @synthesize email, password;
 
+- (id)initWithNibName:(NSString *)nibName bundle:(NSBundle *)nibBundle
+{
+    if (self = [super initWithNibName:nibName bundle:nibBundle]) {
+        UIColor *background = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"LoginBG"]];
+        self.view.backgroundColor = background;
+        [background release];
+
+    }
+    return self;
+}
+
 - (IBAction)login:(id)sender 
 {
     [self hideKeyboard:nil];
