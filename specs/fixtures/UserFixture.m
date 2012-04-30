@@ -10,6 +10,8 @@
     u.password = @"letmein";
     u.firstName = @"Adam";
     u.lastName = @"Smith";
+    u.height = @"180";
+    u.weight = @"78";
     u.gender = [NSNumber numberWithInt:0];
     return u;
 }

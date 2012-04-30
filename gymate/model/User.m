@@ -49,11 +49,31 @@
     [self setObject:gender forKey:@"gender"];
 }
 
+- (NSNumber *)height
+{
+    return [self objectForKey:@"height"];
+}
+
+- (void)setHeight:(NSNumber *)height
+{
+    [self setObject:height forKey:@"height"];
+}
+
+- (NSNumber *)weight
+{
+    return [self objectForKey:@"weight"];
+}
+
+- (void)setWeight:(NSNumber *)weight
+{
+    [self setObject:weight forKey:@"weight"];
+}
+
 - (void)validate
 {
-    [$arr(@"firstName", @"lastName", @"email") $each:^(id key) {
+    [$arr(@"firstName", @"lastName", @"email", @"height", @"weight") $each:^(id key) {
         NSString *value = [self objectForKey:key];
-        if (!value || [value isEmpty]) {
+        if (!value || [(NSString *)value isEmpty]) {
             @throw [NSException exceptionWithName:@"Signup failed" reason:[NSString stringWithFormat:@"%@ should not be empty", [key lowercaseString]] userInfo:nil];
         }
     }];

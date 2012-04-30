@@ -14,5 +14,9 @@
 - (void)setLastName:(NSString *)lastName;
 - (NSNumber *)gender;
 - (void)setGender:(NSNumber *)gender;
+- (NSString *)height;
+- (void)setHeight:(NSString *)height;
+- (NSString *)weight;
+- (void)setWeight:(NSString *)wight;
 
 @end
