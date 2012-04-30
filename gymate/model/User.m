@@ -49,22 +49,22 @@
     [self setObject:gender forKey:@"gender"];
 }
 
-- (NSNumber *)height
+- (NSString *)height
 {
     return [self objectForKey:@"height"];
 }
 
-- (void)setHeight:(NSNumber *)height
+- (void)setHeight:(NSString *)height
 {
     [self setObject:height forKey:@"height"];
 }
 
-- (NSNumber *)weight
+- (NSString *)weight
 {
     return [self objectForKey:@"weight"];
 }
 
-- (void)setWeight:(NSNumber *)weight
+- (void)setWeight:(NSString *)weight
 {
     [self setObject:weight forKey:@"weight"];
 }
