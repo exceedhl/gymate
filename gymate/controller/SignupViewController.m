@@ -5,17 +5,39 @@
 
 #define PORTRAIT_KEYBOARD_HEIGHT 216
 #define MIN_GAP_BETWEEN_KEYBOARD_AND_TEXT_FIELD 5
+#define MAX_HEIGHT_WEIGHT_LENGTH 3
 
 @interface SignupViewController ()
 
 - (void)moveViewUp:(CGFloat)deltaY;
 - (void)keyboardWillHide:(NSNotification *)notif;
+- (UILabel *)textFieldLabel:(NSString *)text;
 
 @end
 
 @implementation SignupViewController
 
 @synthesize firstName, lastName, gender, email, password, height, weight;
+
+- (void)viewDidLoad {    
+    height.rightViewMode = UITextFieldViewModeAlways;
+    height.rightView = [self textFieldLabel:@"cm"];
+    weight.rightViewMode = UITextFieldViewModeAlways;
+    weight.rightView = [self textFieldLabel:@"kg"];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    // register for keyboard notifications
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) 
+                                                 name:UIKeyboardWillHideNotification object:self.view.window]; 
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    // unregister for keyboard notifications while not visible.
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil]; 
+}
 
 - (IBAction)signup:(id)sender {
     [self hideKeyboard:nil];
@@ -58,24 +80,14 @@
     [self.navigationController popViewControllerAnimated:NO];
 }
 
+#pragma UITextFieldDelegate
+
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     NSArray *textFields = $arr(email, password, firstName, lastName, height, weight);
     [self handleReturnKeyOfTextFields:textFields withAction:^{
         [self signup:nil];
     }];
     return NO;
-}
-
--(void)moveViewUp:(CGFloat)deltaY
-{
-    [UIView beginAnimations:nil context:NULL];
-    [UIView setAnimationDuration:0.3];
-    
-    CGRect rect = self.view.frame;
-    rect.origin.y = -(deltaY + MIN_GAP_BETWEEN_KEYBOARD_AND_TEXT_FIELD);
-    self.view.frame = rect;
-    
-    [UIView commitAnimations];
 }
 
 
@@ -90,22 +102,33 @@
     }
 }
 
+#pragma Private methods
+
+-(void)moveViewUp:(CGFloat)deltaY
+{
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:0.3];
+    
+    CGRect rect = self.view.frame;
+    rect.origin.y = -(deltaY + MIN_GAP_BETWEEN_KEYBOARD_AND_TEXT_FIELD);
+    self.view.frame = rect;
+    
+    [UIView commitAnimations];
+}
+
 - (void)keyboardWillHide:(NSNotification *)notif
 {
     [self moveViewUp:0];   
 }
 
-- (void)viewWillAppear:(BOOL)animated
+- (UILabel *)textFieldLabel:(NSString *)text
 {
-    // register for keyboard notifications
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) 
-                                                 name:UIKeyboardWillHideNotification object:self.view.window]; 
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-    // unregister for keyboard notifications while not visible.
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil]; 
+    UILabel *label = [[[UILabel alloc] initWithFrame:CGRectMake(0, 0, 25, 40)] autorelease];
+    label.text = text;
+    label.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.0];
+    label.alpha = 0.3;
+    label.font = [UIFont systemFontOfSize:14];
+    return label;
 }
 
 @end
