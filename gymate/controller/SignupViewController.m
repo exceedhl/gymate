@@ -112,6 +112,17 @@
     }
 }
 
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+{
+    if (textField == height && height.text.length >= 3) {
+        return NO;
+    }
+    if (textField == weight && weight.text.length >= 3) {
+        return NO;
+    }
+    return YES;
+}
+
 #pragma Private methods
 
 -(void)moveViewUp:(CGFloat)deltaY
