@@ -1,6 +1,6 @@
 #import <UIKit/UIKit.h>
 
-@interface UIViewController (Extensions)
+@interface UIViewController (Gymate)
 
 - (void)setTransitionAnimation:(UIView *)view withType:(NSString * const)type;
 - (void)handleReturnKeyOfTextFields:(NSArray *)textFields withAction:(void (^)(void))action;

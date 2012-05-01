@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3E1601EA154BD625001F231E /* UIViewController+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1601E9154BD625001F231E /* UIViewController+Extensions.m */; };
+		3E1601EA154BD625001F231E /* UIViewController+Gymate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1601E9154BD625001F231E /* UIViewController+Gymate.m */; };
 		3E1601F7154BDC16001F231E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1601F6154BDC16001F231E /* BaseViewController.m */; };
 		3E1601FA154C022F001F231E /* NSStringGymateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1601F9154C022F001F231E /* NSStringGymateSpec.m */; };
 		3E1601FD154C04AC001F231E /* NSString+Gymate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1601FC154C04AC001F231E /* NSString+Gymate.m */; };
@@ -18,6 +18,17 @@
 		BA19A1F9155004F200D7FB4C /* LoginPasswordTextfieldBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A1F3155004F200D7FB4C /* LoginPasswordTextfieldBG@2x.png */; };
 		BA19A1FA155004F200D7FB4C /* LoginTextfieldTriangle.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A1F4155004F200D7FB4C /* LoginTextfieldTriangle.png */; };
 		BA19A1FB155004F200D7FB4C /* LoginTextfieldTriangle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A1F5155004F200D7FB4C /* LoginTextfieldTriangle@2x.png */; };
+		BA19A1FF15500A5500D7FB4C /* SignupBG.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A1FD15500A5500D7FB4C /* SignupBG.png */; };
+		BA19A20015500A5500D7FB4C /* SignupBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A1FE15500A5500D7FB4C /* SignupBG@2x.png */; };
+		BA19A20C1550242100D7FB4C /* LeftTextfieldBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A2051550242000D7FB4C /* LeftTextfieldBG@2x.png */; };
+		BA19A20D1550242100D7FB4C /* RightTextfieldBG.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A2061550242000D7FB4C /* RightTextfieldBG.png */; };
+		BA19A20E1550242100D7FB4C /* RightTextfieldBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A2071550242000D7FB4C /* RightTextfieldBG@2x.png */; };
+		BA19A20F1550242100D7FB4C /* ShortLeftTextfieldBG.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A2081550242000D7FB4C /* ShortLeftTextfieldBG.png */; };
+		BA19A2101550242100D7FB4C /* ShortLeftTextfieldBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A2091550242000D7FB4C /* ShortLeftTextfieldBG@2x.png */; };
+		BA19A2111550242100D7FB4C /* ShortRightTextfieldBG.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A20A1550242000D7FB4C /* ShortRightTextfieldBG.png */; };
+		BA19A2121550242100D7FB4C /* ShortRightTextfieldBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A20B1550242000D7FB4C /* ShortRightTextfieldBG@2x.png */; };
+		BA19A2141550244300D7FB4C /* LeftTextfieldBG.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A2131550244300D7FB4C /* LeftTextfieldBG.png */; };
+		BA19A21A155027B300D7FB4C /* UITextField+Gymate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA19A219155027B300D7FB4C /* UITextField+Gymate.m */; };
 		BA6A05AA1532B5840007E136 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A05A91532B5840007E136 /* Parse.framework */; };
 		BA6A05AF1532B5A30007E136 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA6A05AE1532B5A30007E136 /* LoginView.xib */; };
 		BA6A05B31532B5BF0007E136 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6A05B21532B5BF0007E136 /* LoginViewController.m */; };
@@ -69,8 +80,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3E1601E8154BD597001F231E /* UIViewController+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Extensions.h"; sourceTree = "<group>"; };
-		3E1601E9154BD625001F231E /* UIViewController+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Extensions.m"; sourceTree = "<group>"; };
+		3E1601E8154BD597001F231E /* UIViewController+Gymate.h */ = {isa = PBXFileReference; fileEncoding = 4; path = "UIViewController+Gymate.h"; sourceTree = "<group>"; };
+		3E1601E9154BD625001F231E /* UIViewController+Gymate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Gymate.m"; sourceTree = "<group>"; };
 		3E1601F5154BDC16001F231E /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		3E1601F6154BDC16001F231E /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		3E1601F8154C022F001F231E /* NSStringGymateSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringGymateSpec.h; sourceTree = "<group>"; };
@@ -83,6 +94,18 @@
 		BA19A1F3155004F200D7FB4C /* LoginPasswordTextfieldBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginPasswordTextfieldBG@2x.png"; sourceTree = "<group>"; };
 		BA19A1F4155004F200D7FB4C /* LoginTextfieldTriangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginTextfieldTriangle.png; sourceTree = "<group>"; };
 		BA19A1F5155004F200D7FB4C /* LoginTextfieldTriangle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginTextfieldTriangle@2x.png"; sourceTree = "<group>"; };
+		BA19A1FD15500A5500D7FB4C /* SignupBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SignupBG.png; sourceTree = "<group>"; };
+		BA19A1FE15500A5500D7FB4C /* SignupBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SignupBG@2x.png"; sourceTree = "<group>"; };
+		BA19A2051550242000D7FB4C /* LeftTextfieldBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LeftTextfieldBG@2x.png"; sourceTree = "<group>"; };
+		BA19A2061550242000D7FB4C /* RightTextfieldBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RightTextfieldBG.png; sourceTree = "<group>"; };
+		BA19A2071550242000D7FB4C /* RightTextfieldBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RightTextfieldBG@2x.png"; sourceTree = "<group>"; };
+		BA19A2081550242000D7FB4C /* ShortLeftTextfieldBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShortLeftTextfieldBG.png; sourceTree = "<group>"; };
+		BA19A2091550242000D7FB4C /* ShortLeftTextfieldBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ShortLeftTextfieldBG@2x.png"; sourceTree = "<group>"; };
+		BA19A20A1550242000D7FB4C /* ShortRightTextfieldBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShortRightTextfieldBG.png; sourceTree = "<group>"; };
+		BA19A20B1550242000D7FB4C /* ShortRightTextfieldBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ShortRightTextfieldBG@2x.png"; sourceTree = "<group>"; };
+		BA19A2131550244300D7FB4C /* LeftTextfieldBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LeftTextfieldBG.png; sourceTree = "<group>"; };
+		BA19A218155027B300D7FB4C /* UITextField+Gymate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Gymate.h"; sourceTree = "<group>"; };
+		BA19A219155027B300D7FB4C /* UITextField+Gymate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Gymate.m"; sourceTree = "<group>"; };
 		BA6A05A91532B5840007E136 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = gymate/lib/Parse.framework; sourceTree = "<group>"; };
 		BA6A05AE1532B5A30007E136 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		BA6A05B11532B5BF0007E136 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -181,6 +204,8 @@
 			children = (
 				BA6A05AE1532B5A30007E136 /* LoginView.xib */,
 				BA6A05B41532B61C0007E136 /* SignupView.xib */,
+				BA19A218155027B300D7FB4C /* UITextField+Gymate.h */,
+				BA19A219155027B300D7FB4C /* UITextField+Gymate.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -192,8 +217,8 @@
 				BA6A05B21532B5BF0007E136 /* LoginViewController.m */,
 				BA6A05B61532B8520007E136 /* SignupViewController.h */,
 				BA6A05B71532B8520007E136 /* SignupViewController.m */,
-				3E1601E8154BD597001F231E /* UIViewController+Extensions.h */,
-				3E1601E9154BD625001F231E /* UIViewController+Extensions.m */,
+				3E1601E8154BD597001F231E /* UIViewController+Gymate.h */,
+				3E1601E9154BD625001F231E /* UIViewController+Gymate.m */,
 				3E1601F5154BDC16001F231E /* BaseViewController.h */,
 				3E1601F6154BDC16001F231E /* BaseViewController.m */,
 			);
@@ -280,6 +305,16 @@
 		BABAA3D7154ECA6C00ABC508 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				BA19A2131550244300D7FB4C /* LeftTextfieldBG.png */,
+				BA19A2051550242000D7FB4C /* LeftTextfieldBG@2x.png */,
+				BA19A2061550242000D7FB4C /* RightTextfieldBG.png */,
+				BA19A2071550242000D7FB4C /* RightTextfieldBG@2x.png */,
+				BA19A2081550242000D7FB4C /* ShortLeftTextfieldBG.png */,
+				BA19A2091550242000D7FB4C /* ShortLeftTextfieldBG@2x.png */,
+				BA19A20A1550242000D7FB4C /* ShortRightTextfieldBG.png */,
+				BA19A20B1550242000D7FB4C /* ShortRightTextfieldBG@2x.png */,
+				BA19A1FD15500A5500D7FB4C /* SignupBG.png */,
+				BA19A1FE15500A5500D7FB4C /* SignupBG@2x.png */,
 				BA19A1F0155004F200D7FB4C /* LoginEmailTextfieldBG.png */,
 				BA19A1F1155004F200D7FB4C /* LoginEmailTextfieldBG@2x.png */,
 				BA19A1F2155004F200D7FB4C /* LoginPasswordTextfieldBG.png */,
@@ -432,6 +467,16 @@
 				BA19A1F9155004F200D7FB4C /* LoginPasswordTextfieldBG@2x.png in Resources */,
 				BA19A1FA155004F200D7FB4C /* LoginTextfieldTriangle.png in Resources */,
 				BA19A1FB155004F200D7FB4C /* LoginTextfieldTriangle@2x.png in Resources */,
+				BA19A1FF15500A5500D7FB4C /* SignupBG.png in Resources */,
+				BA19A20015500A5500D7FB4C /* SignupBG@2x.png in Resources */,
+				BA19A20C1550242100D7FB4C /* LeftTextfieldBG@2x.png in Resources */,
+				BA19A20D1550242100D7FB4C /* RightTextfieldBG.png in Resources */,
+				BA19A20E1550242100D7FB4C /* RightTextfieldBG@2x.png in Resources */,
+				BA19A20F1550242100D7FB4C /* ShortLeftTextfieldBG.png in Resources */,
+				BA19A2101550242100D7FB4C /* ShortLeftTextfieldBG@2x.png in Resources */,
+				BA19A2111550242100D7FB4C /* ShortRightTextfieldBG.png in Resources */,
+				BA19A2121550242100D7FB4C /* ShortRightTextfieldBG@2x.png in Resources */,
+				BA19A2141550244300D7FB4C /* LeftTextfieldBG.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,9 +544,10 @@
 				BA6A05B31532B5BF0007E136 /* LoginViewController.m in Sources */,
 				BA6A05B81532B8520007E136 /* SignupViewController.m in Sources */,
 				BA6A05BC1532C84D0007E136 /* User.m in Sources */,
-				3E1601EA154BD625001F231E /* UIViewController+Extensions.m in Sources */,
+				3E1601EA154BD625001F231E /* UIViewController+Gymate.m in Sources */,
 				3E1601F7154BDC16001F231E /* BaseViewController.m in Sources */,
 				3E1601FD154C04AC001F231E /* NSString+Gymate.m in Sources */,
+				BA19A21A155027B300D7FB4C /* UITextField+Gymate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,7 +1,8 @@
 #import "SignupViewController.h"
 #import "User.h"
 #import "MBProgressHUD.h"
-#import "UIViewController+Extensions.h"
+#import "UIViewController+Gymate.h"
+#import "UITextField+Gymate.h"
 
 #define PORTRAIT_KEYBOARD_HEIGHT 216
 #define MIN_GAP_BETWEEN_KEYBOARD_AND_TEXT_FIELD 5
@@ -11,7 +12,6 @@
 
 - (void)moveViewUp:(CGFloat)deltaY;
 - (void)keyboardWillHide:(NSNotification *)notif;
-- (UILabel *)textFieldLabel:(NSString *)text;
 
 @end
 
@@ -19,11 +19,21 @@
 
 @synthesize firstName, lastName, gender, email, password, height, weight;
 
+- (id)initWithNibName:(NSString *)nibName bundle:(NSBundle *)nibBundle
+{
+    if (self = [super initWithNibName:nibName bundle:nibBundle]) {
+        UIColor *background = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"SignupBG"]];
+        self.view.backgroundColor = background;
+        [background release];
+        
+    }
+    return self;
+}
+
 - (void)viewDidLoad {    
-    height.rightViewMode = UITextFieldViewModeAlways;
-    height.rightView = [self textFieldLabel:@"cm"];
-    weight.rightViewMode = UITextFieldViewModeAlways;
-    weight.rightView = [self textFieldLabel:@"kg"];
+    [height setRightLabel:@"cm"];
+    [weight setRightLabel:@"kg"];
+    [self setLeftPadding:8 forTextFields:$arr(email, password, firstName, lastName, height, weight)];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -121,14 +131,6 @@
     [self moveViewUp:0];   
 }
 
-- (UILabel *)textFieldLabel:(NSString *)text
-{
-    UILabel *label = [[[UILabel alloc] initWithFrame:CGRectMake(0, 0, 25, 40)] autorelease];
-    label.text = text;
-    label.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.0];
-    label.alpha = 0.3;
-    label.font = [UIFont systemFontOfSize:14];
-    return label;
-}
+
 
 @end

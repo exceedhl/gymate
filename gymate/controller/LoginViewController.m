@@ -2,7 +2,7 @@
 #import "SignupViewController.h"
 #import "User.h"
 #import "MBProgressHUD.h"
-#import "UIViewController+Extensions.h"
+#import "UIViewController+Gymate.h"
 
 @implementation LoginViewController
 
@@ -21,12 +21,17 @@
 
 - (void)viewDidLoad
 {
-    UIView *paddingView = [[[UIView alloc] initWithFrame:CGRectMake(0, 0, 8, 20)] autorelease];
-    email.leftView = paddingView;
-    email.leftViewMode = UITextFieldViewModeAlways;
-    paddingView = [[[UIView alloc] initWithFrame:CGRectMake(0, 0, 8, 20)] autorelease];
-    password.leftView = paddingView;
-    password.leftViewMode = UITextFieldViewModeAlways;
+    [self setLeftPadding:8 forTextFields:$arr(email, password)];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [UIApplication sharedApplication].statusBarHidden = YES;
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [UIApplication sharedApplication].statusBarHidden = NO;
 }
 
 - (IBAction)login:(id)sender 

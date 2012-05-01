@@ -1,12 +1,12 @@
-#import "UIViewController+Extensions.h"
+#import "UIViewController+Gymate.h"
 #import <QuartzCore/QuartzCore.h>
 
-@implementation UIViewController (Extensions)
+@implementation UIViewController (Gymate)
 - (void)setTransitionAnimation:(UIView *)view withType:(NSString * const)type 
 {
     CATransition *transition = [CATransition animation];
     transition.duration = 0.7;
-    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionDefault];
     transition.type = kCATransitionPush;
     transition.subtype = type;
     transition.delegate = self;
