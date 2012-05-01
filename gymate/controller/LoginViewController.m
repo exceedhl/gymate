@@ -19,6 +19,16 @@
     return self;
 }
 
+- (void)viewDidLoad
+{
+    UIView *paddingView = [[[UIView alloc] initWithFrame:CGRectMake(0, 0, 8, 20)] autorelease];
+    email.leftView = paddingView;
+    email.leftViewMode = UITextFieldViewModeAlways;
+    paddingView = [[[UIView alloc] initWithFrame:CGRectMake(0, 0, 8, 20)] autorelease];
+    password.leftView = paddingView;
+    password.leftViewMode = UITextFieldViewModeAlways;
+}
+
 - (IBAction)login:(id)sender 
 {
     [self hideKeyboard:nil];

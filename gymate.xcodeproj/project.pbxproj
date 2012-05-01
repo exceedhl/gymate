@@ -12,6 +12,12 @@
 		3E1601FA154C022F001F231E /* NSStringGymateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1601F9154C022F001F231E /* NSStringGymateSpec.m */; };
 		3E1601FD154C04AC001F231E /* NSString+Gymate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1601FC154C04AC001F231E /* NSString+Gymate.m */; };
 		3E1601FE154C04AC001F231E /* NSString+Gymate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1601FC154C04AC001F231E /* NSString+Gymate.m */; };
+		BA19A1F6155004F200D7FB4C /* LoginEmailTextfieldBG.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A1F0155004F200D7FB4C /* LoginEmailTextfieldBG.png */; };
+		BA19A1F7155004F200D7FB4C /* LoginEmailTextfieldBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A1F1155004F200D7FB4C /* LoginEmailTextfieldBG@2x.png */; };
+		BA19A1F8155004F200D7FB4C /* LoginPasswordTextfieldBG.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A1F2155004F200D7FB4C /* LoginPasswordTextfieldBG.png */; };
+		BA19A1F9155004F200D7FB4C /* LoginPasswordTextfieldBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A1F3155004F200D7FB4C /* LoginPasswordTextfieldBG@2x.png */; };
+		BA19A1FA155004F200D7FB4C /* LoginTextfieldTriangle.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A1F4155004F200D7FB4C /* LoginTextfieldTriangle.png */; };
+		BA19A1FB155004F200D7FB4C /* LoginTextfieldTriangle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A1F5155004F200D7FB4C /* LoginTextfieldTriangle@2x.png */; };
 		BA6A05AA1532B5840007E136 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A05A91532B5840007E136 /* Parse.framework */; };
 		BA6A05AF1532B5A30007E136 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA6A05AE1532B5A30007E136 /* LoginView.xib */; };
 		BA6A05B31532B5BF0007E136 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6A05B21532B5BF0007E136 /* LoginViewController.m */; };
@@ -71,6 +77,12 @@
 		3E1601F9154C022F001F231E /* NSStringGymateSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringGymateSpec.m; sourceTree = "<group>"; };
 		3E1601FB154C04AC001F231E /* NSString+Gymate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Gymate.h"; sourceTree = "<group>"; };
 		3E1601FC154C04AC001F231E /* NSString+Gymate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Gymate.m"; sourceTree = "<group>"; };
+		BA19A1F0155004F200D7FB4C /* LoginEmailTextfieldBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginEmailTextfieldBG.png; sourceTree = "<group>"; };
+		BA19A1F1155004F200D7FB4C /* LoginEmailTextfieldBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginEmailTextfieldBG@2x.png"; sourceTree = "<group>"; };
+		BA19A1F2155004F200D7FB4C /* LoginPasswordTextfieldBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginPasswordTextfieldBG.png; sourceTree = "<group>"; };
+		BA19A1F3155004F200D7FB4C /* LoginPasswordTextfieldBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginPasswordTextfieldBG@2x.png"; sourceTree = "<group>"; };
+		BA19A1F4155004F200D7FB4C /* LoginTextfieldTriangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginTextfieldTriangle.png; sourceTree = "<group>"; };
+		BA19A1F5155004F200D7FB4C /* LoginTextfieldTriangle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginTextfieldTriangle@2x.png"; sourceTree = "<group>"; };
 		BA6A05A91532B5840007E136 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = gymate/lib/Parse.framework; sourceTree = "<group>"; };
 		BA6A05AE1532B5A30007E136 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		BA6A05B11532B5BF0007E136 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -268,6 +280,12 @@
 		BABAA3D7154ECA6C00ABC508 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				BA19A1F0155004F200D7FB4C /* LoginEmailTextfieldBG.png */,
+				BA19A1F1155004F200D7FB4C /* LoginEmailTextfieldBG@2x.png */,
+				BA19A1F2155004F200D7FB4C /* LoginPasswordTextfieldBG.png */,
+				BA19A1F3155004F200D7FB4C /* LoginPasswordTextfieldBG@2x.png */,
+				BA19A1F4155004F200D7FB4C /* LoginTextfieldTriangle.png */,
+				BA19A1F5155004F200D7FB4C /* LoginTextfieldTriangle@2x.png */,
 				BABAA3E8154ED1EF00ABC508 /* AppIcon.png */,
 				BABAA3E4154ECAC200ABC508 /* LoginButton.png */,
 				BABAA3E5154ECAC200ABC508 /* Logo.png */,
@@ -408,6 +426,12 @@
 				BABAA3E6154ECAC200ABC508 /* LoginButton.png in Resources */,
 				BABAA3E7154ECAC200ABC508 /* Logo.png in Resources */,
 				BABAA3E9154ED1EF00ABC508 /* AppIcon.png in Resources */,
+				BA19A1F6155004F200D7FB4C /* LoginEmailTextfieldBG.png in Resources */,
+				BA19A1F7155004F200D7FB4C /* LoginEmailTextfieldBG@2x.png in Resources */,
+				BA19A1F8155004F200D7FB4C /* LoginPasswordTextfieldBG.png in Resources */,
+				BA19A1F9155004F200D7FB4C /* LoginPasswordTextfieldBG@2x.png in Resources */,
+				BA19A1FA155004F200D7FB4C /* LoginTextfieldTriangle.png in Resources */,
+				BA19A1FB155004F200D7FB4C /* LoginTextfieldTriangle@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
