@@ -3,15 +3,21 @@
 #import "MBProgressHUD.h"
 #import "UIViewController+Gymate.h"
 #import "UITextField+Gymate.h"
+#import "SVSegmentedControl.h"
 
 #define PORTRAIT_KEYBOARD_HEIGHT 216
 #define MIN_GAP_BETWEEN_KEYBOARD_AND_TEXT_FIELD 5
 #define MAX_HEIGHT_WEIGHT_LENGTH 3
 
+#define GYMATE_TINT_COLOR_RED 255
+#define GYMATE_TINT_COLOR_GREEN 156
+#define GYMATE_TINT_COLOR_BLUE 52
+
 @interface SignupViewController ()
 
 - (void)moveViewUp:(CGFloat)deltaY;
 - (void)keyboardWillHide:(NSNotification *)notif;
+- (void)createGenderView;
 
 @end
 
@@ -26,8 +32,25 @@
         self.view.backgroundColor = background;
         [background release];
         
+        [self createGenderView];
     }
     return self;
+}
+
+- (void)createGenderView
+{
+    gender = [[SVSegmentedControl alloc] initWithSectionTitles:$arr(@"Male", @"Female")];
+    gender.crossFadeLabelsOnDrag = YES;
+    gender.thumb.tintColor = [UIColor colorWithRed:GYMATE_TINT_COLOR_RED/255.0 green:GYMATE_TINT_COLOR_GREEN/255.0 blue:GYMATE_TINT_COLOR_BLUE/255.0 alpha:1];
+    gender.height = firstName.frame.size.height;
+    [self.view addSubview:gender];
+    gender.center = CGPointMake(212, 255);
+}
+
+- (void)dealloc
+{
+    [gender release];
+    [super dealloc];
 }
 
 - (void)viewDidLoad {    
@@ -57,7 +80,7 @@
         User *user = [User user];
         user.firstName = firstName.text;
         user.lastName = lastName.text;
-        user.gender = [NSNumber numberWithInt:gender.selectedSegmentIndex];
+        user.gender = [NSNumber numberWithInt:gender.selectedIndex];
         user.email = email.text;
         user.password = password.text;
         //TODO: Should we make height and weight NSNumber? - Yuan
@@ -106,7 +129,7 @@
     CGFloat bottomYOfTextField = sender.frame.size.height + sender.frame.origin.y;
     CGFloat deltaY = PORTRAIT_KEYBOARD_HEIGHT - (self.view.frame.size.height - bottomYOfTextField);
     if ( deltaY > 0) {
-        [self moveViewUp:deltaY];
+        [self moveViewUp:(deltaY + MIN_GAP_BETWEEN_KEYBOARD_AND_TEXT_FIELD)];
     } else {
         [self moveViewUp:0];
     }
@@ -131,7 +154,7 @@
     [UIView setAnimationDuration:0.3];
     
     CGRect rect = self.view.frame;
-    rect.origin.y = -(deltaY + MIN_GAP_BETWEEN_KEYBOARD_AND_TEXT_FIELD);
+    rect.origin.y = -deltaY;
     self.view.frame = rect;
     
     [UIView commitAnimations];

@@ -53,6 +53,8 @@
 		BA758D3E154C4B27006BED63 /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA758D3D154C4B27006BED63 /* libPods-test.a */; };
 		BA758D41154C52A4006BED63 /* Pods-test.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BA758D3F154C52A3006BED63 /* Pods-test.xcconfig */; };
 		BA758D42154C52A4006BED63 /* Pods.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BA758D40154C52A4006BED63 /* Pods.xcconfig */; };
+		BA79261015515B940098F7B2 /* SVSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BA79260D15515B940098F7B2 /* SVSegmentedControl.m */; };
+		BA79261115515B940098F7B2 /* SVSegmentedThumb.m in Sources */ = {isa = PBXBuildFile; fileRef = BA79260F15515B940098F7B2 /* SVSegmentedThumb.m */; };
 		BABAA3DD154ECA6C00ABC508 /* LoginBG.png in Resources */ = {isa = PBXBuildFile; fileRef = BABAA3D8154ECA6C00ABC508 /* LoginBG.png */; };
 		BABAA3DE154ECA6C00ABC508 /* LoginBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BABAA3D9154ECA6C00ABC508 /* LoginBG@2x.png */; };
 		BABAA3DF154ECA6C00ABC508 /* LoginButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BABAA3DA154ECA6C00ABC508 /* LoginButton@2x.png */; };
@@ -80,7 +82,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3E1601E8154BD597001F231E /* UIViewController+Gymate.h */ = {isa = PBXFileReference; fileEncoding = 4; path = "UIViewController+Gymate.h"; sourceTree = "<group>"; };
+		3E1601E8154BD597001F231E /* UIViewController+Gymate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Gymate.h"; sourceTree = "<group>"; };
 		3E1601E9154BD625001F231E /* UIViewController+Gymate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Gymate.m"; sourceTree = "<group>"; };
 		3E1601F5154BDC16001F231E /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		3E1601F6154BDC16001F231E /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
@@ -138,6 +140,10 @@
 		BA758D3D154C4B27006BED63 /* libPods-test.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-test.a"; path = "Pods/build/Release-iphoneos/libPods-test.a"; sourceTree = "<group>"; };
 		BA758D3F154C52A3006BED63 /* Pods-test.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-test.xcconfig"; path = "Pods/Pods-test.xcconfig"; sourceTree = "<group>"; };
 		BA758D40154C52A4006BED63 /* Pods.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		BA79260C15515B940098F7B2 /* SVSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVSegmentedControl.h; sourceTree = "<group>"; };
+		BA79260D15515B940098F7B2 /* SVSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVSegmentedControl.m; sourceTree = "<group>"; };
+		BA79260E15515B940098F7B2 /* SVSegmentedThumb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVSegmentedThumb.h; sourceTree = "<group>"; };
+		BA79260F15515B940098F7B2 /* SVSegmentedThumb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVSegmentedThumb.m; sourceTree = "<group>"; };
 		BABAA3D8154ECA6C00ABC508 /* LoginBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginBG.png; sourceTree = "<group>"; };
 		BABAA3D9154ECA6C00ABC508 /* LoginBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginBG@2x.png"; sourceTree = "<group>"; };
 		BABAA3DA154ECA6C00ABC508 /* LoginButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginButton@2x.png"; sourceTree = "<group>"; };
@@ -278,6 +284,7 @@
 		BA6A0B711532A3260010E596 /* gymate */ = {
 			isa = PBXGroup;
 			children = (
+				BA79260A15515B940098F7B2 /* vendor */,
 				BAE43363153C3D4D0076B12E /* resources */,
 				BA6A05B91532C8380007E136 /* model */,
 				BA6A05B01532B5BF0007E136 /* controller */,
@@ -300,6 +307,25 @@
 				BA6A0B791532A3260010E596 /* gymate-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BA79260A15515B940098F7B2 /* vendor */ = {
+			isa = PBXGroup;
+			children = (
+				BA79260B15515B940098F7B2 /* SVSegmentedControl */,
+			);
+			path = vendor;
+			sourceTree = "<group>";
+		};
+		BA79260B15515B940098F7B2 /* SVSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				BA79260C15515B940098F7B2 /* SVSegmentedControl.h */,
+				BA79260D15515B940098F7B2 /* SVSegmentedControl.m */,
+				BA79260E15515B940098F7B2 /* SVSegmentedThumb.h */,
+				BA79260F15515B940098F7B2 /* SVSegmentedThumb.m */,
+			);
+			path = SVSegmentedControl;
 			sourceTree = "<group>";
 		};
 		BABAA3D7154ECA6C00ABC508 /* images */ = {
@@ -548,6 +574,8 @@
 				3E1601F7154BDC16001F231E /* BaseViewController.m in Sources */,
 				3E1601FD154C04AC001F231E /* NSString+Gymate.m in Sources */,
 				BA19A21A155027B300D7FB4C /* UITextField+Gymate.m in Sources */,
+				BA79261015515B940098F7B2 /* SVSegmentedControl.m in Sources */,
+				BA79261115515B940098F7B2 /* SVSegmentedThumb.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
