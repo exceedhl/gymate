@@ -19,7 +19,7 @@ describe(@"User", ^{
             user.lastName = @"Jerry";
             user.gender = [NSNumber numberWithInt:0];
             user.email = @"tom@jerry.com";
-            user.password = @"letmein";
+            user.passwd = @"letmein";
             user.height = @"180";
             user.weight = @"78";
             [user signUp];
@@ -34,19 +34,19 @@ describe(@"User", ^{
             user.height = @"180";
             user.weight = @"78";
             user.email = @"adam@smith.com";
-            [user setPassword:@"password"];
+            user.passwd = @"password";
             [[theBlock(^{[user signUp];}) should] raiseWithName:@"Signup failed" reason:@"username adam@smith.com already taken"];            
         });
         
         it(@"should throw exception if firstName or lastName or email or height or weight is empty", ^{
-            NSArray *keys = $arr(@"firstName", @"lastName", @"email");
+            NSArray *keys = $arr(@"firstName", @"lastName", @"email", @"height", @"weight", @"passwd");
             [keys $each:^(id key) {
                 User *user = [User user];
                 user.firstName = @"foo";
                 user.lastName = @"bar";
                 user.gender = [NSNumber numberWithInt:0];
                 user.email = @"foo@bar.com";
-                user.password = @"password";
+                user.passwd = @"password";
                 user.height = @"180";
                 user.weight = @"78";
                 [user setObject:@"     \t  \n" forKey:key];
@@ -54,34 +54,6 @@ describe(@"User", ^{
              }];
         });
         
-        it(@"should throw exception if height or weight is empty", ^{
-            NSArray *keys = $arr(@"height", @"weight");
-            [keys $each:^(id key) {
-                User *user = [User user];
-                user.firstName = @"foo";
-                user.lastName = @"bar";
-                user.gender = [NSNumber numberWithInt:0];
-                user.email = @"foo@bar.com";
-                user.password = @"password";
-                user.height = @"180";
-                user.weight = @"78";
-                [user setObject:@" " forKey:key];
-                [[theBlock(^{[user signUp];}) should] raiseWithName:@"Signup failed" reason:[NSString stringWithFormat:@"%@ should not be empty", [key lowercaseString]]];                                   
-            }];
-        });
-
-        it(@"should throw exception if password is empty", ^{
-            User *user = [User user];
-            user.firstName = @"foo";
-            user.lastName = @"bar";
-            user.gender = [NSNumber numberWithInt:0];
-            user.email = @"foo@bar.com";
-            user.height = @"180";
-            user.weight = @"78";
-            [user setObject:@" " forKey:@"password"];
-            [[theBlock(^{[user signUp];}) should] raiseWithReason:@"Cannot sign up without a password."];  
-        });
-
     });
 
     context(@"when login", ^{

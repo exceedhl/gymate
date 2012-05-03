@@ -69,9 +69,30 @@
     [self setObject:weight forKey:@"weight"];
 }
 
+- (NSString *)email
+{
+    return [self objectForKey:@"email"];
+}
+
+- (void)setEmail:(NSString *)anEmail
+{
+    [self setObject:anEmail forKey:@"email"];
+}
+
+- (NSString *)passwd
+{
+    return [self objectForKey:@"passwd"];
+}
+
+- (void)setPasswd:(NSString *)aPassword
+{
+    [self setObject:aPassword forKey:@"passwd"];
+    super.password = aPassword;
+}
+
 - (void)validate
 {
-    [$arr(@"firstName", @"lastName", @"email", @"height", @"weight") $each:^(id key) {
+    [$arr(@"email", @"passwd", @"firstName", @"lastName", @"height", @"weight") $each:^(id key) {
         NSString *value = [self objectForKey:key];
         if (!value || [(NSString *)value isEmpty]) {
             @throw [NSException exceptionWithName:@"Signup failed" reason:[NSString stringWithFormat:@"%@ should not be empty", [key lowercaseString]] userInfo:nil];

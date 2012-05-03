@@ -82,7 +82,7 @@
         user.lastName = lastName.text;
         user.gender = [NSNumber numberWithInt:gender.selectedIndex];
         user.email = email.text;
-        user.password = password.text;
+        user.passwd = password.text;
         //TODO: Should we make height and weight NSNumber? - Yuan
         user.height = height.text;
         user.weight = weight.text;

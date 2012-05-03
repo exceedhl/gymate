@@ -18,5 +18,7 @@
 - (void)setHeight:(NSString *)height;
 - (NSString *)weight;
 - (void)setWeight:(NSString *)wight;
+- (NSString *)passwd;
+- (void)setPasswd:(NSString *)aPassword;
 
 @end
