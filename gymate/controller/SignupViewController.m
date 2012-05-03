@@ -17,7 +17,7 @@
 
 - (void)moveViewUp:(CGFloat)deltaY;
 - (void)keyboardWillHide:(NSNotification *)notif;
-- (void)createGenderView;
+- (void)createGenderControl;
 
 @end
 
@@ -28,16 +28,16 @@
 - (id)initWithNibName:(NSString *)nibName bundle:(NSBundle *)nibBundle
 {
     if (self = [super initWithNibName:nibName bundle:nibBundle]) {
-        UIColor *background = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"SignupBG"]];
+        UIColor *background = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"BG"]];
         self.view.backgroundColor = background;
         [background release];
         
-        [self createGenderView];
+        [self createGenderControl];
     }
     return self;
 }
 
-- (void)createGenderView
+- (void)createGenderControl
 {
     gender = [[SVSegmentedControl alloc] initWithSectionTitles:$arr(@"Male", @"Female")];
     gender.crossFadeLabelsOnDrag = YES;

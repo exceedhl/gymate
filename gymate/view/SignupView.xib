@@ -246,7 +246,7 @@
 						</object>
 						<object class="NSCustomResource" key="IBUIBackground">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">LoginEmailTextfieldBG.png</string>
+							<string key="NSResourceName">TopTextfieldBG.png</string>
 						</object>
 						<int key="IBUIClearButtonMode">1</int>
 						<reference key="IBUIFontDescription" ref="995978987"/>
@@ -280,7 +280,7 @@
 						</object>
 						<object class="NSCustomResource" key="IBUIBackground">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">LoginPasswordTextfieldBG.png</string>
+							<string key="NSResourceName">DownTextfieldBG.png</string>
 						</object>
 						<int key="IBUIClearButtonMode">1</int>
 						<reference key="IBUIFontDescription" ref="995978987"/>
@@ -723,11 +723,11 @@
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
+			<string key="DownTextfieldBG.png">{16, 16}</string>
 			<string key="LeftTextfieldBG.png">{142, 39}</string>
 			<string key="LoginButton.png">{175, 43}</string>
-			<string key="LoginEmailTextfieldBG.png">{286, 44}</string>
-			<string key="LoginPasswordTextfieldBG.png">{286, 44}</string>
 			<string key="RightTextfieldBG.png">{142, 39}</string>
+			<string key="TopTextfieldBG.png">{16, 16}</string>
 		</dictionary>
 		<string key="IBCocoaTouchPluginVersion">1181</string>
 	</data>

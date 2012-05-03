@@ -3,6 +3,7 @@
 #import "User.h"
 #import "MBProgressHUD.h"
 #import "UIViewController+Gymate.h"
+#import "TodayWorkoutViewController.h"
 
 @implementation LoginViewController
 
@@ -11,7 +12,7 @@
 - (id)initWithNibName:(NSString *)nibName bundle:(NSBundle *)nibBundle
 {
     if (self = [super initWithNibName:nibName bundle:nibBundle]) {
-        UIColor *background = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"LoginBG"]];
+        UIColor *background = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"BG"]];
         self.view.backgroundColor = background;
         [background release];
 
@@ -24,16 +25,6 @@
     [self setLeftPadding:8 forTextFields:$arr(email, password)];
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    [UIApplication sharedApplication].statusBarHidden = YES;
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-    [UIApplication sharedApplication].statusBarHidden = NO;
-}
-
 - (IBAction)login:(id)sender 
 {
     [self hideKeyboard:nil];
@@ -44,10 +35,8 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             [MBProgressHUD hideHUDForView:self.view animated:NO];
             if (user) {
-                NSLog(@"User: %@", user);
-                NSLog(@"session token: %@", user.sessionToken);
-                NSLog(@"new user?: %d", user.isNew);
-                NSLog(@"Current User: %@", [User currentUser]);
+                TodayWorkoutViewController *controller = [[[TodayWorkoutViewController alloc] initWithNibName:@"TodayWorkoutView" bundle:nil] autorelease];
+                [self.navigationController pushViewController:controller animated:YES];
             } else {
                 NSString *title = @"Login Failed";
                 NSString *message = @"Wrong Username/Email and password combination. \nPlease try again.";

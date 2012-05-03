@@ -12,14 +12,14 @@
 		3E1601FA154C022F001F231E /* NSStringGymateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1601F9154C022F001F231E /* NSStringGymateSpec.m */; };
 		3E1601FD154C04AC001F231E /* NSString+Gymate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1601FC154C04AC001F231E /* NSString+Gymate.m */; };
 		3E1601FE154C04AC001F231E /* NSString+Gymate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1601FC154C04AC001F231E /* NSString+Gymate.m */; };
-		BA19A1F6155004F200D7FB4C /* LoginEmailTextfieldBG.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A1F0155004F200D7FB4C /* LoginEmailTextfieldBG.png */; };
-		BA19A1F7155004F200D7FB4C /* LoginEmailTextfieldBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A1F1155004F200D7FB4C /* LoginEmailTextfieldBG@2x.png */; };
-		BA19A1F8155004F200D7FB4C /* LoginPasswordTextfieldBG.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A1F2155004F200D7FB4C /* LoginPasswordTextfieldBG.png */; };
-		BA19A1F9155004F200D7FB4C /* LoginPasswordTextfieldBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A1F3155004F200D7FB4C /* LoginPasswordTextfieldBG@2x.png */; };
-		BA19A1FA155004F200D7FB4C /* LoginTextfieldTriangle.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A1F4155004F200D7FB4C /* LoginTextfieldTriangle.png */; };
-		BA19A1FB155004F200D7FB4C /* LoginTextfieldTriangle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A1F5155004F200D7FB4C /* LoginTextfieldTriangle@2x.png */; };
-		BA19A1FF15500A5500D7FB4C /* SignupBG.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A1FD15500A5500D7FB4C /* SignupBG.png */; };
-		BA19A20015500A5500D7FB4C /* SignupBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A1FE15500A5500D7FB4C /* SignupBG@2x.png */; };
+		BA19A1F6155004F200D7FB4C /* TopTextfieldBG.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A1F0155004F200D7FB4C /* TopTextfieldBG.png */; };
+		BA19A1F7155004F200D7FB4C /* TopTextfieldBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A1F1155004F200D7FB4C /* TopTextfieldBG@2x.png */; };
+		BA19A1F8155004F200D7FB4C /* DownTextfieldBG.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A1F2155004F200D7FB4C /* DownTextfieldBG.png */; };
+		BA19A1F9155004F200D7FB4C /* DownTextfieldBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A1F3155004F200D7FB4C /* DownTextfieldBG@2x.png */; };
+		BA19A1FA155004F200D7FB4C /* UpTriangle.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A1F4155004F200D7FB4C /* UpTriangle.png */; };
+		BA19A1FB155004F200D7FB4C /* UpTriangle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A1F5155004F200D7FB4C /* UpTriangle@2x.png */; };
+		BA19A1FF15500A5500D7FB4C /* BG.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A1FD15500A5500D7FB4C /* BG.png */; };
+		BA19A20015500A5500D7FB4C /* BG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A1FE15500A5500D7FB4C /* BG@2x.png */; };
 		BA19A20C1550242100D7FB4C /* LeftTextfieldBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A2051550242000D7FB4C /* LeftTextfieldBG@2x.png */; };
 		BA19A20D1550242100D7FB4C /* RightTextfieldBG.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A2061550242000D7FB4C /* RightTextfieldBG.png */; };
 		BA19A20E1550242100D7FB4C /* RightTextfieldBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A2071550242000D7FB4C /* RightTextfieldBG@2x.png */; };
@@ -29,6 +29,8 @@
 		BA19A2121550242100D7FB4C /* ShortRightTextfieldBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A20B1550242000D7FB4C /* ShortRightTextfieldBG@2x.png */; };
 		BA19A2141550244300D7FB4C /* LeftTextfieldBG.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A2131550244300D7FB4C /* LeftTextfieldBG.png */; };
 		BA19A21A155027B300D7FB4C /* UITextField+Gymate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA19A219155027B300D7FB4C /* UITextField+Gymate.m */; };
+		BA3BD0B51552385400D8E1F0 /* DateTag.png in Resources */ = {isa = PBXBuildFile; fileRef = BA3BD0B31552385400D8E1F0 /* DateTag.png */; };
+		BA3BD0B61552385400D8E1F0 /* DateTag@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA3BD0B41552385400D8E1F0 /* DateTag@2x.png */; };
 		BA6A05AA1532B5840007E136 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A05A91532B5840007E136 /* Parse.framework */; };
 		BA6A05AF1532B5A30007E136 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA6A05AE1532B5A30007E136 /* LoginView.xib */; };
 		BA6A05B31532B5BF0007E136 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6A05B21532B5BF0007E136 /* LoginViewController.m */; };
@@ -55,6 +57,8 @@
 		BA758D42154C52A4006BED63 /* Pods.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BA758D40154C52A4006BED63 /* Pods.xcconfig */; };
 		BA79261015515B940098F7B2 /* SVSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BA79260D15515B940098F7B2 /* SVSegmentedControl.m */; };
 		BA79261115515B940098F7B2 /* SVSegmentedThumb.m in Sources */ = {isa = PBXBuildFile; fileRef = BA79260F15515B940098F7B2 /* SVSegmentedThumb.m */; };
+		BA79262F155230CF0098F7B2 /* TodayWorkoutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA79262E155230CF0098F7B2 /* TodayWorkoutView.xib */; };
+		BA792633155231000098F7B2 /* TodayWorkoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA792632155231000098F7B2 /* TodayWorkoutViewController.m */; };
 		BABAA3DD154ECA6C00ABC508 /* LoginBG.png in Resources */ = {isa = PBXBuildFile; fileRef = BABAA3D8154ECA6C00ABC508 /* LoginBG.png */; };
 		BABAA3DE154ECA6C00ABC508 /* LoginBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BABAA3D9154ECA6C00ABC508 /* LoginBG@2x.png */; };
 		BABAA3DF154ECA6C00ABC508 /* LoginButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BABAA3DA154ECA6C00ABC508 /* LoginButton@2x.png */; };
@@ -90,14 +94,14 @@
 		3E1601F9154C022F001F231E /* NSStringGymateSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringGymateSpec.m; sourceTree = "<group>"; };
 		3E1601FB154C04AC001F231E /* NSString+Gymate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Gymate.h"; sourceTree = "<group>"; };
 		3E1601FC154C04AC001F231E /* NSString+Gymate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Gymate.m"; sourceTree = "<group>"; };
-		BA19A1F0155004F200D7FB4C /* LoginEmailTextfieldBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginEmailTextfieldBG.png; sourceTree = "<group>"; };
-		BA19A1F1155004F200D7FB4C /* LoginEmailTextfieldBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginEmailTextfieldBG@2x.png"; sourceTree = "<group>"; };
-		BA19A1F2155004F200D7FB4C /* LoginPasswordTextfieldBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginPasswordTextfieldBG.png; sourceTree = "<group>"; };
-		BA19A1F3155004F200D7FB4C /* LoginPasswordTextfieldBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginPasswordTextfieldBG@2x.png"; sourceTree = "<group>"; };
-		BA19A1F4155004F200D7FB4C /* LoginTextfieldTriangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginTextfieldTriangle.png; sourceTree = "<group>"; };
-		BA19A1F5155004F200D7FB4C /* LoginTextfieldTriangle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginTextfieldTriangle@2x.png"; sourceTree = "<group>"; };
-		BA19A1FD15500A5500D7FB4C /* SignupBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SignupBG.png; sourceTree = "<group>"; };
-		BA19A1FE15500A5500D7FB4C /* SignupBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SignupBG@2x.png"; sourceTree = "<group>"; };
+		BA19A1F0155004F200D7FB4C /* TopTextfieldBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TopTextfieldBG.png; sourceTree = "<group>"; };
+		BA19A1F1155004F200D7FB4C /* TopTextfieldBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TopTextfieldBG@2x.png"; sourceTree = "<group>"; };
+		BA19A1F2155004F200D7FB4C /* DownTextfieldBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DownTextfieldBG.png; sourceTree = "<group>"; };
+		BA19A1F3155004F200D7FB4C /* DownTextfieldBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DownTextfieldBG@2x.png"; sourceTree = "<group>"; };
+		BA19A1F4155004F200D7FB4C /* UpTriangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UpTriangle.png; sourceTree = "<group>"; };
+		BA19A1F5155004F200D7FB4C /* UpTriangle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UpTriangle@2x.png"; sourceTree = "<group>"; };
+		BA19A1FD15500A5500D7FB4C /* BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BG.png; sourceTree = "<group>"; };
+		BA19A1FE15500A5500D7FB4C /* BG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BG@2x.png"; sourceTree = "<group>"; };
 		BA19A2051550242000D7FB4C /* LeftTextfieldBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LeftTextfieldBG@2x.png"; sourceTree = "<group>"; };
 		BA19A2061550242000D7FB4C /* RightTextfieldBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RightTextfieldBG.png; sourceTree = "<group>"; };
 		BA19A2071550242000D7FB4C /* RightTextfieldBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RightTextfieldBG@2x.png"; sourceTree = "<group>"; };
@@ -108,6 +112,8 @@
 		BA19A2131550244300D7FB4C /* LeftTextfieldBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LeftTextfieldBG.png; sourceTree = "<group>"; };
 		BA19A218155027B300D7FB4C /* UITextField+Gymate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Gymate.h"; sourceTree = "<group>"; };
 		BA19A219155027B300D7FB4C /* UITextField+Gymate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Gymate.m"; sourceTree = "<group>"; };
+		BA3BD0B31552385400D8E1F0 /* DateTag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DateTag.png; sourceTree = "<group>"; };
+		BA3BD0B41552385400D8E1F0 /* DateTag@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DateTag@2x.png"; sourceTree = "<group>"; };
 		BA6A05A91532B5840007E136 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = gymate/lib/Parse.framework; sourceTree = "<group>"; };
 		BA6A05AE1532B5A30007E136 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		BA6A05B11532B5BF0007E136 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -144,6 +150,9 @@
 		BA79260D15515B940098F7B2 /* SVSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVSegmentedControl.m; sourceTree = "<group>"; };
 		BA79260E15515B940098F7B2 /* SVSegmentedThumb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVSegmentedThumb.h; sourceTree = "<group>"; };
 		BA79260F15515B940098F7B2 /* SVSegmentedThumb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVSegmentedThumb.m; sourceTree = "<group>"; };
+		BA79262E155230CF0098F7B2 /* TodayWorkoutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TodayWorkoutView.xib; sourceTree = "<group>"; };
+		BA792631155231000098F7B2 /* TodayWorkoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodayWorkoutViewController.h; sourceTree = "<group>"; };
+		BA792632155231000098F7B2 /* TodayWorkoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodayWorkoutViewController.m; sourceTree = "<group>"; };
 		BABAA3D8154ECA6C00ABC508 /* LoginBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginBG.png; sourceTree = "<group>"; };
 		BABAA3D9154ECA6C00ABC508 /* LoginBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginBG@2x.png"; sourceTree = "<group>"; };
 		BABAA3DA154ECA6C00ABC508 /* LoginButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginButton@2x.png"; sourceTree = "<group>"; };
@@ -212,6 +221,7 @@
 				BA6A05B41532B61C0007E136 /* SignupView.xib */,
 				BA19A218155027B300D7FB4C /* UITextField+Gymate.h */,
 				BA19A219155027B300D7FB4C /* UITextField+Gymate.m */,
+				BA79262E155230CF0098F7B2 /* TodayWorkoutView.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -227,6 +237,8 @@
 				3E1601E9154BD625001F231E /* UIViewController+Gymate.m */,
 				3E1601F5154BDC16001F231E /* BaseViewController.h */,
 				3E1601F6154BDC16001F231E /* BaseViewController.m */,
+				BA792631155231000098F7B2 /* TodayWorkoutViewController.h */,
+				BA792632155231000098F7B2 /* TodayWorkoutViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -331,6 +343,8 @@
 		BABAA3D7154ECA6C00ABC508 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				BA3BD0B31552385400D8E1F0 /* DateTag.png */,
+				BA3BD0B41552385400D8E1F0 /* DateTag@2x.png */,
 				BA19A2131550244300D7FB4C /* LeftTextfieldBG.png */,
 				BA19A2051550242000D7FB4C /* LeftTextfieldBG@2x.png */,
 				BA19A2061550242000D7FB4C /* RightTextfieldBG.png */,
@@ -339,14 +353,14 @@
 				BA19A2091550242000D7FB4C /* ShortLeftTextfieldBG@2x.png */,
 				BA19A20A1550242000D7FB4C /* ShortRightTextfieldBG.png */,
 				BA19A20B1550242000D7FB4C /* ShortRightTextfieldBG@2x.png */,
-				BA19A1FD15500A5500D7FB4C /* SignupBG.png */,
-				BA19A1FE15500A5500D7FB4C /* SignupBG@2x.png */,
-				BA19A1F0155004F200D7FB4C /* LoginEmailTextfieldBG.png */,
-				BA19A1F1155004F200D7FB4C /* LoginEmailTextfieldBG@2x.png */,
-				BA19A1F2155004F200D7FB4C /* LoginPasswordTextfieldBG.png */,
-				BA19A1F3155004F200D7FB4C /* LoginPasswordTextfieldBG@2x.png */,
-				BA19A1F4155004F200D7FB4C /* LoginTextfieldTriangle.png */,
-				BA19A1F5155004F200D7FB4C /* LoginTextfieldTriangle@2x.png */,
+				BA19A1FD15500A5500D7FB4C /* BG.png */,
+				BA19A1FE15500A5500D7FB4C /* BG@2x.png */,
+				BA19A1F0155004F200D7FB4C /* TopTextfieldBG.png */,
+				BA19A1F1155004F200D7FB4C /* TopTextfieldBG@2x.png */,
+				BA19A1F2155004F200D7FB4C /* DownTextfieldBG.png */,
+				BA19A1F3155004F200D7FB4C /* DownTextfieldBG@2x.png */,
+				BA19A1F4155004F200D7FB4C /* UpTriangle.png */,
+				BA19A1F5155004F200D7FB4C /* UpTriangle@2x.png */,
 				BABAA3E8154ED1EF00ABC508 /* AppIcon.png */,
 				BABAA3E4154ECAC200ABC508 /* LoginButton.png */,
 				BABAA3E5154ECAC200ABC508 /* Logo.png */,
@@ -487,14 +501,14 @@
 				BABAA3E6154ECAC200ABC508 /* LoginButton.png in Resources */,
 				BABAA3E7154ECAC200ABC508 /* Logo.png in Resources */,
 				BABAA3E9154ED1EF00ABC508 /* AppIcon.png in Resources */,
-				BA19A1F6155004F200D7FB4C /* LoginEmailTextfieldBG.png in Resources */,
-				BA19A1F7155004F200D7FB4C /* LoginEmailTextfieldBG@2x.png in Resources */,
-				BA19A1F8155004F200D7FB4C /* LoginPasswordTextfieldBG.png in Resources */,
-				BA19A1F9155004F200D7FB4C /* LoginPasswordTextfieldBG@2x.png in Resources */,
-				BA19A1FA155004F200D7FB4C /* LoginTextfieldTriangle.png in Resources */,
-				BA19A1FB155004F200D7FB4C /* LoginTextfieldTriangle@2x.png in Resources */,
-				BA19A1FF15500A5500D7FB4C /* SignupBG.png in Resources */,
-				BA19A20015500A5500D7FB4C /* SignupBG@2x.png in Resources */,
+				BA19A1F6155004F200D7FB4C /* TopTextfieldBG.png in Resources */,
+				BA19A1F7155004F200D7FB4C /* TopTextfieldBG@2x.png in Resources */,
+				BA19A1F8155004F200D7FB4C /* DownTextfieldBG.png in Resources */,
+				BA19A1F9155004F200D7FB4C /* DownTextfieldBG@2x.png in Resources */,
+				BA19A1FA155004F200D7FB4C /* UpTriangle.png in Resources */,
+				BA19A1FB155004F200D7FB4C /* UpTriangle@2x.png in Resources */,
+				BA19A1FF15500A5500D7FB4C /* BG.png in Resources */,
+				BA19A20015500A5500D7FB4C /* BG@2x.png in Resources */,
 				BA19A20C1550242100D7FB4C /* LeftTextfieldBG@2x.png in Resources */,
 				BA19A20D1550242100D7FB4C /* RightTextfieldBG.png in Resources */,
 				BA19A20E1550242100D7FB4C /* RightTextfieldBG@2x.png in Resources */,
@@ -503,6 +517,9 @@
 				BA19A2111550242100D7FB4C /* ShortRightTextfieldBG.png in Resources */,
 				BA19A2121550242100D7FB4C /* ShortRightTextfieldBG@2x.png in Resources */,
 				BA19A2141550244300D7FB4C /* LeftTextfieldBG.png in Resources */,
+				BA79262F155230CF0098F7B2 /* TodayWorkoutView.xib in Resources */,
+				BA3BD0B51552385400D8E1F0 /* DateTag.png in Resources */,
+				BA3BD0B61552385400D8E1F0 /* DateTag@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,6 +593,7 @@
 				BA19A21A155027B300D7FB4C /* UITextField+Gymate.m in Sources */,
 				BA79261015515B940098F7B2 /* SVSegmentedControl.m in Sources */,
 				BA79261115515B940098F7B2 /* SVSegmentedThumb.m in Sources */,
+				BA792633155231000098F7B2 /* TodayWorkoutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,6 +1,10 @@
 #import "AppDelegate.h"
 #import "LoginViewController.h"
 
+#define GYMATE_BG_COLOR_RED 57
+#define GYMATE_BG_COLOR_GREEN 59
+#define GYMATE_BG_COLOR_BLUE 66
+
 @implementation AppDelegate
 
 @synthesize window = _window;
@@ -23,7 +27,7 @@
     [navigationController setNavigationBarHidden:YES];
     [loginViewController release];
     [self.window addSubview:navigationController.view];
-    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.backgroundColor = [UIColor colorWithRed:GYMATE_BG_COLOR_RED/255.0 green:GYMATE_BG_COLOR_GREEN/255.0 blue:GYMATE_BG_COLOR_BLUE/255.0 alpha:1];
     [self.window makeKeyAndVisible];
     return YES;
 }
