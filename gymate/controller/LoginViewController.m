@@ -35,8 +35,7 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             [MBProgressHUD hideHUDForView:self.view animated:NO];
             if (user) {
-                TodayWorkoutViewController *controller = [[[TodayWorkoutViewController alloc] initWithNibName:@"TodayWorkoutView" bundle:nil] autorelease];
-                [self.navigationController pushViewController:controller animated:YES];
+                [self dismissViewControllerAnimated:YES completion:nil];
             } else {
                 NSString *title = @"Login Failed";
                 NSString *message = @"Wrong Username/Email and password combination. \nPlease try again.";

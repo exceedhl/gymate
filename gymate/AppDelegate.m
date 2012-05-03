@@ -7,11 +7,12 @@
 
 @implementation AppDelegate
 
-@synthesize window = _window;
+@synthesize window, tabBarController;
 
 - (void)dealloc
 {
-    [_window release];
+    [window release];
+    [tabBarController release];
     [navigationController release];
     [super dealloc];
 }
@@ -20,15 +21,15 @@
 {
     [Parse setApplicationId:@"LgeuExxvIpU5ZLyXeSwCk4AKj4aD1a5ViPtcef2m" 
                   clientKey:@"HrEukR6VwxpXOkiwt2XQRiDR92knGg9MguD2MESS"];
-    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
-    // Override point for customization after application launch.
-    LoginViewController *loginViewController = [[LoginViewController alloc] initWithNibName:@"loginView" bundle:nil];
-    navigationController = [[UINavigationController alloc] initWithRootViewController:loginViewController];
-    [navigationController setNavigationBarHidden:YES];
-    [loginViewController release];
-    [self.window addSubview:navigationController.view];
     self.window.backgroundColor = [UIColor colorWithRed:GYMATE_BG_COLOR_RED/255.0 green:GYMATE_BG_COLOR_GREEN/255.0 blue:GYMATE_BG_COLOR_BLUE/255.0 alpha:1];
     [self.window makeKeyAndVisible];
+    [self.window addSubview:tabBarController.view];
+    LoginViewController *loginViewController = [[[LoginViewController alloc] initWithNibName:@"loginView" bundle:nil] autorelease];
+    navigationController = [[UINavigationController alloc] initWithRootViewController:loginViewController];
+    [navigationController setNavigationBarHidden:YES];
+    [tabBarController presentViewController:navigationController animated:YES completion:^{        
+        [self.window addSubview:navigationController.view];        
+    }];
     return YES;
 }
 

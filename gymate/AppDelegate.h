@@ -2,9 +2,12 @@
 #import <Parse/Parse.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate> {
+    UIWindow *window;
+    UITabBarController *tabBarController;
     UINavigationController *navigationController;
 }
 
-@property (retain, nonatomic) UIWindow *window;
+@property (retain, nonatomic) IBOutlet UIWindow *window;
+@property (retain, nonatomic) IBOutlet UITabBarController *tabBarController;
 
 @end

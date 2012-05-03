@@ -12,6 +12,7 @@
 		3E1601FA154C022F001F231E /* NSStringGymateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1601F9154C022F001F231E /* NSStringGymateSpec.m */; };
 		3E1601FD154C04AC001F231E /* NSString+Gymate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1601FC154C04AC001F231E /* NSString+Gymate.m */; };
 		3E1601FE154C04AC001F231E /* NSString+Gymate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1601FC154C04AC001F231E /* NSString+Gymate.m */; };
+		3E76C5EE15529E3D00379C8F /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E76C5ED15529E3D00379C8F /* MainView.xib */; };
 		BA19A1F6155004F200D7FB4C /* TopTextfieldBG.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A1F0155004F200D7FB4C /* TopTextfieldBG.png */; };
 		BA19A1F7155004F200D7FB4C /* TopTextfieldBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A1F1155004F200D7FB4C /* TopTextfieldBG@2x.png */; };
 		BA19A1F8155004F200D7FB4C /* DownTextfieldBG.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A1F2155004F200D7FB4C /* DownTextfieldBG.png */; };
@@ -100,6 +101,7 @@
 		3E1601F9154C022F001F231E /* NSStringGymateSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringGymateSpec.m; sourceTree = "<group>"; };
 		3E1601FB154C04AC001F231E /* NSString+Gymate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Gymate.h"; sourceTree = "<group>"; };
 		3E1601FC154C04AC001F231E /* NSString+Gymate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Gymate.m"; sourceTree = "<group>"; };
+		3E76C5ED15529E3D00379C8F /* MainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
 		BA19A1F0155004F200D7FB4C /* TopTextfieldBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TopTextfieldBG.png; sourceTree = "<group>"; };
 		BA19A1F1155004F200D7FB4C /* TopTextfieldBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TopTextfieldBG@2x.png"; sourceTree = "<group>"; };
 		BA19A1F2155004F200D7FB4C /* DownTextfieldBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DownTextfieldBG.png; sourceTree = "<group>"; };
@@ -120,7 +122,7 @@
 		BA19A219155027B300D7FB4C /* UITextField+Gymate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Gymate.m"; sourceTree = "<group>"; };
 		BA3BD0B31552385400D8E1F0 /* DateTag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DateTag.png; sourceTree = "<group>"; };
 		BA3BD0B41552385400D8E1F0 /* DateTag@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DateTag@2x.png"; sourceTree = "<group>"; };
-		BA3BD0C41552520600D8E1F0 /* GymateTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; path = GymateTableViewCell.h; sourceTree = "<group>"; };
+		BA3BD0C41552520600D8E1F0 /* GymateTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GymateTableViewCell.h; sourceTree = "<group>"; };
 		BA3BD0C51552520600D8E1F0 /* GymateTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GymateTableViewCell.m; sourceTree = "<group>"; };
 		BA3BD0C71552523900D8E1F0 /* GymateTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GymateTableViewCell.xib; sourceTree = "<group>"; };
 		BA3BD0C91552555900D8E1F0 /* RepeatIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RepeatIcon.png; sourceTree = "<group>"; };
@@ -240,6 +242,7 @@
 				BA3BD0C41552520600D8E1F0 /* GymateTableViewCell.h */,
 				BA3BD0C51552520600D8E1F0 /* GymateTableViewCell.m */,
 				BA3BD0C71552523900D8E1F0 /* GymateTableViewCell.xib */,
+				3E76C5ED15529E3D00379C8F /* MainView.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -549,6 +552,7 @@
 				BA3BD0D21552555900D8E1F0 /* SetIcon@2x.png in Resources */,
 				BA3BD0D31552555900D8E1F0 /* WeightIcon.png in Resources */,
 				BA3BD0D41552555900D8E1F0 /* WeightIcon@2x.png in Resources */,
+				3E76C5EE15529E3D00379C8F /* MainView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
