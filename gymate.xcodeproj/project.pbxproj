@@ -31,6 +31,14 @@
 		BA19A21A155027B300D7FB4C /* UITextField+Gymate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA19A219155027B300D7FB4C /* UITextField+Gymate.m */; };
 		BA3BD0B51552385400D8E1F0 /* DateTag.png in Resources */ = {isa = PBXBuildFile; fileRef = BA3BD0B31552385400D8E1F0 /* DateTag.png */; };
 		BA3BD0B61552385400D8E1F0 /* DateTag@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA3BD0B41552385400D8E1F0 /* DateTag@2x.png */; };
+		BA3BD0C61552520600D8E1F0 /* GymateTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3BD0C51552520600D8E1F0 /* GymateTableViewCell.m */; };
+		BA3BD0C81552523900D8E1F0 /* GymateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA3BD0C71552523900D8E1F0 /* GymateTableViewCell.xib */; };
+		BA3BD0CF1552555900D8E1F0 /* RepeatIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BA3BD0C91552555900D8E1F0 /* RepeatIcon.png */; };
+		BA3BD0D01552555900D8E1F0 /* RepeatIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA3BD0CA1552555900D8E1F0 /* RepeatIcon@2x.png */; };
+		BA3BD0D11552555900D8E1F0 /* SetIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BA3BD0CB1552555900D8E1F0 /* SetIcon.png */; };
+		BA3BD0D21552555900D8E1F0 /* SetIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA3BD0CC1552555900D8E1F0 /* SetIcon@2x.png */; };
+		BA3BD0D31552555900D8E1F0 /* WeightIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BA3BD0CD1552555900D8E1F0 /* WeightIcon.png */; };
+		BA3BD0D41552555900D8E1F0 /* WeightIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA3BD0CE1552555900D8E1F0 /* WeightIcon@2x.png */; };
 		BA6A05AA1532B5840007E136 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A05A91532B5840007E136 /* Parse.framework */; };
 		BA6A05AF1532B5A30007E136 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA6A05AE1532B5A30007E136 /* LoginView.xib */; };
 		BA6A05B31532B5BF0007E136 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6A05B21532B5BF0007E136 /* LoginViewController.m */; };
@@ -53,8 +61,6 @@
 		BA6A6CD91538363C00ED9261 /* UserSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6A6CD81538363C00ED9261 /* UserSpec.m */; };
 		BA758D3C154C4B22006BED63 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA758D3B154C4B21006BED63 /* libPods.a */; };
 		BA758D3E154C4B27006BED63 /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA758D3D154C4B27006BED63 /* libPods-test.a */; };
-		BA758D41154C52A4006BED63 /* Pods-test.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BA758D3F154C52A3006BED63 /* Pods-test.xcconfig */; };
-		BA758D42154C52A4006BED63 /* Pods.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BA758D40154C52A4006BED63 /* Pods.xcconfig */; };
 		BA79261015515B940098F7B2 /* SVSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BA79260D15515B940098F7B2 /* SVSegmentedControl.m */; };
 		BA79261115515B940098F7B2 /* SVSegmentedThumb.m in Sources */ = {isa = PBXBuildFile; fileRef = BA79260F15515B940098F7B2 /* SVSegmentedThumb.m */; };
 		BA79262F155230CF0098F7B2 /* TodayWorkoutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA79262E155230CF0098F7B2 /* TodayWorkoutView.xib */; };
@@ -114,6 +120,15 @@
 		BA19A219155027B300D7FB4C /* UITextField+Gymate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Gymate.m"; sourceTree = "<group>"; };
 		BA3BD0B31552385400D8E1F0 /* DateTag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DateTag.png; sourceTree = "<group>"; };
 		BA3BD0B41552385400D8E1F0 /* DateTag@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DateTag@2x.png"; sourceTree = "<group>"; };
+		BA3BD0C41552520600D8E1F0 /* GymateTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; path = GymateTableViewCell.h; sourceTree = "<group>"; };
+		BA3BD0C51552520600D8E1F0 /* GymateTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GymateTableViewCell.m; sourceTree = "<group>"; };
+		BA3BD0C71552523900D8E1F0 /* GymateTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GymateTableViewCell.xib; sourceTree = "<group>"; };
+		BA3BD0C91552555900D8E1F0 /* RepeatIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RepeatIcon.png; sourceTree = "<group>"; };
+		BA3BD0CA1552555900D8E1F0 /* RepeatIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RepeatIcon@2x.png"; sourceTree = "<group>"; };
+		BA3BD0CB1552555900D8E1F0 /* SetIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SetIcon.png; sourceTree = "<group>"; };
+		BA3BD0CC1552555900D8E1F0 /* SetIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SetIcon@2x.png"; sourceTree = "<group>"; };
+		BA3BD0CD1552555900D8E1F0 /* WeightIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WeightIcon.png; sourceTree = "<group>"; };
+		BA3BD0CE1552555900D8E1F0 /* WeightIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WeightIcon@2x.png"; sourceTree = "<group>"; };
 		BA6A05A91532B5840007E136 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = gymate/lib/Parse.framework; sourceTree = "<group>"; };
 		BA6A05AE1532B5A30007E136 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		BA6A05B11532B5BF0007E136 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -222,6 +237,9 @@
 				BA19A218155027B300D7FB4C /* UITextField+Gymate.h */,
 				BA19A219155027B300D7FB4C /* UITextField+Gymate.m */,
 				BA79262E155230CF0098F7B2 /* TodayWorkoutView.xib */,
+				BA3BD0C41552520600D8E1F0 /* GymateTableViewCell.h */,
+				BA3BD0C51552520600D8E1F0 /* GymateTableViewCell.m */,
+				BA3BD0C71552523900D8E1F0 /* GymateTableViewCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -343,6 +361,12 @@
 		BABAA3D7154ECA6C00ABC508 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				BA3BD0C91552555900D8E1F0 /* RepeatIcon.png */,
+				BA3BD0CA1552555900D8E1F0 /* RepeatIcon@2x.png */,
+				BA3BD0CB1552555900D8E1F0 /* SetIcon.png */,
+				BA3BD0CC1552555900D8E1F0 /* SetIcon@2x.png */,
+				BA3BD0CD1552555900D8E1F0 /* WeightIcon.png */,
+				BA3BD0CE1552555900D8E1F0 /* WeightIcon@2x.png */,
 				BA3BD0B31552385400D8E1F0 /* DateTag.png */,
 				BA3BD0B41552385400D8E1F0 /* DateTag@2x.png */,
 				BA19A2131550244300D7FB4C /* LeftTextfieldBG.png */,
@@ -490,8 +514,6 @@
 				BA6A0B761532A3260010E596 /* InfoPlist.strings in Resources */,
 				BA6A05AF1532B5A30007E136 /* LoginView.xib in Resources */,
 				BA6A05B51532B61C0007E136 /* SignupView.xib in Resources */,
-				BA758D41154C52A4006BED63 /* Pods-test.xcconfig in Resources */,
-				BA758D42154C52A4006BED63 /* Pods.xcconfig in Resources */,
 				BABAA3DD154ECA6C00ABC508 /* LoginBG.png in Resources */,
 				BABAA3DE154ECA6C00ABC508 /* LoginBG@2x.png in Resources */,
 				BABAA3DF154ECA6C00ABC508 /* LoginButton@2x.png in Resources */,
@@ -520,6 +542,13 @@
 				BA79262F155230CF0098F7B2 /* TodayWorkoutView.xib in Resources */,
 				BA3BD0B51552385400D8E1F0 /* DateTag.png in Resources */,
 				BA3BD0B61552385400D8E1F0 /* DateTag@2x.png in Resources */,
+				BA3BD0C81552523900D8E1F0 /* GymateTableViewCell.xib in Resources */,
+				BA3BD0CF1552555900D8E1F0 /* RepeatIcon.png in Resources */,
+				BA3BD0D01552555900D8E1F0 /* RepeatIcon@2x.png in Resources */,
+				BA3BD0D11552555900D8E1F0 /* SetIcon.png in Resources */,
+				BA3BD0D21552555900D8E1F0 /* SetIcon@2x.png in Resources */,
+				BA3BD0D31552555900D8E1F0 /* WeightIcon.png in Resources */,
+				BA3BD0D41552555900D8E1F0 /* WeightIcon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -594,6 +623,7 @@
 				BA79261015515B940098F7B2 /* SVSegmentedControl.m in Sources */,
 				BA79261115515B940098F7B2 /* SVSegmentedThumb.m in Sources */,
 				BA792633155231000098F7B2 /* TodayWorkoutViewController.m in Sources */,
+				BA3BD0C61552520600D8E1F0 /* GymateTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,7 +1,8 @@
 #import "TodayWorkoutViewController.h"
+#import "GymateTableViewCell.h"
 
 @interface TodayWorkoutViewController ()
-
+- (void) createCustomViews;
 @end
 
 @implementation TodayWorkoutViewController
@@ -12,17 +13,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        UIColor *background = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"BG"]];
-        self.view.backgroundColor = background;
-        [background release];
-
-        [self.view addSubview:dateTag];
-        dateTag.center = CGPointMake(self.view.frame.size.width - dateTag.frame.size.width / 2, self.navBar.center.y);
         
-        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-        [dateFormatter setDateFormat:@"d MMM "];
-        dateTag.text = [dateFormatter stringFromDate:[NSDate date]];
-        [dateFormatter release];
     }
     return self;
 }
@@ -30,7 +21,30 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    tableViewCellLoader = [UINib nibWithNibName:@"GymateTableViewCell" bundle:[NSBundle mainBundle]];
+    [workouts registerNib:tableViewCellLoader forCellReuseIdentifier:@"GymateTableViewCell"];
+}
+
+- (void) createCustomViews
+{
+    [self.view addSubview:dateTag];
+    dateTag.center = CGPointMake(self.view.frame.size.width - dateTag.frame.size.width / 2, self.navBar.center.y);
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"d MMM "];
+    dateTag.text = [dateFormatter stringFromDate:[NSDate date]];
+    [dateFormatter release];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 2;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    GymateTableViewCell *cell = (GymateTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"GymateTableViewCell"];
+    return cell;
 }
 
 - (void)viewDidUnload

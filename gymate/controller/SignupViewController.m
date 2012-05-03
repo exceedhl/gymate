@@ -17,7 +17,7 @@
 
 - (void)moveViewUp:(CGFloat)deltaY;
 - (void)keyboardWillHide:(NSNotification *)notif;
-- (void)createGenderControl;
+- (void)createCustomViews;
 
 @end
 
@@ -25,19 +25,7 @@
 
 @synthesize firstName, lastName, gender, email, password, height, weight;
 
-- (id)initWithNibName:(NSString *)nibName bundle:(NSBundle *)nibBundle
-{
-    if (self = [super initWithNibName:nibName bundle:nibBundle]) {
-        UIColor *background = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"BG"]];
-        self.view.backgroundColor = background;
-        [background release];
-        
-        [self createGenderControl];
-    }
-    return self;
-}
-
-- (void)createGenderControl
+- (void)createCustomViews
 {
     gender = [[SVSegmentedControl alloc] initWithSectionTitles:$arr(@"Male", @"Female")];
     gender.crossFadeLabelsOnDrag = YES;
