@@ -14,4 +14,16 @@ NSString * const PREFS_PASSWORD = @"password";
     [userDefaults synchronize];
 }
 
++(BOOL) preferencesExist:(NSArray *)keys
+{
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    __block BOOL keysExist = YES;
+    [keys $each:^(id key) {
+        if ([userDefaults objectForKey:key] == nil) {
+            keysExist = NO;
+        }
+    }];
+    return keysExist;
+}
+
 @end

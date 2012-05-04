@@ -13,6 +13,8 @@
 		3E1601FD154C04AC001F231E /* NSString+Gymate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1601FC154C04AC001F231E /* NSString+Gymate.m */; };
 		3E1601FE154C04AC001F231E /* NSString+Gymate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1601FC154C04AC001F231E /* NSString+Gymate.m */; };
 		3E76C5EE15529E3D00379C8F /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E76C5ED15529E3D00379C8F /* MainView.xib */; };
+		3ECBE12C155360BF00B7BD50 /* UserPreferenceHelperSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECBE12B155360BF00B7BD50 /* UserPreferenceHelperSpec.m */; };
+		3ECBE12E1553644000B7BD50 /* UserPreferenceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE7F47F15533E5500F589FB /* UserPreferenceHelper.m */; };
 		3EE7F48015533E5500F589FB /* UserPreferenceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE7F47F15533E5500F589FB /* UserPreferenceHelper.m */; };
 		BA19A1F6155004F200D7FB4C /* TopTextfieldBG.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A1F0155004F200D7FB4C /* TopTextfieldBG.png */; };
 		BA19A1F7155004F200D7FB4C /* TopTextfieldBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A1F1155004F200D7FB4C /* TopTextfieldBG@2x.png */; };
@@ -103,6 +105,8 @@
 		3E1601FB154C04AC001F231E /* NSString+Gymate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Gymate.h"; sourceTree = "<group>"; };
 		3E1601FC154C04AC001F231E /* NSString+Gymate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Gymate.m"; sourceTree = "<group>"; };
 		3E76C5ED15529E3D00379C8F /* MainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
+		3ECBE12A155360BF00B7BD50 /* UserPreferenceHelperSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserPreferenceHelperSpec.h; sourceTree = "<group>"; };
+		3ECBE12B155360BF00B7BD50 /* UserPreferenceHelperSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserPreferenceHelperSpec.m; sourceTree = "<group>"; };
 		3EE7F47E15533E5500F589FB /* UserPreferenceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserPreferenceHelper.h; sourceTree = "<group>"; };
 		3EE7F47F15533E5500F589FB /* UserPreferenceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserPreferenceHelper.m; sourceTree = "<group>"; };
 		BA19A1F0155004F200D7FB4C /* TopTextfieldBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TopTextfieldBG.png; sourceTree = "<group>"; };
@@ -442,6 +446,8 @@
 				BA6A6CD81538363C00ED9261 /* UserSpec.m */,
 				3E1601F8154C022F001F231E /* NSStringGymateSpec.h */,
 				3E1601F9154C022F001F231E /* NSStringGymateSpec.m */,
+				3ECBE12A155360BF00B7BD50 /* UserPreferenceHelperSpec.h */,
+				3ECBE12B155360BF00B7BD50 /* UserPreferenceHelperSpec.m */,
 			);
 			path = specs;
 			sourceTree = "<group>";
@@ -655,6 +661,8 @@
 				BAE55053153851BE007421DE /* UserFixture.m in Sources */,
 				3E1601FA154C022F001F231E /* NSStringGymateSpec.m in Sources */,
 				3E1601FE154C04AC001F231E /* NSString+Gymate.m in Sources */,
+				3ECBE12C155360BF00B7BD50 /* UserPreferenceHelperSpec.m in Sources */,
+				3ECBE12E1553644000B7BD50 /* UserPreferenceHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
