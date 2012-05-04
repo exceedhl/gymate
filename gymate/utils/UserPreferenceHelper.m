@@ -2,8 +2,7 @@
 
 @implementation UserPreferenceHelper
 
-NSString * const PREFS_EMAIL = @"username";
-NSString * const PREFS_PASSWORD = @"password";
+NSString * const PREFS_SESSION_TOKEN = @"sessionToken";
 
 +(void) setPreferences:(NSDictionary *)prefs
 {

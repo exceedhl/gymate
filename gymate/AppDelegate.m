@@ -24,7 +24,7 @@
     self.window.backgroundColor = [UIColor colorWithRed:GYMATE_BG_COLOR_RED/255.0 green:GYMATE_BG_COLOR_GREEN/255.0 blue:GYMATE_BG_COLOR_BLUE/255.0 alpha:1];
     [self.window makeKeyAndVisible];
     [self.window addSubview:tabBarController.view];
-    if (![UserPreferenceHelper preferencesExist:$arr(PREFS_EMAIL, PREFS_PASSWORD)]) {        
+    if (![UserPreferenceHelper preferencesExist:$arr(PREFS_SESSION_TOKEN)]) {        
         LoginViewController *loginViewController = [[[LoginViewController alloc] initWithNibName:@"loginView" bundle:nil] autorelease];
         UINavigationController *navigationController = [[[UINavigationController alloc]initWithRootViewController:loginViewController] autorelease];
         [navigationController setNavigationBarHidden:YES];

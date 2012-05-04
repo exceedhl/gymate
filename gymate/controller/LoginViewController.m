@@ -36,7 +36,7 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             [MBProgressHUD hideHUDForView:self.view animated:NO];
             if (user) {
-                [UserPreferenceHelper setPreferences:$dict(user.email, PREFS_EMAIL, user.password, PREFS_PASSWORD)];
+                [UserPreferenceHelper setPreferences:$dict(user.sessionToken, PREFS_SESSION_TOKEN)];
                 [self dismissViewControllerAnimated:YES completion:nil];
             } else {
                 NSString *title = @"Login Failed";

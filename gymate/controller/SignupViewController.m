@@ -77,7 +77,8 @@
         user.weight = weight.text;
         @try {
             [user signUp];
-            [UserPreferenceHelper setPreferences:$dict(user.email, PREFS_EMAIL, user.password, PREFS_PASSWORD)];
+            [User logInWithEmail:email.text password:password.text];
+            [UserPreferenceHelper setPreferences:$dict(user.sessionToken, PREFS_SESSION_TOKEN)];
             [self dismissViewControllerAnimated:YES completion:nil];
         }
         @catch (NSException *exception) {
