@@ -13,6 +13,7 @@
 		3E1601FD154C04AC001F231E /* NSString+Gymate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1601FC154C04AC001F231E /* NSString+Gymate.m */; };
 		3E1601FE154C04AC001F231E /* NSString+Gymate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1601FC154C04AC001F231E /* NSString+Gymate.m */; };
 		3E76C5EE15529E3D00379C8F /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E76C5ED15529E3D00379C8F /* MainView.xib */; };
+		3EE7F48015533E5500F589FB /* UserPreferenceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE7F47F15533E5500F589FB /* UserPreferenceHelper.m */; };
 		BA19A1F6155004F200D7FB4C /* TopTextfieldBG.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A1F0155004F200D7FB4C /* TopTextfieldBG.png */; };
 		BA19A1F7155004F200D7FB4C /* TopTextfieldBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A1F1155004F200D7FB4C /* TopTextfieldBG@2x.png */; };
 		BA19A1F8155004F200D7FB4C /* DownTextfieldBG.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A1F2155004F200D7FB4C /* DownTextfieldBG.png */; };
@@ -102,6 +103,8 @@
 		3E1601FB154C04AC001F231E /* NSString+Gymate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Gymate.h"; sourceTree = "<group>"; };
 		3E1601FC154C04AC001F231E /* NSString+Gymate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Gymate.m"; sourceTree = "<group>"; };
 		3E76C5ED15529E3D00379C8F /* MainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
+		3EE7F47E15533E5500F589FB /* UserPreferenceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserPreferenceHelper.h; sourceTree = "<group>"; };
+		3EE7F47F15533E5500F589FB /* UserPreferenceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserPreferenceHelper.m; sourceTree = "<group>"; };
 		BA19A1F0155004F200D7FB4C /* TopTextfieldBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TopTextfieldBG.png; sourceTree = "<group>"; };
 		BA19A1F1155004F200D7FB4C /* TopTextfieldBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TopTextfieldBG@2x.png"; sourceTree = "<group>"; };
 		BA19A1F2155004F200D7FB4C /* DownTextfieldBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DownTextfieldBG.png; sourceTree = "<group>"; };
@@ -231,6 +234,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3EE7F47C15533E1200F589FB /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				3EE7F47E15533E5500F589FB /* UserPreferenceHelper.h */,
+				3EE7F47F15533E5500F589FB /* UserPreferenceHelper.m */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
 		BA6A05AD1532B5A30007E136 /* view */ = {
 			isa = PBXGroup;
 			children = (
@@ -317,6 +329,7 @@
 		BA6A0B711532A3260010E596 /* gymate */ = {
 			isa = PBXGroup;
 			children = (
+				3EE7F47C15533E1200F589FB /* utils */,
 				BA79260A15515B940098F7B2 /* vendor */,
 				BAE43363153C3D4D0076B12E /* resources */,
 				BA6A05B91532C8380007E136 /* model */,
@@ -628,6 +641,7 @@
 				BA79261115515B940098F7B2 /* SVSegmentedThumb.m in Sources */,
 				BA792633155231000098F7B2 /* TodayWorkoutViewController.m in Sources */,
 				BA3BD0C61552520600D8E1F0 /* GymateTableViewCell.m in Sources */,
+				3EE7F48015533E5500F589FB /* UserPreferenceHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
