@@ -1,5 +1,6 @@
 #import "AppDelegate.h"
 #import "LoginViewController.h"
+#import "UserPreferenceHelper.h"
 
 #define GYMATE_BG_COLOR_RED 57
 #define GYMATE_BG_COLOR_GREEN 59
@@ -13,7 +14,6 @@
 {
     [window release];
     [tabBarController release];
-    [navigationController release];
     [super dealloc];
 }
 
@@ -24,12 +24,14 @@
     self.window.backgroundColor = [UIColor colorWithRed:GYMATE_BG_COLOR_RED/255.0 green:GYMATE_BG_COLOR_GREEN/255.0 blue:GYMATE_BG_COLOR_BLUE/255.0 alpha:1];
     [self.window makeKeyAndVisible];
     [self.window addSubview:tabBarController.view];
-    LoginViewController *loginViewController = [[[LoginViewController alloc] initWithNibName:@"loginView" bundle:nil] autorelease];
-    navigationController = [[UINavigationController alloc] initWithRootViewController:loginViewController];
-    [navigationController setNavigationBarHidden:YES];
-    [tabBarController presentViewController:navigationController animated:YES completion:^{        
-        [self.window addSubview:navigationController.view];        
-    }];
+    if (![UserPreferenceHelper preferencesExist:$arr(PREFS_EMAIL, PREFS_PASSWORD)]) {        
+        LoginViewController *loginViewController = [[[LoginViewController alloc] initWithNibName:@"loginView" bundle:nil] autorelease];
+        UINavigationController *navigationController = [[[UINavigationController alloc]initWithRootViewController:loginViewController] autorelease];
+        [navigationController setNavigationBarHidden:YES];
+        [self.tabBarController presentViewController:navigationController animated:YES completion:^{        
+            [self.window addSubview:navigationController.view];        
+        }];
+    }
     return YES;
 }
 

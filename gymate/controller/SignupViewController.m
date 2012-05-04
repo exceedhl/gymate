@@ -78,6 +78,7 @@
         @try {
             [user signUp];
             [UserPreferenceHelper setPreferences:$dict(user.email, PREFS_EMAIL, user.password, PREFS_PASSWORD)];
+            [self dismissViewControllerAnimated:YES completion:nil];
         }
         @catch (NSException *exception) {
             dispatch_async(dispatch_get_main_queue(), ^{
