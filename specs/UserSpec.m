@@ -58,7 +58,7 @@ describe(@"User", ^{
 
     context(@"when login", ^{
         it(@"should succeed", ^{
-            User *user = [users user];
+            User *user = [users adam];
             User *loggedInUser = [User logInWithEmail:user.email password:user.password];
             [[loggedInUser.email should] equal:user.email];
             [[loggedInUser.firstName should] equal:user.firstName];

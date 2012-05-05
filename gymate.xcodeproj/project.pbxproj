@@ -75,6 +75,11 @@
 		BABAA3E6154ECAC200ABC508 /* LoginButton.png in Resources */ = {isa = PBXBuildFile; fileRef = BABAA3E4154ECAC200ABC508 /* LoginButton.png */; };
 		BABAA3E7154ECAC200ABC508 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = BABAA3E5154ECAC200ABC508 /* Logo.png */; };
 		BABAA3E9154ED1EF00ABC508 /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BABAA3E8154ED1EF00ABC508 /* AppIcon.png */; };
+		BAD1890D15526D7800500716 /* PlanSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD1890C15526D7800500716 /* PlanSpec.m */; };
+		BAD18911155270DE00500716 /* Plan.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD18910155270DE00500716 /* Plan.m */; };
+		BAD18914155270FA00500716 /* Workout.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD18913155270FA00500716 /* Workout.m */; };
+		BAD18915155272C700500716 /* Plan.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD18910155270DE00500716 /* Plan.m */; };
+		BAD18916155272C700500716 /* Workout.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD18913155270FA00500716 /* Workout.m */; };
 		BAE5503315383D32007421DE /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A05A91532B5840007E136 /* Parse.framework */; };
 		BAE5503415383D5E007421DE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B9A1532B2700010E596 /* QuartzCore.framework */; };
 		BAE5503515383D61007421DE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B981532B2340010E596 /* Security.framework */; };
@@ -179,6 +184,12 @@
 		BABAA3E4154ECAC200ABC508 /* LoginButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginButton.png; sourceTree = "<group>"; };
 		BABAA3E5154ECAC200ABC508 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
 		BABAA3E8154ED1EF00ABC508 /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon.png; sourceTree = "<group>"; };
+		BAD1890B15526D7800500716 /* PlanSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanSpec.h; sourceTree = "<group>"; };
+		BAD1890C15526D7800500716 /* PlanSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanSpec.m; sourceTree = "<group>"; };
+		BAD1890F155270DE00500716 /* Plan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Plan.h; sourceTree = "<group>"; };
+		BAD18910155270DE00500716 /* Plan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Plan.m; sourceTree = "<group>"; };
+		BAD18912155270F900500716 /* Workout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Workout.h; sourceTree = "<group>"; };
+		BAD18913155270FA00500716 /* Workout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Workout.m; sourceTree = "<group>"; };
 		BAE5504E153851B0007421DE /* Fixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fixture.h; sourceTree = "<group>"; };
 		BAE5504F153851B0007421DE /* Fixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fixture.m; sourceTree = "<group>"; };
 		BAE55051153851BE007421DE /* UserFixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserFixture.h; sourceTree = "<group>"; };
@@ -269,6 +280,10 @@
 			children = (
 				BA6A05BA1532C84D0007E136 /* User.h */,
 				BA6A05BB1532C84D0007E136 /* User.m */,
+				BAD1890F155270DE00500716 /* Plan.h */,
+				BAD18910155270DE00500716 /* Plan.m */,
+				BAD18912155270F900500716 /* Workout.h */,
+				BAD18913155270FA00500716 /* Workout.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -429,6 +444,8 @@
 				BA6A6CD81538363C00ED9261 /* UserSpec.m */,
 				3E1601F8154C022F001F231E /* NSStringGymateSpec.h */,
 				3E1601F9154C022F001F231E /* NSStringGymateSpec.m */,
+				BAD1890B15526D7800500716 /* PlanSpec.h */,
+				BAD1890C15526D7800500716 /* PlanSpec.m */,
 			);
 			path = specs;
 			sourceTree = "<group>";
@@ -628,6 +645,8 @@
 				BA79261115515B940098F7B2 /* SVSegmentedThumb.m in Sources */,
 				BA792633155231000098F7B2 /* TodayWorkoutViewController.m in Sources */,
 				BA3BD0C61552520600D8E1F0 /* GymateTableViewCell.m in Sources */,
+				BAD18911155270DE00500716 /* Plan.m in Sources */,
+				BAD18914155270FA00500716 /* Workout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -641,6 +660,9 @@
 				BAE55053153851BE007421DE /* UserFixture.m in Sources */,
 				3E1601FA154C022F001F231E /* NSStringGymateSpec.m in Sources */,
 				3E1601FE154C04AC001F231E /* NSString+Gymate.m in Sources */,
+				BAD1890D15526D7800500716 /* PlanSpec.m in Sources */,
+				BAD18915155272C700500716 /* Plan.m in Sources */,
+				BAD18916155272C700500716 /* Workout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
