@@ -67,8 +67,8 @@
 				<bool key="IBUIDefinesPresentationContext">YES</bool>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 				<bool key="IBUIHorizontal">NO</bool>
-				<object class="IBUINavigationController" key="IBUISelectedViewController" id="958845723">
-					<object class="IBUITabBarItem" key="IBUITabBarItem" id="252780078">
+				<object class="IBUINavigationController" key="IBUISelectedViewController" id="938310841">
+					<object class="IBUITabBarItem" key="IBUITabBarItem" id="783743299">
 						<string key="IBUITitle">Me</string>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
@@ -81,7 +81,7 @@
 					<bool key="IBUIDefinesPresentationContext">YES</bool>
 					<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					<bool key="IBUIHorizontal">NO</bool>
-					<object class="IBUINavigationBar" key="IBUINavigationBar" id="725816729">
+					<object class="IBUINavigationBar" key="IBUINavigationBar" id="838371254">
 						<nil key="NSNextResponder"/>
 						<int key="NSvFlags">256</int>
 						<string key="NSFrameSize">{0, 0}</string>
@@ -92,12 +92,12 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
 					<array class="NSMutableArray" key="IBUIViewControllers">
-						<object class="IBUIViewController" id="234432086">
-							<object class="IBUINavigationItem" key="IBUINavigationItem" id="779633887">
+						<object class="IBUIViewController" id="357055561">
+							<object class="IBUINavigationItem" key="IBUINavigationItem" id="264512514">
 								<string key="IBUITitle">Me</string>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 							</object>
-							<reference key="IBUIParentViewController" ref="958845723"/>
+							<reference key="IBUIParentViewController" ref="938310841"/>
 							<string key="IBUINibName">MeView</string>
 							<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
 								<int key="IBUIInterfaceOrientation">1</int>
@@ -109,7 +109,7 @@
 					</array>
 				</object>
 				<array class="NSMutableArray" key="IBUIViewControllers">
-					<reference ref="958845723"/>
+					<reference ref="938310841"/>
 					<object class="IBUIViewController" id="531213097">
 						<object class="IBUITabBarItem" key="IBUITabBarItem" id="19637349">
 							<string key="IBUITitle">Do</string>
@@ -205,7 +205,7 @@
 							<reference ref="688516284"/>
 							<reference ref="531213097"/>
 							<reference ref="681053594"/>
-							<reference ref="958845723"/>
+							<reference ref="938310841"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -252,36 +252,36 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">17</int>
-						<reference key="object" ref="958845723"/>
+						<reference key="object" ref="938310841"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="725816729"/>
-							<reference ref="234432086"/>
-							<reference ref="252780078"/>
+							<reference ref="838371254"/>
+							<reference ref="357055561"/>
+							<reference ref="783743299"/>
 						</array>
 						<reference key="parent" ref="792480708"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">18</int>
-						<reference key="object" ref="725816729"/>
-						<reference key="parent" ref="958845723"/>
+						<reference key="object" ref="838371254"/>
+						<reference key="parent" ref="938310841"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">19</int>
-						<reference key="object" ref="234432086"/>
+						<reference key="object" ref="357055561"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="779633887"/>
+							<reference ref="264512514"/>
 						</array>
-						<reference key="parent" ref="958845723"/>
+						<reference key="parent" ref="938310841"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">20</int>
-						<reference key="object" ref="779633887"/>
-						<reference key="parent" ref="234432086"/>
+						<reference key="object" ref="264512514"/>
+						<reference key="parent" ref="357055561"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">21</int>
-						<reference key="object" ref="252780078"/>
-						<reference key="parent" ref="958845723"/>
+						<reference key="object" ref="783743299"/>
+						<reference key="parent" ref="938310841"/>
 					</object>
 				</array>
 			</object>
