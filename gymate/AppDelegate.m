@@ -31,10 +31,9 @@
         [navigationController setNavigationBarHidden:YES];
         double delayInSeconds = 0.1;
         dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
-        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){ 
-            [self.tabBarController presentViewController:navigationController animated:YES completion:^{        
-                [self.window addSubview:navigationController.view];        
-            }];
+        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+            [self.tabBarController setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
+            [self.tabBarController presentModalViewController:navigationController animated:NO];
         });
     }
     return YES;

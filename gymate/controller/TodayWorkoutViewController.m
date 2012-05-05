@@ -58,4 +58,11 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (void)dealloc {
+    [workouts release];
+    [dateTag release];
+    [navBar release];
+    [super dealloc];
+}
+
 @end
