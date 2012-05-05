@@ -76,6 +76,7 @@
         user.weight = weight.text;
         @try {
             [user signUp];
+            [self dismissViewControllerAnimated:YES completion:nil];
         }
         @catch (NSException *exception) {
             dispatch_async(dispatch_get_main_queue(), ^{

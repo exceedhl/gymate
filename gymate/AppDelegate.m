@@ -1,5 +1,6 @@
 #import "AppDelegate.h"
 #import "LoginViewController.h"
+#import "User.h"
 
 #define GYMATE_BG_COLOR_RED 57
 #define GYMATE_BG_COLOR_GREEN 59
@@ -13,7 +14,6 @@
 {
     [window release];
     [tabBarController release];
-    [navigationController release];
     [super dealloc];
 }
 
@@ -23,13 +23,19 @@
                   clientKey:@"HrEukR6VwxpXOkiwt2XQRiDR92knGg9MguD2MESS"];
     self.window.backgroundColor = [UIColor colorWithRed:GYMATE_BG_COLOR_RED/255.0 green:GYMATE_BG_COLOR_GREEN/255.0 blue:GYMATE_BG_COLOR_BLUE/255.0 alpha:1];
     [self.window makeKeyAndVisible];
-    [self.window addSubview:tabBarController.view];
-    LoginViewController *loginViewController = [[[LoginViewController alloc] initWithNibName:@"loginView" bundle:nil] autorelease];
-    navigationController = [[UINavigationController alloc] initWithRootViewController:loginViewController];
-    [navigationController setNavigationBarHidden:YES];
-    [tabBarController presentViewController:navigationController animated:YES completion:^{        
-        [self.window addSubview:navigationController.view];        
-    }];
+    self.window.rootViewController = self.tabBarController;
+    if (![User currentUser]) {        
+        LoginViewController *loginViewController = [[[LoginViewController alloc] initWithNibName:@"loginView" bundle:nil] autorelease];
+        UINavigationController *navigationController = [[[UINavigationController alloc]initWithRootViewController:loginViewController] autorelease];
+        [navigationController setNavigationBarHidden:YES];
+        double delayInSeconds = 0.1;
+        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){            
+            [self.tabBarController presentViewController:navigationController animated:YES completion:^{        
+                [self.window addSubview:navigationController.view];        
+            }];
+        });
+    }
     return YES;
 }
 

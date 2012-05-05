@@ -4,7 +4,6 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate> {
     UIWindow *window;
     UITabBarController *tabBarController;
-    UINavigationController *navigationController;
 }
 
 @property (retain, nonatomic) IBOutlet UIWindow *window;
