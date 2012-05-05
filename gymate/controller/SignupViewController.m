@@ -75,7 +75,8 @@
         user.height = height.text;
         user.weight = weight.text;
         @try {
-            [user signUp];
+            [user signUp];            
+            [self.presentingViewController.view setHidden:NO];
             [self dismissViewControllerAnimated:YES completion:nil];
         }
         @catch (NSException *exception) {
