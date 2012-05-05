@@ -1,8 +1,8 @@
-#import "UserPreferenceHelper.h"
+#import "Preferences.h"
 
-@implementation UserPreferenceHelper
+@implementation Preferences
 
-NSString * const PREFS_SESSION_TOKEN = @"sessionToken";
+NSString * const PREFS_USER = @"USER";
 
 +(void) setPreferences:(NSDictionary *)prefs
 {

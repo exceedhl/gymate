@@ -1,8 +1,8 @@
 #import <Foundation/Foundation.h>
 
-@interface UserPreferenceHelper : NSObject
+@interface Preferences : NSObject
 
-extern NSString * const PREFS_SESSION_TOKEN;
+extern NSString * const PREFS_USER;
 
 +(void) setPreferences:(NSDictionary *)prefs;
 +(BOOL) preferencesExist:(NSArray *)keys;

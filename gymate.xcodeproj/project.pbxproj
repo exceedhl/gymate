@@ -15,9 +15,9 @@
 		3E76C5EE15529E3D00379C8F /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E76C5ED15529E3D00379C8F /* MainView.xib */; };
 		3EB2D30C15538FF200ADAB1C /* MeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EB2D30B15538FF200ADAB1C /* MeView.xib */; };
 		3EB2D3101553903900ADAB1C /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB2D30F1553903900ADAB1C /* MeViewController.m */; };
-		3ECBE12C155360BF00B7BD50 /* UserPreferenceHelperSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECBE12B155360BF00B7BD50 /* UserPreferenceHelperSpec.m */; };
-		3ECBE12E1553644000B7BD50 /* UserPreferenceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE7F47F15533E5500F589FB /* UserPreferenceHelper.m */; };
-		3EE7F48015533E5500F589FB /* UserPreferenceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE7F47F15533E5500F589FB /* UserPreferenceHelper.m */; };
+		3ECBE12C155360BF00B7BD50 /* PreferencesSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECBE12B155360BF00B7BD50 /* PreferencesSpec.m */; };
+		3ECBE12E1553644000B7BD50 /* Preferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE7F47F15533E5500F589FB /* Preferences.m */; };
+		3EE7F48015533E5500F589FB /* Preferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE7F47F15533E5500F589FB /* Preferences.m */; };
 		BA19A1F6155004F200D7FB4C /* TopTextfieldBG.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A1F0155004F200D7FB4C /* TopTextfieldBG.png */; };
 		BA19A1F7155004F200D7FB4C /* TopTextfieldBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A1F1155004F200D7FB4C /* TopTextfieldBG@2x.png */; };
 		BA19A1F8155004F200D7FB4C /* DownTextfieldBG.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A1F2155004F200D7FB4C /* DownTextfieldBG.png */; };
@@ -110,10 +110,10 @@
 		3EB2D30B15538FF200ADAB1C /* MeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeView.xib; sourceTree = "<group>"; };
 		3EB2D30E1553903900ADAB1C /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
 		3EB2D30F1553903900ADAB1C /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
-		3ECBE12A155360BF00B7BD50 /* UserPreferenceHelperSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserPreferenceHelperSpec.h; sourceTree = "<group>"; };
-		3ECBE12B155360BF00B7BD50 /* UserPreferenceHelperSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserPreferenceHelperSpec.m; sourceTree = "<group>"; };
-		3EE7F47E15533E5500F589FB /* UserPreferenceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserPreferenceHelper.h; sourceTree = "<group>"; };
-		3EE7F47F15533E5500F589FB /* UserPreferenceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserPreferenceHelper.m; sourceTree = "<group>"; };
+		3ECBE12A155360BF00B7BD50 /* PreferencesSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesSpec.h; sourceTree = "<group>"; };
+		3ECBE12B155360BF00B7BD50 /* PreferencesSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesSpec.m; sourceTree = "<group>"; };
+		3EE7F47E15533E5500F589FB /* Preferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Preferences.h; sourceTree = "<group>"; };
+		3EE7F47F15533E5500F589FB /* Preferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Preferences.m; sourceTree = "<group>"; };
 		BA19A1F0155004F200D7FB4C /* TopTextfieldBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TopTextfieldBG.png; sourceTree = "<group>"; };
 		BA19A1F1155004F200D7FB4C /* TopTextfieldBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TopTextfieldBG@2x.png"; sourceTree = "<group>"; };
 		BA19A1F2155004F200D7FB4C /* DownTextfieldBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DownTextfieldBG.png; sourceTree = "<group>"; };
@@ -246,8 +246,8 @@
 		3EE7F47C15533E1200F589FB /* utils */ = {
 			isa = PBXGroup;
 			children = (
-				3EE7F47E15533E5500F589FB /* UserPreferenceHelper.h */,
-				3EE7F47F15533E5500F589FB /* UserPreferenceHelper.m */,
+				3EE7F47E15533E5500F589FB /* Preferences.h */,
+				3EE7F47F15533E5500F589FB /* Preferences.m */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -454,8 +454,8 @@
 				BA6A6CD81538363C00ED9261 /* UserSpec.m */,
 				3E1601F8154C022F001F231E /* NSStringGymateSpec.h */,
 				3E1601F9154C022F001F231E /* NSStringGymateSpec.m */,
-				3ECBE12A155360BF00B7BD50 /* UserPreferenceHelperSpec.h */,
-				3ECBE12B155360BF00B7BD50 /* UserPreferenceHelperSpec.m */,
+				3ECBE12A155360BF00B7BD50 /* PreferencesSpec.h */,
+				3ECBE12B155360BF00B7BD50 /* PreferencesSpec.m */,
 			);
 			path = specs;
 			sourceTree = "<group>";
@@ -656,7 +656,7 @@
 				BA79261115515B940098F7B2 /* SVSegmentedThumb.m in Sources */,
 				BA792633155231000098F7B2 /* TodayWorkoutViewController.m in Sources */,
 				BA3BD0C61552520600D8E1F0 /* GymateTableViewCell.m in Sources */,
-				3EE7F48015533E5500F589FB /* UserPreferenceHelper.m in Sources */,
+				3EE7F48015533E5500F589FB /* Preferences.m in Sources */,
 				3EB2D3101553903900ADAB1C /* MeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -671,8 +671,8 @@
 				BAE55053153851BE007421DE /* UserFixture.m in Sources */,
 				3E1601FA154C022F001F231E /* NSStringGymateSpec.m in Sources */,
 				3E1601FE154C04AC001F231E /* NSString+Gymate.m in Sources */,
-				3ECBE12C155360BF00B7BD50 /* UserPreferenceHelperSpec.m in Sources */,
-				3ECBE12E1553644000B7BD50 /* UserPreferenceHelper.m in Sources */,
+				3ECBE12C155360BF00B7BD50 /* PreferencesSpec.m in Sources */,
+				3ECBE12E1553644000B7BD50 /* Preferences.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

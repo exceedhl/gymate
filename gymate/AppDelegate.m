@@ -1,6 +1,6 @@
 #import "AppDelegate.h"
 #import "LoginViewController.h"
-#import "UserPreferenceHelper.h"
+#import "User.h"
 
 #define GYMATE_BG_COLOR_RED 57
 #define GYMATE_BG_COLOR_GREEN 59
@@ -24,7 +24,7 @@
     self.window.backgroundColor = [UIColor colorWithRed:GYMATE_BG_COLOR_RED/255.0 green:GYMATE_BG_COLOR_GREEN/255.0 blue:GYMATE_BG_COLOR_BLUE/255.0 alpha:1];
     [self.window makeKeyAndVisible];
     self.window.rootViewController = self.tabBarController;
-    if (![UserPreferenceHelper preferencesExist:$arr(PREFS_SESSION_TOKEN)]) {        
+    if (![User currentUser]) {        
         LoginViewController *loginViewController = [[[LoginViewController alloc] initWithNibName:@"loginView" bundle:nil] autorelease];
         UINavigationController *navigationController = [[[UINavigationController alloc]initWithRootViewController:loginViewController] autorelease];
         [navigationController setNavigationBarHidden:YES];

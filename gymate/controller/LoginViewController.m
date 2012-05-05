@@ -4,7 +4,6 @@
 #import "MBProgressHUD.h"
 #import "UIViewController+Gymate.h"
 #import "TodayWorkoutViewController.h"
-#import "UserPreferenceHelper.h"
 
 @implementation LoginViewController
 
@@ -36,7 +35,6 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             [MBProgressHUD hideHUDForView:self.view animated:NO];
             if (user) {
-                [UserPreferenceHelper setPreferences:$dict(user.sessionToken, PREFS_SESSION_TOKEN)];
                 [self dismissViewControllerAnimated:YES completion:nil];
             } else {
                 NSString *title = @"Login Failed";

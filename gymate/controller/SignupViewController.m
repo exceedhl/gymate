@@ -4,7 +4,6 @@
 #import "UIViewController+Gymate.h"
 #import "UITextField+Gymate.h"
 #import "SVSegmentedControl.h"
-#import "UserPreferenceHelper.h"
 
 #define PORTRAIT_KEYBOARD_HEIGHT 216
 #define MIN_GAP_BETWEEN_KEYBOARD_AND_TEXT_FIELD 5
@@ -77,8 +76,6 @@
         user.weight = weight.text;
         @try {
             [user signUp];
-            [User logInWithEmail:email.text password:password.text];
-            [UserPreferenceHelper setPreferences:$dict(user.sessionToken, PREFS_SESSION_TOKEN)];
             [self dismissViewControllerAnimated:YES completion:nil];
         }
         @catch (NSException *exception) {
