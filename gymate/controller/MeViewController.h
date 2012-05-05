@@ -1,6 +1,7 @@
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface MeViewController : UIViewController
+@interface MeViewController : BaseViewController
 
 @property (nonatomic, retain) IBOutlet UILabel *name;
 @property (nonatomic, retain) IBOutlet UILabel *weight;

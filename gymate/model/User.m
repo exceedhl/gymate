@@ -19,6 +19,12 @@
     return user;
 }
 
++ (User *)currentUser {
+    PFUser *user = [super currentUser];
+    object_setClass(user, [User class]);
+    return user;
+}
+
 - (NSString *)firstName
 {
     return [self objectForKey:@"firstName"];

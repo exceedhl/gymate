@@ -9,17 +9,6 @@
 
 @synthesize email, password;
 
-- (id)initWithNibName:(NSString *)nibName bundle:(NSBundle *)nibBundle
-{
-    if (self = [super initWithNibName:nibName bundle:nibBundle]) {
-        UIColor *background = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"BG"]];
-        self.view.backgroundColor = background;
-        [background release];
-
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [self setLeftPadding:8 forTextFields:$arr(email, password)];

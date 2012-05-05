@@ -6,6 +6,8 @@
 + (id)user;
 + (id)logInWithEmail:(NSString *)username password:(NSString *)password;
 
++ (User *)currentUser;
+
 - (void)signUp;
 
 - (NSString *)firstName;

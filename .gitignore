@@ -1,4 +1,4 @@
-ude the build directory
+# Exclude the build directory
 build/*
 
 # Exclude temp nibs and swap files
@@ -16,3 +16,5 @@ build/*
 *.perspectivev3
 *.pbxuser
 xcuserdata
+
+.idea

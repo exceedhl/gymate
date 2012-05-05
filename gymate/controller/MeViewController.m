@@ -1,4 +1,5 @@
 #import "MeViewController.h"
+#import "User.h"
 
 @interface MeViewController ()
 
@@ -8,30 +9,21 @@
 
 @synthesize name, weight, height;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:YES];
+    User *user = [User currentUser];
+    if (user) {
+        name.text = $str(@"%@ %@", user.firstName, user.lastName);
+        weight.text = $str(@"%@kg", user.weight);
+        height.text = $str(@"%@cm", user.height);
     }
-    return self;
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view.
-}
-
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+- (void)dealloc {
+    [name release];
+    [weight release];
+    [height release];
+    [super dealloc];
 }
 
 @end
