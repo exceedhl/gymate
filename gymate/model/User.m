@@ -116,4 +116,9 @@
     }
 }
 
+- (Plan *)plan
+{
+    return nil;
+}
+
 @end

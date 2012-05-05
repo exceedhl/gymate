@@ -4,7 +4,7 @@
 
 @interface UserFixture : Fixture
 
-- (User *)user;
+- (User *)adam;
 + (id)fixture;
 
 @end

@@ -1,5 +1,6 @@
 #import <Foundation/Foundation.h>
 #import <Parse/Parse.h>
+#import "Plan.h"
 
 @interface User : PFUser
 
@@ -22,5 +23,7 @@
 - (void)setWeight:(NSString *)wight;
 - (NSString *)passwd;
 - (void)setPasswd:(NSString *)aPassword;
+
+- (Plan *)plan;
 
 @end

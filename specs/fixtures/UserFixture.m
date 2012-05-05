@@ -3,7 +3,7 @@
 
 @implementation UserFixture
 
-- (User *)user
+- (User *)adam
 {
     User *u = [User user];
     u.email = @"adam@smith.com";

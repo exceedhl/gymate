@@ -13,6 +13,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+//        Plan *plan = Plan.findByUser();
         
     }
     return self;
