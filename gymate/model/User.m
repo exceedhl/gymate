@@ -20,7 +20,7 @@
 }
 
 + (User *)currentUser {
-    PFUser *user = [super currentUser];
+    User *user = (User *)[super currentUser];
     object_setClass(user, [User class]);
     return user;
 }

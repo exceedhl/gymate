@@ -1,23 +1,27 @@
 #import "Fixture.h"
+#import "Workout.h"
+#import "User.h"
 
 @implementation Fixture
+@synthesize adam, planOfAdam, workoutShoulderPress, workoutPushup, workoutTreadmill;
 
 - (id)init {
-    if (self = [super init]) {
+    self = [super init];
+    if (self) {
         [Parse setApplicationId:@"vHejG6VviEbZmluhw9H8Z3BwdOL3IfDrxmRF70eb"
                       clientKey:@"NP1GdDSDXSN1oi7YyBTL7BDVpczqLbAEuJqww56N"];
     }
     return self;
 }
 
-- (Fixture *)fixture {
++ (Fixture *)fixture {
     return [[[Fixture alloc] init] autorelease];
 }
 
 - (void)createUsers {
     adam = [User user];
     adam.email = @"adam@smith.com";
-    adam.password = @"letmein";
+    adam.passwd = @"letmein";
     adam.firstName = @"Adam";
     adam.lastName = @"Smith";
     adam.height = @"180";
@@ -31,19 +35,24 @@
 }
 
 - (void)createWorkouts {
-
+    workoutPushup = [[Workout withName:@"Push up"] save];
+    workoutShoulderPress = [[Workout withName:@"Shoulder Press"] save];
+    workoutTreadmill = [[Workout withName:@"Treadmill"] save];
 }
 
-- (void)destroyWorkouts {
-
+- (void)destroyObjects:(NSString *)className {
+    PFQuery *q = [PFQuery queryWithClassName:className];
+    [[q findObjects] $each:^(id plan) {
+        [plan delete];
+    }];
 }
 
 - (void)createPlans {
-    planOfAdam = [[Plan planWithUser:adam] save];
-}
-
-- (void)destroyPlans {
-
+    planOfAdam = [Plan planWithUser:adam];
+    [planOfAdam.workouts addObject:workoutShoulderPress];
+    [planOfAdam.workouts addObject:workoutPushup];
+    [planOfAdam.workouts addObject:workoutTreadmill];
+    [planOfAdam save];
 }
 
 - (void)createData {
@@ -53,10 +62,18 @@
 }
 
 - (void)destroyAllData {
-    [self destroyPlans];
-    [self destroyWorkouts];
+    [self destroyObjects:[Plan tableName]];
+    [self destroyObjects:[Workout tableName]];
     [self destroyUsers];
 }
 
+- (void)dealloc {
+    [workoutShoulderPress release];
+    [workoutPushup release];
+    [workoutTreadmill release];
+    [adam release];
+    [planOfAdam release];
+    [super dealloc];
+}
 
 @end

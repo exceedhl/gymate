@@ -18,6 +18,9 @@
 		3ECBE12C155360BF00B7BD50 /* PreferencesSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECBE12B155360BF00B7BD50 /* PreferencesSpec.m */; };
 		3ECBE12E1553644000B7BD50 /* Preferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE7F47F15533E5500F589FB /* Preferences.m */; };
 		3EE7F48015533E5500F589FB /* Preferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE7F47F15533E5500F589FB /* Preferences.m */; };
+		3EE9CA091555420100C4CE43 /* Plan.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED49 /* Plan.m */; };
+		3EE9CA0B1555422E00C4CE43 /* PlanSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED4F /* PlanSpec.m */; };
+		3EE9CA1015554F9700C4CE43 /* Workout.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED4C /* Workout.m */; };
 		BA19A1F6155004F200D7FB4C /* TopTextfieldBG.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A1F0155004F200D7FB4C /* TopTextfieldBG.png */; };
 		BA19A1F7155004F200D7FB4C /* TopTextfieldBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A1F1155004F200D7FB4C /* TopTextfieldBG@2x.png */; };
 		BA19A1F8155004F200D7FB4C /* DownTextfieldBG.png in Resources */ = {isa = PBXBuildFile; fileRef = BA19A1F2155004F200D7FB4C /* DownTextfieldBG.png */; };
@@ -98,6 +101,10 @@
 		E076E5F748184C9D86BCED4A /* Plan.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED49 /* Plan.m */; };
 		E076E5F748184C9D86BCED4D /* Workout.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED4C /* Workout.m */; };
 		E076E5F748184C9D86BCED50 /* PlanSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED4F /* PlanSpec.m */; };
+		E076E5F748184C9D86BCED52 /* BaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED51 /* BaseObject.m */; };
+		E076E5F748184C9D86BCED53 /* BaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED51 /* BaseObject.m */; };
+		E076E5F748184C9D86BCED56 /* PlanWorkout.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED55 /* PlanWorkout.m */; };
+		E076E5F748184C9D86BCED57 /* PlanWorkout.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED55 /* PlanWorkout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -208,6 +215,10 @@
 		E076E5F748184C9D86BCED4C /* Workout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Workout.m; sourceTree = "<group>"; };
 		E076E5F748184C9D86BCED4E /* PlanSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanSpec.h; sourceTree = "<group>"; };
 		E076E5F748184C9D86BCED4F /* PlanSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanSpec.m; sourceTree = "<group>"; };
+		E076E5F748184C9D86BCED51 /* BaseObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseObject.m; sourceTree = "<group>"; };
+		E076E5F748184C9D86BCED54 /* BaseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseObject.h; sourceTree = "<group>"; };
+		E076E5F748184C9D86BCED55 /* PlanWorkout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanWorkout.m; sourceTree = "<group>"; };
+		E076E5F748184C9D86BCED58 /* PlanWorkout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanWorkout.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -300,6 +311,10 @@
 		BA6A05B91532C8380007E136 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				E076E5F748184C9D86BCED58 /* PlanWorkout.h */,
+				E076E5F748184C9D86BCED55 /* PlanWorkout.m */,
+				E076E5F748184C9D86BCED54 /* BaseObject.h */,
+				E076E5F748184C9D86BCED51 /* BaseObject.m */,
 				E076E5F748184C9D86BCED4C /* Workout.m */,
 				E076E5F748184C9D86BCED4B /* Workout.h */,
 				E076E5F748184C9D86BCED49 /* Plan.m */,
@@ -676,6 +691,8 @@
 				E076E5F748184C9D86BCED4A /* Plan.m in Sources */,
 				E076E5F748184C9D86BCED4D /* Workout.m in Sources */,
 				E076E5F748184C9D86BCED50 /* PlanSpec.m in Sources */,
+				E076E5F748184C9D86BCED52 /* BaseObject.m in Sources */,
+				E076E5F748184C9D86BCED56 /* PlanWorkout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -691,6 +708,11 @@
 				3E1601FE154C04AC001F231E /* NSString+Gymate.m in Sources */,
 				3ECBE12C155360BF00B7BD50 /* PreferencesSpec.m in Sources */,
 				3ECBE12E1553644000B7BD50 /* Preferences.m in Sources */,
+				3EE9CA091555420100C4CE43 /* Plan.m in Sources */,
+				3EE9CA0B1555422E00C4CE43 /* PlanSpec.m in Sources */,
+				E076E5F748184C9D86BCED53 /* BaseObject.m in Sources */,
+				3EE9CA1015554F9700C4CE43 /* Workout.m in Sources */,
+				E076E5F748184C9D86BCED57 /* PlanWorkout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

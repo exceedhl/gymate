@@ -1,21 +1,21 @@
 #import "User.h"
-#import "Plan.h"
-#import "Workout.h"
-#import "UserFixture.h"
+#import "Fixture.h"
 
 SPEC_BEGIN(PlanSpec)
 
 describe(@"Plan", ^{
-    
-    __block UserFixture *users = nil;
-    
-    
+
+    __block Fixture *f = nil;
+
+
     beforeAll(^{
-        users = [UserFixture fixture];
+        f = [Fixture fixture];
+        [f destroyAllData];
+        [f createData];
     });
-    
+
     it(@"should find the plan for a user", ^{
-        Plan *p = [users.adam plan];
+        Plan *p = [f.adam plan];
         NSArray *workouts = [p workouts];
         [[workouts should] haveCountOf:2];
         [[[[workouts objectAtIndex:0] name] should] equal:@"Shoulder Press"];
