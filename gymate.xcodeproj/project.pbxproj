@@ -74,6 +74,14 @@
 		BA79261115515B940098F7B2 /* SVSegmentedThumb.m in Sources */ = {isa = PBXBuildFile; fileRef = BA79260F15515B940098F7B2 /* SVSegmentedThumb.m */; };
 		BA79262F155230CF0098F7B2 /* TodayWorkoutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA79262E155230CF0098F7B2 /* TodayWorkoutView.xib */; };
 		BA792633155231000098F7B2 /* TodayWorkoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA792632155231000098F7B2 /* TodayWorkoutViewController.m */; };
+		BAA0F816155805ED00A73DAA /* Avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA0F80E155805ED00A73DAA /* Avatar.png */; };
+		BAA0F817155805ED00A73DAA /* Avatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA0F80F155805ED00A73DAA /* Avatar@2x.png */; };
+		BAA0F818155805ED00A73DAA /* ButtonOrange.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA0F810155805ED00A73DAA /* ButtonOrange.png */; };
+		BAA0F819155805ED00A73DAA /* ButtonOrange@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA0F811155805ED00A73DAA /* ButtonOrange@2x.png */; };
+		BAA0F81A155805ED00A73DAA /* SettingsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA0F812155805ED00A73DAA /* SettingsIcon.png */; };
+		BAA0F81B155805ED00A73DAA /* SettingsIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA0F813155805ED00A73DAA /* SettingsIcon@2x.png */; };
+		BAA0F81C155805ED00A73DAA /* WhiteBoxBG.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA0F814155805ED00A73DAA /* WhiteBoxBG.png */; };
+		BAA0F81D155805ED00A73DAA /* WhiteBoxBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA0F815155805ED00A73DAA /* WhiteBoxBG@2x.png */; };
 		BABAA3DD154ECA6C00ABC508 /* LoginBG.png in Resources */ = {isa = PBXBuildFile; fileRef = BABAA3D8154ECA6C00ABC508 /* LoginBG.png */; };
 		BABAA3DE154ECA6C00ABC508 /* LoginBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BABAA3D9154ECA6C00ABC508 /* LoginBG@2x.png */; };
 		BABAA3DF154ECA6C00ABC508 /* LoginButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BABAA3DA154ECA6C00ABC508 /* LoginButton@2x.png */; };
@@ -100,7 +108,6 @@
 		BAF72F891538320C004469EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BAF72F871538320C004469EC /* InfoPlist.strings */; };
 		E076E5F748184C9D86BCED4A /* Plan.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED49 /* Plan.m */; };
 		E076E5F748184C9D86BCED4D /* Workout.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED4C /* Workout.m */; };
-		E076E5F748184C9D86BCED50 /* PlanSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED4F /* PlanSpec.m */; };
 		E076E5F748184C9D86BCED52 /* BaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED51 /* BaseObject.m */; };
 		E076E5F748184C9D86BCED53 /* BaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED51 /* BaseObject.m */; };
 		E076E5F748184C9D86BCED56 /* PlanWorkout.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED55 /* PlanWorkout.m */; };
@@ -192,6 +199,14 @@
 		BA79262E155230CF0098F7B2 /* TodayWorkoutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TodayWorkoutView.xib; sourceTree = "<group>"; };
 		BA792631155231000098F7B2 /* TodayWorkoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodayWorkoutViewController.h; sourceTree = "<group>"; };
 		BA792632155231000098F7B2 /* TodayWorkoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodayWorkoutViewController.m; sourceTree = "<group>"; };
+		BAA0F80E155805ED00A73DAA /* Avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Avatar.png; sourceTree = "<group>"; };
+		BAA0F80F155805ED00A73DAA /* Avatar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Avatar@2x.png"; sourceTree = "<group>"; };
+		BAA0F810155805ED00A73DAA /* ButtonOrange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonOrange.png; sourceTree = "<group>"; };
+		BAA0F811155805ED00A73DAA /* ButtonOrange@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ButtonOrange@2x.png"; sourceTree = "<group>"; };
+		BAA0F812155805ED00A73DAA /* SettingsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsIcon.png; sourceTree = "<group>"; };
+		BAA0F813155805ED00A73DAA /* SettingsIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SettingsIcon@2x.png"; sourceTree = "<group>"; };
+		BAA0F814155805ED00A73DAA /* WhiteBoxBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteBoxBG.png; sourceTree = "<group>"; };
+		BAA0F815155805ED00A73DAA /* WhiteBoxBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WhiteBoxBG@2x.png"; sourceTree = "<group>"; };
 		BABAA3D8154ECA6C00ABC508 /* LoginBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginBG.png; sourceTree = "<group>"; };
 		BABAA3D9154ECA6C00ABC508 /* LoginBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginBG@2x.png"; sourceTree = "<group>"; };
 		BABAA3DA154ECA6C00ABC508 /* LoginButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginButton@2x.png"; sourceTree = "<group>"; };
@@ -417,6 +432,14 @@
 		BABAA3D7154ECA6C00ABC508 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				BAA0F80E155805ED00A73DAA /* Avatar.png */,
+				BAA0F80F155805ED00A73DAA /* Avatar@2x.png */,
+				BAA0F810155805ED00A73DAA /* ButtonOrange.png */,
+				BAA0F811155805ED00A73DAA /* ButtonOrange@2x.png */,
+				BAA0F812155805ED00A73DAA /* SettingsIcon.png */,
+				BAA0F813155805ED00A73DAA /* SettingsIcon@2x.png */,
+				BAA0F814155805ED00A73DAA /* WhiteBoxBG.png */,
+				BAA0F815155805ED00A73DAA /* WhiteBoxBG@2x.png */,
 				BA3BD0C91552555900D8E1F0 /* RepeatIcon.png */,
 				BA3BD0CA1552555900D8E1F0 /* RepeatIcon@2x.png */,
 				BA3BD0CB1552555900D8E1F0 /* SetIcon.png */,
@@ -611,6 +634,14 @@
 				BA3BD0D41552555900D8E1F0 /* WeightIcon@2x.png in Resources */,
 				3E76C5EE15529E3D00379C8F /* MainView.xib in Resources */,
 				3EB2D30C15538FF200ADAB1C /* MeView.xib in Resources */,
+				BAA0F816155805ED00A73DAA /* Avatar.png in Resources */,
+				BAA0F817155805ED00A73DAA /* Avatar@2x.png in Resources */,
+				BAA0F818155805ED00A73DAA /* ButtonOrange.png in Resources */,
+				BAA0F819155805ED00A73DAA /* ButtonOrange@2x.png in Resources */,
+				BAA0F81A155805ED00A73DAA /* SettingsIcon.png in Resources */,
+				BAA0F81B155805ED00A73DAA /* SettingsIcon@2x.png in Resources */,
+				BAA0F81C155805ED00A73DAA /* WhiteBoxBG.png in Resources */,
+				BAA0F81D155805ED00A73DAA /* WhiteBoxBG@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -690,7 +721,6 @@
 				3EB2D3101553903900ADAB1C /* MeViewController.m in Sources */,
 				E076E5F748184C9D86BCED4A /* Plan.m in Sources */,
 				E076E5F748184C9D86BCED4D /* Workout.m in Sources */,
-				E076E5F748184C9D86BCED50 /* PlanSpec.m in Sources */,
 				E076E5F748184C9D86BCED52 /* BaseObject.m in Sources */,
 				E076E5F748184C9D86BCED56 /* PlanWorkout.m in Sources */,
 			);
