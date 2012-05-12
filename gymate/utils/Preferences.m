@@ -2,11 +2,11 @@
 
 @implementation Preferences
 
-NSString * const PREFS_USER = @"USER";
-
 +(void) setPreferences:(NSDictionary *)prefs
 {
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+//    [userDefaults removeObjectForKey:PREF_LOGGED_IN_USER_ID];
+//    [userDefaults synchronize];
     [prefs enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
         [userDefaults setValue:obj forKey:key];
     }];
@@ -23,6 +23,11 @@ NSString * const PREFS_USER = @"USER";
         }
     }];
     return keysExist;
+}
+
++ (id)getPreference:(NSString *)key {
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    return [userDefaults objectForKey:key];
 }
 
 @end

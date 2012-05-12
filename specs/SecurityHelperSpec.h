@@ -1,5 +1,5 @@
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface UserSpec : SenTestCase
+@interface SecurityHelperSpec : SenTestCase
 
 @end

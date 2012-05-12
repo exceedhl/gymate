@@ -1,29 +1,21 @@
 #import <Foundation/Foundation.h>
-#import <Parse/Parse.h>
-#import "Plan.h"
+#import "BaseObject.h"
 
-@interface User : PFUser
+@class Profile;
 
-+ (id)user;
-+ (id)logInWithEmail:(NSString *)username password:(NSString *)password;
+@interface User : BaseObject
 
-+ (User *)currentUser;
+#define FIELD_EMAIL @"email"
+#define FIELD_PASSWORD @"password"
+#define FIELD_PROFILE @"profile"
 
-- (void)signUp;
+-(NSString *)email;
+-(void)setEmail:(NSString *)email;
+-(NSString *)password;
+-(void)setPassword:(NSString *)password;
+-(Profile *)profile;
+-(void)setProfile:(Profile *)profile;
 
-- (NSString *)firstName;
-- (void)setFirstName:(NSString *)firstName;
-- (NSString *)lastName;
-- (void)setLastName:(NSString *)lastName;
-- (NSNumber *)gender;
-- (void)setGender:(NSNumber *)gender;
-- (NSString *)height;
-- (void)setHeight:(NSString *)height;
-- (NSString *)weight;
-- (void)setWeight:(NSString *)wight;
-- (NSString *)passwd;
-- (void)setPasswd:(NSString *)aPassword;
-
-- (Plan *)plan;
++ (User *)userWithEmail:(NSString *)username password:(NSString *)password andProfile:(Profile *)profile;
 
 @end

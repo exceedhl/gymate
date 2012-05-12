@@ -1,6 +1,6 @@
 #import "AppDelegate.h"
 #import "LoginViewController.h"
-#import "User.h"
+#import "SecurityHelper.h"
 
 #define GYMATE_BG_COLOR_RED 57
 #define GYMATE_BG_COLOR_GREEN 59
@@ -19,12 +19,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [Parse setApplicationId:@"LgeuExxvIpU5ZLyXeSwCk4AKj4aD1a5ViPtcef2m" 
-                  clientKey:@"HrEukR6VwxpXOkiwt2XQRiDR92knGg9MguD2MESS"];
+    [Parse setApplicationId:@"vHejG6VviEbZmluhw9H8Z3BwdOL3IfDrxmRF70eb"
+                  clientKey:@"NP1GdDSDXSN1oi7YyBTL7BDVpczqLbAEuJqww56N"];
     self.window.backgroundColor = [UIColor colorWithRed:GYMATE_BG_COLOR_RED/255.0 green:GYMATE_BG_COLOR_GREEN/255.0 blue:GYMATE_BG_COLOR_BLUE/255.0 alpha:1];
     [self.window makeKeyAndVisible];
     self.window.rootViewController = self.tabBarController;
-    if (![User currentUser]) {
+    if (![SecurityHelper isUserLoggedIn]) {
         [tabBarController.view setHidden:YES];
         LoginViewController *loginViewController = [[[LoginViewController alloc] initWithNibName:@"loginView" bundle:nil] autorelease];
         UINavigationController *navigationController = [[[UINavigationController alloc]initWithRootViewController:loginViewController] autorelease];

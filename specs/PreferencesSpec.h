@@ -1,5 +1,5 @@
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface PreferenceHelperSpec : SenTestCase
+@interface PreferencesSpec : SenTestCase
 
 @end

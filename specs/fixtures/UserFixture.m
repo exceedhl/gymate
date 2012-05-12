@@ -1,25 +1,14 @@
 #import "UserFixture.h"
 #import "User.h"
+#import "Profile.h"
+#import "ProfileFixture.h"
 
 @implementation UserFixture
 
-- (User *)adam
-{
-    User *u = [User user];
-    u.email = @"adam@smith.com";
-    u.password = @"letmein";
-    u.firstName = @"Adam";
-    u.lastName = @"Smith";
-    u.height = @"180";
-    u.weight = @"78";
-    u.gender = [NSNumber numberWithInt:0];
-    return u;
++ (User *)user {
+    Profile *profile = [ProfileFixture profile];
+    User *user = [User userWithEmail:@"adam@smith.com" password:@"abc123" andProfile:profile];
+    user.profile = profile;
+    return user;
 }
-
-+ (id)fixture
-{
-    UserFixture *uf = [[[UserFixture alloc] init] autorelease];
-    return uf;
-}
-
 @end

@@ -9,11 +9,14 @@ describe(@"Preferences", ^{
     });
     
     it(@"should set user preferences", ^{
-        [Preferences setPreferences:$dict(@"adam@smith.com", @"username", @"letmein", @"password")];
-        
-        NSNumber *result  = [NSNumber numberWithBool:[Preferences preferencesExist:$arr(@"username", @"password")]];
-        
+        [Preferences setPreferences:$dict(@"yfan", @"username")];
+        NSNumber *result  = [NSNumber numberWithBool:[Preferences preferencesExist:$arr(@"username")]];
         [[result should] beTrue];        
+    });
+
+    it(@"should return preference value", ^{
+        [Preferences setPreferences:$dict(@"yfan", @"username")];
+        [[[Preferences getPreference:@"username"] should] equal:@"yfan"];
     });
 });
 

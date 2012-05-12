@@ -53,7 +53,7 @@
 		BA6A05B31532B5BF0007E136 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6A05B21532B5BF0007E136 /* LoginViewController.m */; };
 		BA6A05B51532B61C0007E136 /* SignupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA6A05B41532B61C0007E136 /* SignupView.xib */; };
 		BA6A05B81532B8520007E136 /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6A05B71532B8520007E136 /* SignupViewController.m */; };
-		BA6A05BC1532C84D0007E136 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6A05BB1532C84D0007E136 /* User.m */; };
+		BA6A05BC1532C84D0007E136 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		BA6A0B6C1532A3260010E596 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B6B1532A3260010E596 /* UIKit.framework */; };
 		BA6A0B6E1532A3260010E596 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B6D1532A3260010E596 /* Foundation.framework */; };
 		BA6A0B701532A3260010E596 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B6F1532A3260010E596 /* CoreGraphics.framework */; };
@@ -67,7 +67,7 @@
 		BA6A0B971532B22A0010E596 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B961532B22A0010E596 /* libz.1.1.3.dylib */; };
 		BA6A0B991532B2340010E596 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B981532B2340010E596 /* Security.framework */; };
 		BA6A0B9B1532B2700010E596 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B9A1532B2700010E596 /* QuartzCore.framework */; };
-		BA6A6CD91538363C00ED9261 /* UserSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6A6CD81538363C00ED9261 /* UserSpec.m */; };
+		BA6A6CD91538363C00ED9261 /* SecurityHelperSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6A6CD81538363C00ED9261 /* SecurityHelperSpec.m */; };
 		BA758D3C154C4B22006BED63 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA758D3B154C4B21006BED63 /* libPods.a */; };
 		BA758D3E154C4B27006BED63 /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA758D3D154C4B27006BED63 /* libPods-test.a */; };
 		BA79261015515B940098F7B2 /* SVSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BA79260D15515B940098F7B2 /* SVSegmentedControl.m */; };
@@ -92,7 +92,7 @@
 		BAE5503915383D69007421DE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B901532B1E00010E596 /* CFNetwork.framework */; };
 		BAE5503A15383D6B007421DE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B8E1532B1D80010E596 /* AudioToolbox.framework */; };
 		BAE5503B15383D70007421DE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B6F1532A3260010E596 /* CoreGraphics.framework */; };
-		BAE5503C15383D85007421DE /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6A05BB1532C84D0007E136 /* User.m */; };
+		BAE5503C15383D85007421DE /* (null) in Sources */ = {isa = PBXBuildFile; };
 		BAE55050153851B0007421DE /* Fixture.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE5504F153851B0007421DE /* Fixture.m */; };
 		BAE55053153851BE007421DE /* UserFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE55052153851BE007421DE /* UserFixture.m */; };
 		BAF72F821538320C004469EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B6B1532A3260010E596 /* UIKit.framework */; };
@@ -100,11 +100,21 @@
 		BAF72F891538320C004469EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BAF72F871538320C004469EC /* InfoPlist.strings */; };
 		E076E5F748184C9D86BCED4A /* Plan.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED49 /* Plan.m */; };
 		E076E5F748184C9D86BCED4D /* Workout.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED4C /* Workout.m */; };
-		E076E5F748184C9D86BCED50 /* PlanSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED4F /* PlanSpec.m */; };
 		E076E5F748184C9D86BCED52 /* BaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED51 /* BaseObject.m */; };
 		E076E5F748184C9D86BCED53 /* BaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED51 /* BaseObject.m */; };
 		E076E5F748184C9D86BCED56 /* PlanWorkout.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED55 /* PlanWorkout.m */; };
 		E076E5F748184C9D86BCED57 /* PlanWorkout.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED55 /* PlanWorkout.m */; };
+		E076E5F748184C9D86BCED5A /* Profile.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED59 /* Profile.m */; };
+		E076E5F748184C9D86BCED5B /* Profile.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED59 /* Profile.m */; };
+		E076E5F748184C9D86BCED5E /* (null) in Sources */ = {isa = PBXBuildFile; };
+		E076E5F748184C9D86BCED61 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED60 /* User.m */; };
+		E076E5F748184C9D86BCED62 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED60 /* User.m */; };
+		E076E5F748184C9D86BCED65 /* BaseFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED64 /* BaseFixture.m */; };
+		E076E5F748184C9D86BCED66 /* BaseFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED64 /* BaseFixture.m */; };
+		E076E5F748184C9D86BCED69 /* ProfileFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED68 /* ProfileFixture.m */; };
+		E076E5F748184C9D86BCED6A /* ProfileFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED68 /* ProfileFixture.m */; };
+		E076E5F748184C9D86BCED6D /* SecurityHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED6C /* SecurityHelper.m */; };
+		E076E5F748184C9D86BCED6E /* SecurityHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED6C /* SecurityHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -160,8 +170,6 @@
 		BA6A05B41532B61C0007E136 /* SignupView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignupView.xib; sourceTree = "<group>"; };
 		BA6A05B61532B8520007E136 /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
 		BA6A05B71532B8520007E136 /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
-		BA6A05BA1532C84D0007E136 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		BA6A05BB1532C84D0007E136 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		BA6A0B671532A3260010E596 /* gymate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gymate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6A0B6B1532A3260010E596 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BA6A0B6D1532A3260010E596 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -179,8 +187,8 @@
 		BA6A0B961532B22A0010E596 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
 		BA6A0B981532B2340010E596 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		BA6A0B9A1532B2700010E596 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		BA6A6CD71538363C00ED9261 /* UserSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSpec.h; sourceTree = "<group>"; };
-		BA6A6CD81538363C00ED9261 /* UserSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSpec.m; sourceTree = "<group>"; };
+		BA6A6CD71538363C00ED9261 /* SecurityHelperSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecurityHelperSpec.h; sourceTree = "<group>"; };
+		BA6A6CD81538363C00ED9261 /* SecurityHelperSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecurityHelperSpec.m; sourceTree = "<group>"; };
 		BA758D3B154C4B21006BED63 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Release-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		BA758D3D154C4B27006BED63 /* libPods-test.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-test.a"; path = "Pods/build/Release-iphoneos/libPods-test.a"; sourceTree = "<group>"; };
 		BA758D3F154C52A3006BED63 /* Pods-test.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-test.xcconfig"; path = "Pods/Pods-test.xcconfig"; sourceTree = "<group>"; };
@@ -219,6 +227,16 @@
 		E076E5F748184C9D86BCED54 /* BaseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseObject.h; sourceTree = "<group>"; };
 		E076E5F748184C9D86BCED55 /* PlanWorkout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanWorkout.m; sourceTree = "<group>"; };
 		E076E5F748184C9D86BCED58 /* PlanWorkout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanWorkout.h; sourceTree = "<group>"; };
+		E076E5F748184C9D86BCED59 /* Profile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Profile.m; sourceTree = "<group>"; };
+		E076E5F748184C9D86BCED5C /* Profile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Profile.h; sourceTree = "<group>"; };
+		E076E5F748184C9D86BCED60 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		E076E5F748184C9D86BCED63 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		E076E5F748184C9D86BCED64 /* BaseFixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseFixture.m; sourceTree = "<group>"; };
+		E076E5F748184C9D86BCED67 /* BaseFixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseFixture.h; sourceTree = "<group>"; };
+		E076E5F748184C9D86BCED68 /* ProfileFixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileFixture.m; sourceTree = "<group>"; };
+		E076E5F748184C9D86BCED6B /* ProfileFixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileFixture.h; sourceTree = "<group>"; };
+		E076E5F748184C9D86BCED6C /* SecurityHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecurityHelper.m; sourceTree = "<group>"; };
+		E076E5F748184C9D86BCED6F /* SecurityHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecurityHelper.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +284,8 @@
 		3EE7F47C15533E1200F589FB /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				E076E5F748184C9D86BCED6F /* SecurityHelper.h */,
+				E076E5F748184C9D86BCED6C /* SecurityHelper.m */,
 				3EE7F47E15533E5500F589FB /* Preferences.h */,
 				3EE7F47F15533E5500F589FB /* Preferences.m */,
 			);
@@ -311,6 +331,10 @@
 		BA6A05B91532C8380007E136 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				E076E5F748184C9D86BCED63 /* User.h */,
+				E076E5F748184C9D86BCED60 /* User.m */,
+				E076E5F748184C9D86BCED5C /* Profile.h */,
+				E076E5F748184C9D86BCED59 /* Profile.m */,
 				E076E5F748184C9D86BCED58 /* PlanWorkout.h */,
 				E076E5F748184C9D86BCED55 /* PlanWorkout.m */,
 				E076E5F748184C9D86BCED54 /* BaseObject.h */,
@@ -319,8 +343,6 @@
 				E076E5F748184C9D86BCED4B /* Workout.h */,
 				E076E5F748184C9D86BCED49 /* Plan.m */,
 				E076E5F748184C9D86BCED48 /* Plan.h */,
-				BA6A05BA1532C84D0007E136 /* User.h */,
-				BA6A05BB1532C84D0007E136 /* User.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -465,6 +487,10 @@
 		BAE5504D153851B0007421DE /* fixtures */ = {
 			isa = PBXGroup;
 			children = (
+				E076E5F748184C9D86BCED6B /* ProfileFixture.h */,
+				E076E5F748184C9D86BCED68 /* ProfileFixture.m */,
+				E076E5F748184C9D86BCED67 /* BaseFixture.h */,
+				E076E5F748184C9D86BCED64 /* BaseFixture.m */,
 				BAE5504E153851B0007421DE /* Fixture.h */,
 				BAE5504F153851B0007421DE /* Fixture.m */,
 				BAE55051153851BE007421DE /* UserFixture.h */,
@@ -480,8 +506,8 @@
 				E076E5F748184C9D86BCED4E /* PlanSpec.h */,
 				BAE5504D153851B0007421DE /* fixtures */,
 				BAF72F851538320C004469EC /* Supporting Files */,
-				BA6A6CD71538363C00ED9261 /* UserSpec.h */,
-				BA6A6CD81538363C00ED9261 /* UserSpec.m */,
+				BA6A6CD71538363C00ED9261 /* SecurityHelperSpec.h */,
+				BA6A6CD81538363C00ED9261 /* SecurityHelperSpec.m */,
 				3E1601F8154C022F001F231E /* NSStringGymateSpec.h */,
 				3E1601F9154C022F001F231E /* NSStringGymateSpec.m */,
 				3ECBE12A155360BF00B7BD50 /* PreferencesSpec.h */,
@@ -677,7 +703,7 @@
 				BA6A0B7C1532A3260010E596 /* AppDelegate.m in Sources */,
 				BA6A05B31532B5BF0007E136 /* LoginViewController.m in Sources */,
 				BA6A05B81532B8520007E136 /* SignupViewController.m in Sources */,
-				BA6A05BC1532C84D0007E136 /* User.m in Sources */,
+				BA6A05BC1532C84D0007E136 /* (null) in Sources */,
 				3E1601EA154BD625001F231E /* UIViewController+Gymate.m in Sources */,
 				3E1601F7154BDC16001F231E /* BaseViewController.m in Sources */,
 				3E1601FD154C04AC001F231E /* NSString+Gymate.m in Sources */,
@@ -690,9 +716,14 @@
 				3EB2D3101553903900ADAB1C /* MeViewController.m in Sources */,
 				E076E5F748184C9D86BCED4A /* Plan.m in Sources */,
 				E076E5F748184C9D86BCED4D /* Workout.m in Sources */,
-				E076E5F748184C9D86BCED50 /* PlanSpec.m in Sources */,
 				E076E5F748184C9D86BCED52 /* BaseObject.m in Sources */,
 				E076E5F748184C9D86BCED56 /* PlanWorkout.m in Sources */,
+				E076E5F748184C9D86BCED5A /* Profile.m in Sources */,
+				E076E5F748184C9D86BCED5E /* (null) in Sources */,
+				E076E5F748184C9D86BCED61 /* User.m in Sources */,
+				E076E5F748184C9D86BCED65 /* BaseFixture.m in Sources */,
+				E076E5F748184C9D86BCED69 /* ProfileFixture.m in Sources */,
+				E076E5F748184C9D86BCED6D /* SecurityHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -700,8 +731,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA6A6CD91538363C00ED9261 /* UserSpec.m in Sources */,
-				BAE5503C15383D85007421DE /* User.m in Sources */,
+				BA6A6CD91538363C00ED9261 /* SecurityHelperSpec.m in Sources */,
+				BAE5503C15383D85007421DE /* (null) in Sources */,
 				BAE55050153851B0007421DE /* Fixture.m in Sources */,
 				BAE55053153851BE007421DE /* UserFixture.m in Sources */,
 				3E1601FA154C022F001F231E /* NSStringGymateSpec.m in Sources */,
@@ -713,6 +744,11 @@
 				E076E5F748184C9D86BCED53 /* BaseObject.m in Sources */,
 				3EE9CA1015554F9700C4CE43 /* Workout.m in Sources */,
 				E076E5F748184C9D86BCED57 /* PlanWorkout.m in Sources */,
+				E076E5F748184C9D86BCED5B /* Profile.m in Sources */,
+				E076E5F748184C9D86BCED62 /* User.m in Sources */,
+				E076E5F748184C9D86BCED66 /* BaseFixture.m in Sources */,
+				E076E5F748184C9D86BCED6A /* ProfileFixture.m in Sources */,
+				E076E5F748184C9D86BCED6E /* SecurityHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

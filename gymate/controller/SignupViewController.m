@@ -4,6 +4,8 @@
 #import "UIViewController+Gymate.h"
 #import "UITextField+Gymate.h"
 #import "SVSegmentedControl.h"
+#import "Profile.h"
+#import "SecurityHelper.h"
 
 #define PORTRAIT_KEYBOARD_HEIGHT 216
 #define MIN_GAP_BETWEEN_KEYBOARD_AND_TEXT_FIELD 5
@@ -68,17 +70,10 @@
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     hud.labelText = @"Signing up...";
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
-        User *user = [User user];
-        user.firstName = firstName.text;
-        user.lastName = lastName.text;
-        user.gender = [NSNumber numberWithInt:gender.selectedIndex];
-        user.email = email.text;
-        user.passwd = password.text;
-        //TODO: Should we make height and weight NSNumber? - Yuan
-        user.height = height.text;
-        user.weight = weight.text;
+        Profile *profile = [Profile profileWithFirstName:firstName.text lastName:lastName.text height:height.text weight:weight.text andGender:$int(gender.selectedIndex)];
+        User *user = [User userWithEmail:email.text password:password.text andProfile:profile];
         @try {
-            [user signUp];
+            [SecurityHelper signUp:user];
             [self.presentingViewController.view setHidden:NO];
             [self dismissViewControllerAnimated:YES completion:nil];
         }

@@ -2,9 +2,12 @@
 
 @interface Preferences : NSObject
 
-extern NSString * const PREFS_USER;
+#define PREF_LOGGED_IN_USER_ID @"LOG_IN_USER"
 
-+(void) setPreferences:(NSDictionary *)prefs;
-+(BOOL) preferencesExist:(NSArray *)keys;
++ (void)setPreferences:(NSDictionary *)prefs;
+
++ (BOOL)preferencesExist:(NSArray *)keys;
+
++ (id)getPreference:(NSString *)key;
 
 @end

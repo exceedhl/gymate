@@ -1,5 +1,7 @@
 #import "MeViewController.h"
 #import "User.h"
+#import "SecurityHelper.h"
+#import "Profile.h"
 
 @interface MeViewController ()
 
@@ -11,11 +13,12 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:YES];
-    User *user = [User currentUser];
+    User *user = [SecurityHelper loggedInUser];
     if (user) {
-        name.text = $str(@"%@ %@", user.firstName, user.lastName);
-        weight.text = $str(@"%@kg", user.weight);
-        height.text = $str(@"%@cm", user.height);
+        Profile *profile = user.profile;
+        name.text = $str(@"%@ %@", profile.firstName, profile.lastName);
+        weight.text = $str(@"%@kg", profile.weight);
+        height.text = $str(@"%@cm", profile.height);
     }
 }
 

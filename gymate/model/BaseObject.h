@@ -4,8 +4,11 @@
 
 @interface BaseObject : PFObject
 
-+ (NSString *)tableName;
+#define FIELD_OBJECT_ID @"objectId"
 
-- (id)save;
++ (NSString *)tableName;
+//+ (id)fromPFObject:(PFObject *)pfObject toObject:(Class)class;
+
+//- (BOOL)save;
 
 @end

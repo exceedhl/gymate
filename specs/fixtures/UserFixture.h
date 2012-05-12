@@ -1,10 +1,10 @@
 @class User;
 
 #import "Fixture.h"
+#import "BaseFixture.h"
 
-@interface UserFixture : Fixture
+@interface UserFixture : BaseFixture
 
-- (User *)adam;
-+ (id)fixture;
++ (User *)user;
 
 @end

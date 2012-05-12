@@ -1,8 +1,6 @@
 #import <objc/runtime.h>
 #import "Plan.h"
 #import "User.h"
-#import "Workout.h"
-#import "PlanWorkout.h"
 
 @implementation Plan
 @synthesize user, workouts;
