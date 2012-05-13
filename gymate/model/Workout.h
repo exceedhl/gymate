@@ -6,7 +6,10 @@
 
 @interface Workout : BaseObject
 
-@property (nonatomic, retain) NSString *name;
+#define FIELD_NAME @"name"
 
-+ (Workout *)withName:(NSString *)string;
++ (Workout *)workoutWithName:(NSString *)name;
+
+- (NSString *)name;
+- (void)setName:(NSString *)name;
 @end

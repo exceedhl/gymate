@@ -20,9 +20,9 @@
 }
 
 - (void)createWorkouts {
-    [[Workout withName:@"Push up"] save];
-    [[Workout withName:@"Shoulder Press"] save];
-    [[Workout withName:@"Treadmill"] save];
+    [[Workout workoutWithName:@"Push up"] save];
+    [[Workout workoutWithName:@"Shoulder Press"] save];
+    [[Workout workoutWithName:@"Treadmill"] save];
 }
 
 - (void)destroyObjects:(NSString *)className {

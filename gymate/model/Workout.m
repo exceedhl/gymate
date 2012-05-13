@@ -1,20 +1,21 @@
 #import <objc/runtime.h>
 #import "Workout.h"
-#import "Plan.h"
 
 @implementation Workout
 
-@synthesize name;
-
-+ (Workout *)withName:(NSString *)string {
++ (Workout *)workoutWithName:(NSString *)name {
     Workout *workout = (Workout *) [PFObject objectWithClassName:[self tableName]];
     object_setClass(workout, [self class]);
-    workout.name = string;
+    workout.name = name;
     return workout;
 }
 
-- (void)dealloc {
-    [name release];
-    [super dealloc];
+- (NSString *)name {
+    return [self objectForKey:FIELD_NAME];
 }
+
+- (void)setName:(NSString *)name {
+    [self setObject:name forKey:FIELD_NAME];
+}
+
 @end
