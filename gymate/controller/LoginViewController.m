@@ -3,7 +3,6 @@
 #import "User.h"
 #import "MBProgressHUD.h"
 #import "UIViewController+Gymate.h"
-#import "SecurityHelper.h"
 
 @implementation LoginViewController
 
@@ -18,7 +17,7 @@
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     hud.labelText = @"Logging in...";
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
-        User *user = [SecurityHelper loginWithEmail:self.email.text andPassword:self.password.text];
+        User *user = [User loginWithEmail:self.email.text andPassword:self.password.text];
         dispatch_async(dispatch_get_main_queue(), ^{
             [MBProgressHUD hideHUDForView:self.view animated:NO];
             if (user) {

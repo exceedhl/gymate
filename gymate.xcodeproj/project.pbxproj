@@ -67,7 +67,7 @@
 		BA6A0B971532B22A0010E596 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B961532B22A0010E596 /* libz.1.1.3.dylib */; };
 		BA6A0B991532B2340010E596 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B981532B2340010E596 /* Security.framework */; };
 		BA6A0B9B1532B2700010E596 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A0B9A1532B2700010E596 /* QuartzCore.framework */; };
-		BA6A6CD91538363C00ED9261 /* SecurityHelperSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6A6CD81538363C00ED9261 /* SecurityHelperSpec.m */; };
+		BA6A6CD91538363C00ED9261 /* UserSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6A6CD81538363C00ED9261 /* UserSpec.m */; };
 		BA758D3C154C4B22006BED63 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA758D3B154C4B21006BED63 /* libPods.a */; };
 		BA758D3E154C4B27006BED63 /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA758D3D154C4B27006BED63 /* libPods-test.a */; };
 		BA79261015515B940098F7B2 /* SVSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BA79260D15515B940098F7B2 /* SVSegmentedControl.m */; };
@@ -121,8 +121,8 @@
 		E076E5F748184C9D86BCED66 /* BaseFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED64 /* BaseFixture.m */; };
 		E076E5F748184C9D86BCED69 /* ProfileFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED68 /* ProfileFixture.m */; };
 		E076E5F748184C9D86BCED6A /* ProfileFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED68 /* ProfileFixture.m */; };
-		E076E5F748184C9D86BCED6D /* SecurityHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED6C /* SecurityHelper.m */; };
-		E076E5F748184C9D86BCED6E /* SecurityHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED6C /* SecurityHelper.m */; };
+		E076E5F748184C9D86BCED6D /* SecurityHelper.m in Sources */ = {isa = PBXBuildFile; };
+		E076E5F748184C9D86BCED6E /* SecurityHelper.m in Sources */ = {isa = PBXBuildFile; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -195,8 +195,8 @@
 		BA6A0B961532B22A0010E596 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
 		BA6A0B981532B2340010E596 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		BA6A0B9A1532B2700010E596 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		BA6A6CD71538363C00ED9261 /* SecurityHelperSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecurityHelperSpec.h; sourceTree = "<group>"; };
-		BA6A6CD81538363C00ED9261 /* SecurityHelperSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecurityHelperSpec.m; sourceTree = "<group>"; };
+		BA6A6CD71538363C00ED9261 /* UserSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSpec.h; sourceTree = "<group>"; };
+		BA6A6CD81538363C00ED9261 /* UserSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSpec.m; sourceTree = "<group>"; };
 		BA758D3B154C4B21006BED63 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Release-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		BA758D3D154C4B27006BED63 /* libPods-test.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-test.a"; path = "Pods/build/Release-iphoneos/libPods-test.a"; sourceTree = "<group>"; };
 		BA758D3F154C52A3006BED63 /* Pods-test.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-test.xcconfig"; path = "Pods/Pods-test.xcconfig"; sourceTree = "<group>"; };
@@ -251,8 +251,6 @@
 		E076E5F748184C9D86BCED67 /* BaseFixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseFixture.h; sourceTree = "<group>"; };
 		E076E5F748184C9D86BCED68 /* ProfileFixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileFixture.m; sourceTree = "<group>"; };
 		E076E5F748184C9D86BCED6B /* ProfileFixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileFixture.h; sourceTree = "<group>"; };
-		E076E5F748184C9D86BCED6C /* SecurityHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecurityHelper.m; sourceTree = "<group>"; };
-		E076E5F748184C9D86BCED6F /* SecurityHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecurityHelper.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -300,8 +298,6 @@
 		3EE7F47C15533E1200F589FB /* utils */ = {
 			isa = PBXGroup;
 			children = (
-				E076E5F748184C9D86BCED6F /* SecurityHelper.h */,
-				E076E5F748184C9D86BCED6C /* SecurityHelper.m */,
 				3EE7F47E15533E5500F589FB /* Preferences.h */,
 				3EE7F47F15533E5500F589FB /* Preferences.m */,
 			);
@@ -530,8 +526,8 @@
 				E076E5F748184C9D86BCED4E /* PlanSpec.h */,
 				BAE5504D153851B0007421DE /* fixtures */,
 				BAF72F851538320C004469EC /* Supporting Files */,
-				BA6A6CD71538363C00ED9261 /* SecurityHelperSpec.h */,
-				BA6A6CD81538363C00ED9261 /* SecurityHelperSpec.m */,
+				BA6A6CD71538363C00ED9261 /* UserSpec.h */,
+				BA6A6CD81538363C00ED9261 /* UserSpec.m */,
 				3E1601F8154C022F001F231E /* NSStringGymateSpec.h */,
 				3E1601F9154C022F001F231E /* NSStringGymateSpec.m */,
 				3ECBE12A155360BF00B7BD50 /* PreferencesSpec.h */,
@@ -763,7 +759,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA6A6CD91538363C00ED9261 /* SecurityHelperSpec.m in Sources */,
+				BA6A6CD91538363C00ED9261 /* UserSpec.m in Sources */,
 				BAE5503C15383D85007421DE /* (null) in Sources */,
 				BAE55050153851B0007421DE /* Fixture.m in Sources */,
 				BAE55053153851BE007421DE /* UserFixture.m in Sources */,

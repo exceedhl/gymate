@@ -1,13 +1,12 @@
 #import "User.h"
 #import "UserFixture.h"
 #import "Profile.h"
-#import "SecurityHelper.h"
 
-SPEC_BEGIN(SecurityHelperSpec)
+SPEC_BEGIN(UserSpec)
 
 #define EMPTY_STRING @"  "
 
-describe(@"SecurityHelper", ^{
+describe(@"User", ^{
 
     beforeEach(^{
         [BaseFixture destroyAll:$arr([User tableName], [Profile tableName])];
@@ -17,15 +16,15 @@ describe(@"SecurityHelper", ^{
 
         it(@"should succeed", ^{
             User *user = [UserFixture user];
-            [SecurityHelper signUp:user];
-            [[$bool([SecurityHelper isUserLoggedIn]) should] beTrue];
+            [user signUp];
+            [[[User loggedInUser] should] beNonNil];
         });
 
         it(@"should throw exception on duplicate email", ^{
-            [SecurityHelper signUp:[UserFixture user]];
+            [[UserFixture user] signUp];
             User *user = [UserFixture user];
             [[theBlock(^{
-                [SecurityHelper signUp:user];
+                [user signUp];
             }) should] raiseWithName:@"Signup failed" reason:@"Email adam@smith.com is already taken"];
         });
 
@@ -33,7 +32,7 @@ describe(@"SecurityHelper", ^{
             User *user = [UserFixture user];
             user.email = EMPTY_STRING;
             [[theBlock(^{
-                [SecurityHelper signUp:user];
+                [user signUp];
             }) should] raiseWithName:@"Signup failed" reason:@"email should not be empty"];
         });
 
@@ -41,7 +40,7 @@ describe(@"SecurityHelper", ^{
             User *user = [UserFixture user];
             user.password = EMPTY_STRING;
             [[theBlock(^{
-                [SecurityHelper signUp:user];
+                [user signUp];
             }) should] raiseWithName:@"Signup failed" reason:@"password should not be empty"];
         });
 
@@ -49,7 +48,7 @@ describe(@"SecurityHelper", ^{
             User *user = [UserFixture user];
             user.profile.firstName = EMPTY_STRING;
             [[theBlock(^{
-                [SecurityHelper signUp:user];
+                [user signUp];
             }) should] raiseWithName:@"Signup failed" reason:@"firstname should not be empty"];
         });
 
@@ -57,7 +56,7 @@ describe(@"SecurityHelper", ^{
             User *user = [UserFixture user];
             user.profile.lastName = EMPTY_STRING;
             [[theBlock(^{
-                [SecurityHelper signUp:user];
+                [user signUp];
             }) should] raiseWithName:@"Signup failed" reason:@"lastname should not be empty"];
         });
 
@@ -65,7 +64,7 @@ describe(@"SecurityHelper", ^{
             User *user = [UserFixture user];
             user.profile.weight = EMPTY_STRING;
             [[theBlock(^{
-                [SecurityHelper signUp:user];
+                [user signUp];
             }) should] raiseWithName:@"Signup failed" reason:@"weight should not be empty"];
         });
 
@@ -73,7 +72,7 @@ describe(@"SecurityHelper", ^{
             User *user = [UserFixture user];
             user.profile.height = EMPTY_STRING;
             [[theBlock(^{
-                [SecurityHelper signUp:user];
+                [user signUp];
             }) should] raiseWithName:@"Signup failed" reason:@"height should not be empty"];
         });
     });
@@ -83,14 +82,13 @@ describe(@"SecurityHelper", ^{
             User *user = [UserFixture user];
             [user.profile save];
             [user save];
-            [SecurityHelper loginWithEmail:user.email andPassword:user.password];
-            [SecurityHelper isUserLoggedIn];
-            [[$bool([SecurityHelper isUserLoggedIn]) should] beTrue];
+            [User loginWithEmail:user.email andPassword:user.password];
+            [[[User loggedInUser] should] beNonNil];
         });
 
         it(@"should fail if no matching email and password", ^{
             [[theBlock(^{
-                [SecurityHelper loginWithEmail:@"not@exist.com" andPassword:@"void"];
+                [User loginWithEmail:@"not@exist.com" andPassword:@"void"];
             }) should] raiseWithName:@"Login failed" reason:[NSString stringWithFormat:@"Incorrect username or password"]];
 
         });
@@ -99,10 +97,11 @@ describe(@"SecurityHelper", ^{
     context(@"when logged in", ^{
         it(@"should return logged in user", ^{
             User *user = [UserFixture user];
-            [SecurityHelper signUp:user];
-            [[[[SecurityHelper loggedInUser] objectId] should] equal:user.objectId];
+            [user signUp];
+            [[[[User loggedInUser] objectId] should] equal:user.objectId];
         });
     });
 
 });
+
 SPEC_END
