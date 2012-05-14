@@ -3,6 +3,7 @@
 #import "Profile.h"
 #import "Preferences.h"
 #import "NSString+Gymate.h"
+#import "Plan.h"
 
 @interface User()
 
@@ -12,7 +13,10 @@
 
 @end
 
-@implementation User
+#define FIELD_EMAIL @"email"
+#define FIELD_PASSWORD @"password"
+#define FIELD_PROFILE @"profile"
+#define FIELD_PLAN @"plan"
 
 #define LOGIN_FAILED_EXCEPTION @"Login failed"
 #define LOGIN_FAILED_INCORRECT_USERNAME_AND_PASSWORD @"Incorrect username or password"
@@ -20,6 +24,8 @@
 #define SIGNUP_FAILED_EMPTY_FIELD @"%@ should not be empty"
 #define SIGNUP_FAILED_DUPLICATE_EMAIL @"Email %@ is already taken"
 #define SIGNUP_FAILED_INVALID_REQUEST @"Validation request failed"
+
+@implementation User
 
 + (User *)userWithEmail:(NSString *)email password:(NSString *)password andProfile:(Profile *)profile {
     User *user = [[[User alloc] initWithClassName:[self tableName]] autorelease];
@@ -81,13 +87,31 @@
 }
 
 - (Profile *)profile {
-    Profile *profile = (Profile *)[[self objectForKey:FIELD_PROFILE] fetchIfNeeded];
+    Profile *profile = (Profile *)[self objectForKey:FIELD_PROFILE];
+    if ([profile isEqual:[NSNull null]]) {
+        return nil;
+    }
+    [profile fetchIfNeeded];
     object_setClass(profile, [Profile class]);
     return profile;
 }
 
 - (void)setProfile:(Profile *)profile {
     [self setObject:profile forKey:FIELD_PROFILE];
+}
+
+- (Plan *)plan {
+    Plan *plan = (Plan *)[self objectForKey:FIELD_PLAN];
+    if ([plan isEqual:[NSNull null]]) {
+        return nil;
+    }
+    [plan fetchIfNeeded];
+    object_setClass(plan, [Plan class]);
+    return plan;
+}
+
+- (void)setPlan:(Plan *)plan {
+    [self setObject:plan forKey:FIELD_PLAN];
 }
 
 #pragma private methods
@@ -125,5 +149,7 @@
         @throw [NSException exceptionWithName:SIGNUP_FAILED_EXCEPTION reason:SIGNUP_FAILED_INVALID_REQUEST userInfo:error.userInfo];
     }
 }
+
+
 
 @end

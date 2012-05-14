@@ -1,13 +1,9 @@
 #import <Foundation/Foundation.h>
 #import "BaseObject.h"
 
-@class Profile;
+@class Profile, Plan;
 
 @interface User : BaseObject
-
-#define FIELD_EMAIL @"email"
-#define FIELD_PASSWORD @"password"
-#define FIELD_PROFILE @"profile"
 
 + (User *)userWithEmail:(NSString *)username password:(NSString *)password andProfile:(Profile *)profile;
 + (User *)loggedInUser;
@@ -19,6 +15,9 @@
 -(void)setPassword:(NSString *)password;
 -(Profile *)profile;
 -(void)setProfile:(Profile *)profile;
+- (Plan *)plan;
+-(void)setPlan:(Plan *)plan;
 - (void)signUp;
+
 
 @end

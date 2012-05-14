@@ -8,8 +8,11 @@ SPEC_BEGIN(UserSpec)
 
 describe(@"User", ^{
 
-    beforeEach(^{
-        [BaseFixture destroyAll:$arr([User tableName], [Profile tableName])];
+    __block Fixture *f;
+
+    beforeAll(^{
+        f = [Fixture fixture];
+        [f destroyAllData];
     });
 
     context(@"when signup", ^{

@@ -6,14 +6,10 @@
 
 @interface Plan : BaseObject
 
-#define FIELD_USER @"user"
 #define FIELD_WORKOUTS @"workouts"
 
-+ (Plan *)planWithUser:(User *)user andWorkout:(Workout *)workout;
-+ (Plan *)findPlanForUser:(User *)user;
++ (Plan *)plan;
 
-- (User *)user;
-- (void)setUser:(User *)user;
 - (NSMutableArray *)workouts;
 - (void)setWorkouts:(NSMutableArray *)workouts;
 

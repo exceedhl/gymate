@@ -1,47 +1,45 @@
 #import "Fixture.h"
-#import "BaseFixture.h"
 #import "User.h"
-#import "Profile.h"
 #import "Plan.h"
 #import "Workout.h"
-#import "UserFixture.h"
-#import "PlanFixture.h"
 
 SPEC_BEGIN(PlanSpec)
 
 describe(@"Plan", ^{
 
+    __block Fixture *f;
+
     beforeAll(^{
-        [BaseFixture destroyAll:$arr([User tableName], [Profile tableName], [Plan tableName], [Workout tableName])];
-        [[UserFixture user] signUp];
+        f = [Fixture fixture];
+        [[f destroyAllData] createData];
     });
 
     it(@"should be able to create plan for user", ^{
-        [[PlanFixture planWithoutWorkouts] save];
+        User *user = [User userWithEmail:@"user@whatever.com" password:@"whatever" andProfile:(Profile *) [NSNull null]];
+        [user save];
+        [[user plan] shouldBeNil];
+        Plan *plan = [Plan plan];
+        [user setPlan:plan];
+        [user save];
+        [user fetch];
+        [[user plan] shouldNotBeNil];
     });
 
     it(@"should return nil if user has no plan", ^{
-        [[Plan findPlanForUser:[User loggedInUser]] shouldBeNil];
+        [[f.userWithoutPlan plan] shouldBeNil];
     });
 
     it(@"should find plan for user", ^{
-        [[PlanFixture planWithoutWorkouts] save];
-        [[Plan findPlanForUser:[User loggedInUser]] shouldNotBeNil];
+        Plan *plan = [f.adam plan];
+        [plan shouldNotBeNil];
+        [[[plan should] have:3] workouts];
     });
 
     it(@"should be able to add workout", ^{
-        Workout *treadmill = [Workout workoutWithName:@"Treadmill"];
-        [treadmill save];
-        Plan *plan = [Plan planWithUser:[User loggedInUser] andWorkout:treadmill];
-
-        Workout *pushup = [Workout workoutWithName:@"Pushup"];
-        [pushup save];
-        [plan addWorkout:pushup];
-
-        __block NSArray *existingWorkouts = $arr(treadmill.objectId, pushup.objectId);
-        [[[Plan findPlanForUser:[User loggedInUser]] workouts] $each:^(Workout *workout){
-            [[existingWorkouts should] contain:workout.objectId];
-        }];
+        Workout *running = [Workout workoutWithName:@"Running"];
+        [running save];
+        [[f.adam plan] addWorkout:running];
+        [[[[f.adam plan] should] have:4] workouts];
     });
 });
 

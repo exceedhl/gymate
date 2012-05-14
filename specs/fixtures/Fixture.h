@@ -5,6 +5,7 @@
 @interface Fixture : NSObject
 {
     User *adam;
+    User *userWithoutPlan;
     Plan *planOfAdam;
     Workout *workoutShoulderPress;
     Workout *workoutPushup;
@@ -12,19 +13,22 @@
 }
 
 @property(nonatomic, retain) User *adam;
+@property(nonatomic, retain) User *userWithoutPlan;
+
 @property(nonatomic, retain) Plan *planOfAdam;
+
 @property(nonatomic, retain) Workout *workoutShoulderPress;
 @property(nonatomic, retain) Workout *workoutPushup;
 @property(nonatomic, retain) Workout *workoutTreadmill;
 
 + (Fixture *)fixture;
 
-- (void)createData;
-- (void)destroyAllData;
+- (Fixture *)createData;
+- (Fixture *)createUsers;
+- (Fixture *)createPlans;
+- (Fixture *)createWorkouts;
 
-- (void)createUsers;
-- (void)destroyUsers;
-
-- (void)createPlans;
+- (Fixture *)destroyObjects:(NSString *)className;
+- (Fixture *)destroyAllData;
 
 @end

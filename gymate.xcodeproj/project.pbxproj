@@ -110,25 +110,21 @@
 		E076E5F748184C9D86BCED4D /* Workout.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED4C /* Workout.m */; };
 		E076E5F748184C9D86BCED52 /* BaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED51 /* BaseObject.m */; };
 		E076E5F748184C9D86BCED53 /* BaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED51 /* BaseObject.m */; };
-		E076E5F748184C9D86BCED56 /* PlanWorkout.m in Sources */ = {isa = PBXBuildFile; };
-		E076E5F748184C9D86BCED57 /* PlanWorkout.m in Sources */ = {isa = PBXBuildFile; };
+		E076E5F748184C9D86BCED56 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		E076E5F748184C9D86BCED57 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		E076E5F748184C9D86BCED5A /* Profile.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED59 /* Profile.m */; };
 		E076E5F748184C9D86BCED5B /* Profile.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED59 /* Profile.m */; };
 		E076E5F748184C9D86BCED5E /* (null) in Sources */ = {isa = PBXBuildFile; };
 		E076E5F748184C9D86BCED61 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED60 /* User.m */; };
 		E076E5F748184C9D86BCED62 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED60 /* User.m */; };
-		E076E5F748184C9D86BCED65 /* BaseFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED64 /* BaseFixture.m */; };
 		E076E5F748184C9D86BCED66 /* BaseFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED64 /* BaseFixture.m */; };
-		E076E5F748184C9D86BCED69 /* ProfileFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED68 /* ProfileFixture.m */; };
 		E076E5F748184C9D86BCED6A /* ProfileFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED68 /* ProfileFixture.m */; };
-		E076E5F748184C9D86BCED6D /* SecurityHelper.m in Sources */ = {isa = PBXBuildFile; };
-		E076E5F748184C9D86BCED6E /* SecurityHelper.m in Sources */ = {isa = PBXBuildFile; };
-		E076E5F748184C9D86BCED70 /* WorkoutFixture.m in Sources */ = {isa = PBXBuildFile; };
-		E076E5F748184C9D86BCED71 /* WorkoutFixture.m in Sources */ = {isa = PBXBuildFile; };
-		E076E5F748184C9D86BCED74 /* PlanFixture.m in Sources */ = {isa = PBXBuildFile; };
-		E076E5F748184C9D86BCED75 /* PlanFixture.m in Sources */ = {isa = PBXBuildFile; };
-		E076E5F748184C9D86BCED78 /* PlanFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED77 /* PlanFixture.m */; };
-		E076E5F748184C9D86BCED79 /* PlanFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED77 /* PlanFixture.m */; };
+		E076E5F748184C9D86BCED6D /* (null) in Sources */ = {isa = PBXBuildFile; };
+		E076E5F748184C9D86BCED6E /* (null) in Sources */ = {isa = PBXBuildFile; };
+		E076E5F748184C9D86BCED70 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		E076E5F748184C9D86BCED71 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		E076E5F748184C9D86BCED74 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		E076E5F748184C9D86BCED75 /* (null) in Sources */ = {isa = PBXBuildFile; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -255,8 +251,6 @@
 		E076E5F748184C9D86BCED67 /* BaseFixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseFixture.h; sourceTree = "<group>"; };
 		E076E5F748184C9D86BCED68 /* ProfileFixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileFixture.m; sourceTree = "<group>"; };
 		E076E5F748184C9D86BCED6B /* ProfileFixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileFixture.h; sourceTree = "<group>"; };
-		E076E5F748184C9D86BCED77 /* PlanFixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanFixture.m; sourceTree = "<group>"; };
-		E076E5F748184C9D86BCED7A /* PlanFixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanFixture.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -511,8 +505,6 @@
 		BAE5504D153851B0007421DE /* fixtures */ = {
 			isa = PBXGroup;
 			children = (
-				E076E5F748184C9D86BCED7A /* PlanFixture.h */,
-				E076E5F748184C9D86BCED77 /* PlanFixture.m */,
 				E076E5F748184C9D86BCED6B /* ProfileFixture.h */,
 				E076E5F748184C9D86BCED68 /* ProfileFixture.m */,
 				E076E5F748184C9D86BCED67 /* BaseFixture.h */,
@@ -751,16 +743,13 @@
 				E076E5F748184C9D86BCED4A /* Plan.m in Sources */,
 				E076E5F748184C9D86BCED4D /* Workout.m in Sources */,
 				E076E5F748184C9D86BCED52 /* BaseObject.m in Sources */,
-				E076E5F748184C9D86BCED56 /* PlanWorkout.m in Sources */,
+				E076E5F748184C9D86BCED56 /* (null) in Sources */,
 				E076E5F748184C9D86BCED5A /* Profile.m in Sources */,
 				E076E5F748184C9D86BCED5E /* (null) in Sources */,
 				E076E5F748184C9D86BCED61 /* User.m in Sources */,
-				E076E5F748184C9D86BCED65 /* BaseFixture.m in Sources */,
-				E076E5F748184C9D86BCED69 /* ProfileFixture.m in Sources */,
-				E076E5F748184C9D86BCED6D /* SecurityHelper.m in Sources */,
-				E076E5F748184C9D86BCED70 /* WorkoutFixture.m in Sources */,
-				E076E5F748184C9D86BCED74 /* PlanFixture.m in Sources */,
-				E076E5F748184C9D86BCED78 /* PlanFixture.m in Sources */,
+				E076E5F748184C9D86BCED6D /* (null) in Sources */,
+				E076E5F748184C9D86BCED70 /* (null) in Sources */,
+				E076E5F748184C9D86BCED74 /* (null) in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -780,15 +769,14 @@
 				3EE9CA0B1555422E00C4CE43 /* PlanSpec.m in Sources */,
 				E076E5F748184C9D86BCED53 /* BaseObject.m in Sources */,
 				3EE9CA1015554F9700C4CE43 /* Workout.m in Sources */,
-				E076E5F748184C9D86BCED57 /* PlanWorkout.m in Sources */,
+				E076E5F748184C9D86BCED57 /* (null) in Sources */,
 				E076E5F748184C9D86BCED5B /* Profile.m in Sources */,
 				E076E5F748184C9D86BCED62 /* User.m in Sources */,
 				E076E5F748184C9D86BCED66 /* BaseFixture.m in Sources */,
 				E076E5F748184C9D86BCED6A /* ProfileFixture.m in Sources */,
-				E076E5F748184C9D86BCED6E /* SecurityHelper.m in Sources */,
-				E076E5F748184C9D86BCED71 /* WorkoutFixture.m in Sources */,
-				E076E5F748184C9D86BCED75 /* PlanFixture.m in Sources */,
-				E076E5F748184C9D86BCED79 /* PlanFixture.m in Sources */,
+				E076E5F748184C9D86BCED6E /* (null) in Sources */,
+				E076E5F748184C9D86BCED71 /* (null) in Sources */,
+				E076E5F748184C9D86BCED75 /* (null) in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
