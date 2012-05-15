@@ -30,7 +30,7 @@
     [adam setPlan:planOfAdam];
     [adam save];
 
-    userWithoutPlan = [User userWithEmail:@"some@one.com" password:@"whatever" andProfile:(Profile *) [NSNull null]];
+    userWithoutPlan = [User userWithEmail:@"some@one.com" password:@"whatever" andProfile:nil];
     [userWithoutPlan save];
 
     return self;

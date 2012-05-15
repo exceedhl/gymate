@@ -1,15 +1,22 @@
 #import <objc/runtime.h>
 #import "BaseObject.h"
-#import "Profile.h"
 
 
 @implementation BaseObject
 
-+ (NSString *)tableName
-{
++ (NSString *)tableName {
     return [NSString stringWithCString:class_getName([self class]) encoding:NSUTF8StringEncoding];
 }
 
+- (void)setObject:(id)object forKey:(NSString *)key {
+    if (!object) {
+        [super setObject:[NSNull null] forKey:key];
+    }
+    else {
+        [super setObject:object forKey:key];
+    }
+
+}
 
 //+ (id)fromPFObject:(PFObject *)pfObject toObject:(Class)class {
 //    object_setClass(pfObject, class);

@@ -15,7 +15,7 @@ describe(@"Plan", ^{
     });
 
     it(@"should be able to create plan for user", ^{
-        User *user = [User userWithEmail:@"user@whatever.com" password:@"whatever" andProfile:(Profile *) [NSNull null]];
+        User *user = [User userWithEmail:@"user@whatever.com" password:@"whatever" andProfile:nil];
         [user save];
         [[user plan] shouldBeNil];
         Plan *plan = [Plan plan];

@@ -18,7 +18,6 @@ describe(@"User", ^{
     beforeEach(^{
         Profile *profile = [Profile profileWithFirstName:@"new" lastName:@"user" height:@"188" weight:@"55" andGender:[NSNumber numberWithInt:0]];
         user = [User userWithEmail:@"new@user.com" password:@"password" andProfile:profile];
-        user.plan = (Plan *) [NSNull null];
     });
 
     afterEach(^{

@@ -5,10 +5,12 @@
 #import "NSString+Gymate.h"
 #import "Plan.h"
 
-@interface User()
+@interface User ()
 
 - (void)validate;
+
 - (void)validateMandatoryFields;
+
 - (void)validateEmail;
 
 @end
@@ -32,6 +34,7 @@
     user.email = email;
     user.password = password;
     user.profile = profile;
+    user.plan = nil;
     return user;
 }
 
@@ -40,7 +43,7 @@
     if (userId) {
         PFQuery *query = [PFQuery queryWithClassName:[User tableName]];
         [query whereKey:FIELD_OBJECT_ID equalTo:userId];
-        User *user = (User *)[query getFirstObject];
+        User *user = (User *) [query getFirstObject];
         object_setClass(user, [User class]);
         return user;
     }
@@ -51,7 +54,7 @@
     PFQuery *query = [PFQuery queryWithClassName:[User tableName]];
     [query whereKey:FIELD_EMAIL equalTo:email];
     [query whereKey:FIELD_PASSWORD equalTo:password];
-    User *user = (User *)[query getFirstObject];
+    User *user = (User *) [query getFirstObject];
     object_setClass(user, [User class]);
     if (user) {
         [Preferences setPreferences:$dict(user.objectId, PREF_LOGGED_IN_USER_ID)];
@@ -87,7 +90,7 @@
 }
 
 - (Profile *)profile {
-    Profile *profile = (Profile *)[self objectForKey:FIELD_PROFILE];
+    Profile *profile = (Profile *) [self objectForKey:FIELD_PROFILE];
     if ([profile isEqual:[NSNull null]]) {
         return nil;
     }
@@ -101,7 +104,7 @@
 }
 
 - (Plan *)plan {
-    Plan *plan = (Plan *)[self objectForKey:FIELD_PLAN];
+    Plan *plan = (Plan *) [self objectForKey:FIELD_PLAN];
     if ([plan isEqual:[NSNull null]]) {
         return nil;
     }
@@ -149,7 +152,6 @@
         @throw [NSException exceptionWithName:SIGNUP_FAILED_EXCEPTION reason:SIGNUP_FAILED_INVALID_REQUEST userInfo:error.userInfo];
     }
 }
-
 
 
 @end
