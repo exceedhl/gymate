@@ -6,7 +6,7 @@
 @implementation Profile
 
 + (Profile *)profileWithFirstName:(NSString *)firstName lastName:(NSString *)lastName height:(NSString *)height weight:(NSString *)weight andGender:(NSNumber *)gender {
-    Profile *profile = [[[Profile alloc] initWithClassName:[self tableName]] autorelease];
+    Profile *profile = [super basicPFObject];
     profile.firstName = firstName;
     profile.lastName = lastName;
     profile.height = height;

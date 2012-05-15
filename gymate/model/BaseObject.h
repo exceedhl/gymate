@@ -7,8 +7,10 @@
 @interface BaseObject : PFObject
 
 + (NSString *)tableName;
++ (id)basicPFObject;
++ (id)findById:(NSString *)objectId;
++ (id)findByAttributes:(NSDictionary *)keysAndValues;
 //+ (id)fromPFObject:(PFObject *)pfObject toObject:(Class)class;
-
 //- (BOOL)save;
 
 @end

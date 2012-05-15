@@ -1,11 +1,9 @@
-#import <objc/runtime.h>
 #import "Workout.h"
 
 @implementation Workout
 
 + (Workout *)workoutWithName:(NSString *)name {
-    Workout *workout = (Workout *) [PFObject objectWithClassName:[self tableName]];
-    object_setClass(workout, [self class]);
+    Workout *workout = [super basicPFObject];
     workout.name = name;
     return workout;
 }

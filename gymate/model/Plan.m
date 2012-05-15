@@ -1,11 +1,9 @@
-#import <objc/runtime.h>
 #import "Plan.h"
 
 @implementation Plan
 
 + (Plan *)plan {
-    Plan *plan = (Plan *) [Plan objectWithClassName:[self tableName]];
-    object_setClass(plan, [self class]);
+    Plan *plan = [super basicPFObject];
     return plan;
 }
 

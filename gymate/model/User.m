@@ -29,7 +29,7 @@
 @implementation User
 
 + (User *)userWithEmail:(NSString *)email password:(NSString *)password andProfile:(Profile *)profile {
-    User *user = [[[User alloc] initWithClassName:[self tableName]] autorelease];
+    User *user = [super basicPFObject];
     user.email = email;
     user.password = password;
     user.profile = profile;
@@ -40,21 +40,13 @@
 + (User *)loggedInUser {
     NSString *userId = [Preferences getPreference:PREF_LOGGED_IN_USER_ID];
     if (userId) {
-        PFQuery *query = [PFQuery queryWithClassName:[User tableName]];
-        [query whereKey:FIELD_OBJECT_ID equalTo:userId];
-        User *user = (User *) [query getFirstObject];
-        object_setClass(user, [User class]);
-        return user;
+        return [self findById:userId];
     }
     return nil;
 }
 
 + (User *)loginWithEmail:(NSString *)email andPassword:(NSString *)password {
-    PFQuery *query = [PFQuery queryWithClassName:[User tableName]];
-    [query whereKey:FIELD_EMAIL equalTo:email];
-    [query whereKey:FIELD_PASSWORD equalTo:password];
-    User *user = (User *) [query getFirstObject];
-    object_setClass(user, [User class]);
+    User *user = [self findByAttributes:$dict(email, FIELD_EMAIL, password, FIELD_PASSWORD)];
     if (user) {
         [Preferences setPreferences:$dict(user.objectId, PREF_LOGGED_IN_USER_ID)];
     } else {

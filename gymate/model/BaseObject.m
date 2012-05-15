@@ -8,6 +8,12 @@
     return [NSString stringWithCString:class_getName([self class]) encoding:NSUTF8StringEncoding];
 }
 
++ (id)basicPFObject {
+    id obj = [PFObject objectWithClassName:[self tableName]];
+    object_setClass(obj, [self class]);
+    return obj;
+}
+
 - (void)setObject:(id)object forKey:(NSString *)key {
     if (!object) {
         [super setObject:[NSNull null] forKey:key];
@@ -17,6 +23,26 @@
     }
 
 }
+
++ (id)findById:(NSString *)objectId {
+    PFQuery *query = [PFQuery queryWithClassName:[self tableName]];
+    [query whereKey:FIELD_OBJECT_ID equalTo:objectId];
+    id obj = [query getFirstObject];
+    object_setClass(obj, [self class]);
+    return obj;
+}
+
++ (id)findByAttributes:(NSDictionary *)keysAndValues {
+    PFQuery *query = [PFQuery queryWithClassName:[self tableName]];
+    [keysAndValues $each:^(id key, id value) {
+        NSLog(@"%@: %@", key, value);
+        [query whereKey:key equalTo:value];
+    }];
+    id obj = [query getFirstObject];
+    object_setClass(obj, [self class]);
+    return obj;
+}
+
 
 //+ (id)fromPFObject:(PFObject *)pfObject toObject:(Class)class {
 //    object_setClass(pfObject, class);
