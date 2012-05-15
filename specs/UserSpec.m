@@ -1,5 +1,5 @@
 #import "User.h"
-#import "UserFixture.h"
+#import "Fixture.h"
 #import "Profile.h"
 
 SPEC_BEGIN(UserSpec)
@@ -9,30 +9,38 @@ SPEC_BEGIN(UserSpec)
 describe(@"User", ^{
 
     __block Fixture *f;
+    __block User *user;
 
     beforeAll(^{
         f = [Fixture fixture];
-        [f destroyAllData];
+    });
+
+    beforeEach(^{
+        Profile *profile = [Profile profileWithFirstName:@"new" lastName:@"user" height:@"188" weight:@"55" andGender:[NSNumber numberWithInt:0]];
+        user = [User userWithEmail:@"new@user.com" password:@"password" andProfile:profile];
+        user.plan = (Plan *) [NSNull null];
+    });
+
+    afterEach(^{
+        [f destroyObjects:[User tableName]];
+        [f destroyObjects:[Profile tableName]];
     });
 
     context(@"when signup", ^{
 
         it(@"should succeed", ^{
-            User *user = [UserFixture user];
             [user signUp];
             [[[User loggedInUser] should] beNonNil];
         });
 
         it(@"should throw exception on duplicate email", ^{
-            [[UserFixture user] signUp];
-            User *user = [UserFixture user];
+            [user signUp];
             [[theBlock(^{
                 [user signUp];
-            }) should] raiseWithName:@"Signup failed" reason:@"Email adam@smith.com is already taken"];
+            }) should] raiseWithName:@"Signup failed" reason:@"Email new@user.com is already taken"];
         });
 
         it(@"should throw exception if email is empty", ^{
-            User *user = [UserFixture user];
             user.email = EMPTY_STRING;
             [[theBlock(^{
                 [user signUp];
@@ -40,7 +48,6 @@ describe(@"User", ^{
         });
 
         it(@"should throw exception if password is empty", ^{
-            User *user = [UserFixture user];
             user.password = EMPTY_STRING;
             [[theBlock(^{
                 [user signUp];
@@ -48,7 +55,6 @@ describe(@"User", ^{
         });
 
         it(@"should throw exception if firstname is empty", ^{
-            User *user = [UserFixture user];
             user.profile.firstName = EMPTY_STRING;
             [[theBlock(^{
                 [user signUp];
@@ -56,7 +62,6 @@ describe(@"User", ^{
         });
 
         it(@"should throw exception if lastname is empty", ^{
-            User *user = [UserFixture user];
             user.profile.lastName = EMPTY_STRING;
             [[theBlock(^{
                 [user signUp];
@@ -64,7 +69,6 @@ describe(@"User", ^{
         });
 
         it(@"should throw exception if weight is empty", ^{
-            User *user = [UserFixture user];
             user.profile.weight = EMPTY_STRING;
             [[theBlock(^{
                 [user signUp];
@@ -72,7 +76,6 @@ describe(@"User", ^{
         });
 
         it(@"should throw exception if height is empty", ^{
-            User *user = [UserFixture user];
             user.profile.height = EMPTY_STRING;
             [[theBlock(^{
                 [user signUp];
@@ -82,7 +85,6 @@ describe(@"User", ^{
 
     context(@"when login", ^{
         it(@"should succeed", ^{
-            User *user = [UserFixture user];
             [user.profile save];
             [user save];
             [User loginWithEmail:user.email andPassword:user.password];
@@ -99,7 +101,6 @@ describe(@"User", ^{
 
     context(@"when logged in", ^{
         it(@"should return logged in user", ^{
-            User *user = [UserFixture user];
             [user signUp];
             [[[[User loggedInUser] objectId] should] equal:user.objectId];
         });
