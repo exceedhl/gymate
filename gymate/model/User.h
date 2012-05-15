@@ -3,6 +3,8 @@
 
 @class Profile, Plan;
 
+#define SIGNUP_FAILED_EXCEPTION @"Signup failed"
+
 @interface User : BaseObject
 
 + (User *)userWithEmail:(NSString *)username password:(NSString *)password andProfile:(Profile *)profile;

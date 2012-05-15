@@ -1,4 +1,6 @@
 #import "Profile.h"
+#import "NSString+Gymate.h"
+#import "User.h"
 
 
 @implementation Profile
@@ -53,4 +55,12 @@
     [self setObject:gender forKey:FIELD_GENDER];
 }
 
+- (void)validateMandatoryFields {
+    [$arr(FIELD_FIRST_NAME, FIELD_LAST_NAME, FIELD_HEIGHT, FIELD_WEIGHT) $each:^(id key) {
+        NSString *value = [self performSelector:NSSelectorFromString(key)];
+        if (!value || [value isEmpty]) {
+            @throw [NSException exceptionWithName:SIGNUP_FAILED_EXCEPTION reason:$str(ERROR_MSG_EMPTY_FIELD, [key lowercaseString]) userInfo:nil];
+        }
+    }];
+}
 @end

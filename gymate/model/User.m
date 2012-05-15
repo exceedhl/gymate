@@ -21,11 +21,10 @@
 #define FIELD_PLAN @"plan"
 
 #define LOGIN_FAILED_EXCEPTION @"Login failed"
-#define LOGIN_FAILED_INCORRECT_USERNAME_AND_PASSWORD @"Incorrect username or password"
-#define SIGNUP_FAILED_EXCEPTION @"Signup failed"
-#define SIGNUP_FAILED_EMPTY_FIELD @"%@ should not be empty"
-#define SIGNUP_FAILED_DUPLICATE_EMAIL @"Email %@ is already taken"
-#define SIGNUP_FAILED_INVALID_REQUEST @"Validation request failed"
+#define ERROR_MSG_INCORRECT_USERNAME_AND_PASSWORD @"Incorrect username or password"
+
+#define ERROR_MSG_DUPLICATE_EMAIL @"Email %@ is already taken"
+#define ERROR_MSG_INVALID_REQUEST @"Validation request failed"
 
 @implementation User
 
@@ -59,7 +58,7 @@
     if (user) {
         [Preferences setPreferences:$dict(user.objectId, PREF_LOGGED_IN_USER_ID)];
     } else {
-        @throw [NSException exceptionWithName:LOGIN_FAILED_EXCEPTION reason:LOGIN_FAILED_INCORRECT_USERNAME_AND_PASSWORD userInfo:nil];
+        @throw [NSException exceptionWithName:LOGIN_FAILED_EXCEPTION reason:ERROR_MSG_INCORRECT_USERNAME_AND_PASSWORD userInfo:nil];
     }
     return user;
 }
@@ -128,15 +127,10 @@
     [$arr(FIELD_EMAIL, FIELD_PASSWORD) $each:^(id key) {
         NSString *value = [self performSelector:NSSelectorFromString(key)];
         if (!value || [value isEmpty]) {
-            @throw [NSException exceptionWithName:SIGNUP_FAILED_EXCEPTION reason:$str(SIGNUP_FAILED_EMPTY_FIELD, [key lowercaseString]) userInfo:nil];
+            @throw [NSException exceptionWithName:SIGNUP_FAILED_EXCEPTION reason:$str(ERROR_MSG_EMPTY_FIELD, [key lowercaseString]) userInfo:nil];
         }
     }];
-    [$arr(FIELD_FIRST_NAME, FIELD_LAST_NAME, FIELD_HEIGHT, FIELD_WEIGHT) $each:^(id key) {
-        NSString *value = [self.profile performSelector:NSSelectorFromString(key)];
-        if (!value || [value isEmpty]) {
-            @throw [NSException exceptionWithName:SIGNUP_FAILED_EXCEPTION reason:$str(SIGNUP_FAILED_EMPTY_FIELD, [key lowercaseString]) userInfo:nil];
-        }
-    }];
+    [self.profile validateMandatoryFields];
 }
 
 - (void)validateEmail {
@@ -146,10 +140,10 @@
     int count = [query countObjects:&error];
     if (!error) {
         if (count > 0) {
-            @throw [NSException exceptionWithName:SIGNUP_FAILED_EXCEPTION reason:$str(SIGNUP_FAILED_DUPLICATE_EMAIL, self.email) userInfo:nil];
+            @throw [NSException exceptionWithName:SIGNUP_FAILED_EXCEPTION reason:$str(ERROR_MSG_DUPLICATE_EMAIL, self.email) userInfo:nil];
         }
     } else {
-        @throw [NSException exceptionWithName:SIGNUP_FAILED_EXCEPTION reason:SIGNUP_FAILED_INVALID_REQUEST userInfo:error.userInfo];
+        @throw [NSException exceptionWithName:SIGNUP_FAILED_EXCEPTION reason:ERROR_MSG_INVALID_REQUEST userInfo:error.userInfo];
     }
 }
 
