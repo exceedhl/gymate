@@ -10,6 +10,8 @@
 + (id)basicPFObject;
 + (id)findById:(NSString *)objectId;
 + (id)findByAttributes:(NSDictionary *)keysAndValues;
+- (id)fetchPropertyIfNeeded:(Class)class forKey:(NSString *)propName;
+- (void)setObject:(id)object forKey:(NSString *)key;
 //+ (id)fromPFObject:(PFObject *)pfObject toObject:(Class)class;
 //- (BOOL)save;
 

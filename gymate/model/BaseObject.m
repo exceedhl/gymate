@@ -21,7 +21,16 @@
     else {
         [super setObject:object forKey:key];
     }
+}
 
+- (id)fetchPropertyIfNeeded:(Class)class forKey:(NSString *)propName {
+    id obj = [self objectForKey:propName];
+    if ([obj isEqual:[NSNull null]]) {
+        return nil;
+    }
+    [obj fetchIfNeeded];
+    object_setClass(obj, class);
+    return obj;
 }
 
 + (id)findById:(NSString *)objectId {
@@ -35,7 +44,6 @@
 + (id)findByAttributes:(NSDictionary *)keysAndValues {
     PFQuery *query = [PFQuery queryWithClassName:[self tableName]];
     [keysAndValues $each:^(id key, id value) {
-        NSLog(@"%@: %@", key, value);
         [query whereKey:key equalTo:value];
     }];
     id obj = [query getFirstObject];

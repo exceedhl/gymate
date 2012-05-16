@@ -81,13 +81,7 @@
 }
 
 - (Profile *)profile {
-    Profile *profile = (Profile *) [self objectForKey:FIELD_PROFILE];
-    if ([profile isEqual:[NSNull null]]) {
-        return nil;
-    }
-    [profile fetchIfNeeded];
-    object_setClass(profile, [Profile class]);
-    return profile;
+    return [self fetchPropertyIfNeeded:[Profile class] forKey:FIELD_PROFILE];
 }
 
 - (void)setProfile:(Profile *)profile {
@@ -95,13 +89,7 @@
 }
 
 - (Plan *)plan {
-    Plan *plan = (Plan *) [self objectForKey:FIELD_PLAN];
-    if ([plan isEqual:[NSNull null]]) {
-        return nil;
-    }
-    [plan fetchIfNeeded];
-    object_setClass(plan, [Plan class]);
-    return plan;
+    return [self fetchPropertyIfNeeded:[Plan class] forKey:FIELD_PLAN];
 }
 
 - (void)setPlan:(Plan *)plan {
