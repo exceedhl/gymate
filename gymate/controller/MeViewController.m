@@ -1,6 +1,7 @@
 #import "MeViewController.h"
 #import "User.h"
 #import "Profile.h"
+#import "MyPlanController.h"
 
 @interface MeViewController ()
 
@@ -8,7 +9,9 @@
 
 @implementation MeViewController
 
-@synthesize name, weight, height;
+
+@synthesize name, weight, height, myPlan;
+
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:YES];
@@ -21,10 +24,16 @@
     }
 }
 
+- (IBAction)myPlan:(id)sender {
+    MyPlanController *controller = [[[MyPlanController alloc] initWithNibName:@"myPlanView" bundle:nil] autorelease];
+    [self.navigationController pushViewController:controller animated:YES];
+}
+
 - (void)dealloc {
     [name release];
     [weight release];
     [height release];
+    [myPlan release];
     [super dealloc];
 }
 

@@ -16,7 +16,7 @@
     [self save];
 }
 
-- (NSArray *)workouts {
+- (NSMutableArray *)workouts {
     return [self objectForKey:FIELD_WORKOUTS];
 }
 

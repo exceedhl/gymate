@@ -13,6 +13,7 @@
 		3E1601FD154C04AC001F231E /* NSString+Gymate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1601FC154C04AC001F231E /* NSString+Gymate.m */; };
 		3E1601FE154C04AC001F231E /* NSString+Gymate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1601FC154C04AC001F231E /* NSString+Gymate.m */; };
 		3E76C5EE15529E3D00379C8F /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E76C5ED15529E3D00379C8F /* MainView.xib */; };
+		3E972CDD1568B497002C2932 /* MyPlanView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E972CDC1568B497002C2932 /* MyPlanView.xib */; };
 		3EB2D30C15538FF200ADAB1C /* MeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EB2D30B15538FF200ADAB1C /* MeView.xib */; };
 		3EB2D3101553903900ADAB1C /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB2D30F1553903900ADAB1C /* MeViewController.m */; };
 		3ECBE12C155360BF00B7BD50 /* PreferencesSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECBE12B155360BF00B7BD50 /* PreferencesSpec.m */; };
@@ -116,14 +117,16 @@
 		E076E5F748184C9D86BCED5E /* (null) in Sources */ = {isa = PBXBuildFile; };
 		E076E5F748184C9D86BCED61 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED60 /* User.m */; };
 		E076E5F748184C9D86BCED62 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED60 /* User.m */; };
-		E076E5F748184C9D86BCED66 /* BaseFixture.m in Sources */ = {isa = PBXBuildFile; };
-		E076E5F748184C9D86BCED6A /* ProfileFixture.m in Sources */ = {isa = PBXBuildFile; };
+		E076E5F748184C9D86BCED66 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		E076E5F748184C9D86BCED6A /* (null) in Sources */ = {isa = PBXBuildFile; };
 		E076E5F748184C9D86BCED6D /* (null) in Sources */ = {isa = PBXBuildFile; };
 		E076E5F748184C9D86BCED6E /* (null) in Sources */ = {isa = PBXBuildFile; };
 		E076E5F748184C9D86BCED70 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		E076E5F748184C9D86BCED71 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		E076E5F748184C9D86BCED74 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		E076E5F748184C9D86BCED75 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		E076E5F748184C9D86BCED77 /* MyPlanController.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED76 /* MyPlanController.m */; };
+		E076E5F748184C9D86BCED78 /* MyPlanController.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED76 /* MyPlanController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -136,6 +139,7 @@
 		3E1601FB154C04AC001F231E /* NSString+Gymate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Gymate.h"; sourceTree = "<group>"; };
 		3E1601FC154C04AC001F231E /* NSString+Gymate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Gymate.m"; sourceTree = "<group>"; };
 		3E76C5ED15529E3D00379C8F /* MainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
+		3E972CDC1568B497002C2932 /* MyPlanView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyPlanView.xib; sourceTree = "<group>"; };
 		3EB2D30B15538FF200ADAB1C /* MeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeView.xib; sourceTree = "<group>"; };
 		3EB2D30E1553903900ADAB1C /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
 		3EB2D30F1553903900ADAB1C /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
@@ -244,6 +248,8 @@
 		E076E5F748184C9D86BCED5C /* Profile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Profile.h; sourceTree = "<group>"; };
 		E076E5F748184C9D86BCED60 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		E076E5F748184C9D86BCED63 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		E076E5F748184C9D86BCED76 /* MyPlanController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPlanController.m; sourceTree = "<group>"; };
+		E076E5F748184C9D86BCED79 /* MyPlanController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPlanController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -310,6 +316,7 @@
 				BA3BD0C71552523900D8E1F0 /* GymateTableViewCell.xib */,
 				3E76C5ED15529E3D00379C8F /* MainView.xib */,
 				3EB2D30B15538FF200ADAB1C /* MeView.xib */,
+				3E972CDC1568B497002C2932 /* MyPlanView.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -317,6 +324,8 @@
 		BA6A05B01532B5BF0007E136 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				E076E5F748184C9D86BCED79 /* MyPlanController.h */,
+				E076E5F748184C9D86BCED76 /* MyPlanController.m */,
 				BA6A05B11532B5BF0007E136 /* LoginViewController.h */,
 				BA6A05B21532B5BF0007E136 /* LoginViewController.m */,
 				BA6A05B61532B8520007E136 /* SignupViewController.h */,
@@ -650,6 +659,7 @@
 				BAA0F81B155805ED00A73DAA /* SettingsIcon@2x.png in Resources */,
 				BAA0F81C155805ED00A73DAA /* WhiteBoxBG.png in Resources */,
 				BAA0F81D155805ED00A73DAA /* WhiteBoxBG@2x.png in Resources */,
+				3E972CDD1568B497002C2932 /* MyPlanView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -737,6 +747,7 @@
 				E076E5F748184C9D86BCED6D /* (null) in Sources */,
 				E076E5F748184C9D86BCED70 /* (null) in Sources */,
 				E076E5F748184C9D86BCED74 /* (null) in Sources */,
+				E076E5F748184C9D86BCED77 /* MyPlanController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -758,11 +769,12 @@
 				E076E5F748184C9D86BCED57 /* (null) in Sources */,
 				E076E5F748184C9D86BCED5B /* Profile.m in Sources */,
 				E076E5F748184C9D86BCED62 /* User.m in Sources */,
-				E076E5F748184C9D86BCED66 /* BaseFixture.m in Sources */,
-				E076E5F748184C9D86BCED6A /* ProfileFixture.m in Sources */,
+				E076E5F748184C9D86BCED66 /* (null) in Sources */,
+				E076E5F748184C9D86BCED6A /* (null) in Sources */,
 				E076E5F748184C9D86BCED6E /* (null) in Sources */,
 				E076E5F748184C9D86BCED71 /* (null) in Sources */,
 				E076E5F748184C9D86BCED75 /* (null) in Sources */,
+				E076E5F748184C9D86BCED78 /* MyPlanController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
