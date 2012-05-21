@@ -125,6 +125,7 @@
 		E076E5F748184C9D86BCED74 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		E076E5F748184C9D86BCED75 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		E076E5F748184C9D86BCED77 /* FakeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED76 /* FakeSpec.m */; };
+		E076E5F748184C9D86BCED7B /* MyPlanController.m in Sources */ = {isa = PBXBuildFile; fileRef = E076E5F748184C9D86BCED7A /* MyPlanController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -247,6 +248,8 @@
 		E076E5F748184C9D86BCED63 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		E076E5F748184C9D86BCED76 /* FakeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeSpec.m; sourceTree = "<group>"; };
 		E076E5F748184C9D86BCED78 /* FakeSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeSpec.h; sourceTree = "<group>"; };
+		E076E5F748184C9D86BCED79 /* MyPlanController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPlanController.h; sourceTree = "<group>"; };
+		E076E5F748184C9D86BCED7A /* MyPlanController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPlanController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -320,6 +323,8 @@
 		BA6A05B01532B5BF0007E136 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				E076E5F748184C9D86BCED7A /* MyPlanController.m */,
+				E076E5F748184C9D86BCED79 /* MyPlanController.h */,
 				BA6A05B11532B5BF0007E136 /* LoginViewController.h */,
 				BA6A05B21532B5BF0007E136 /* LoginViewController.m */,
 				BA6A05B61532B8520007E136 /* SignupViewController.h */,
@@ -742,6 +747,7 @@
 				E076E5F748184C9D86BCED6D /* (null) in Sources */,
 				E076E5F748184C9D86BCED70 /* (null) in Sources */,
 				E076E5F748184C9D86BCED74 /* (null) in Sources */,
+				E076E5F748184C9D86BCED7B /* MyPlanController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

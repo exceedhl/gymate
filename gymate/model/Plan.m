@@ -1,6 +1,8 @@
 #import <objc/runtime.h>
 #import "Plan.h"
 #import "Workout.h"
+#import "CKMacros.h"
+#import "CKAdditions.h"
 
 @implementation Plan
 
@@ -18,8 +20,8 @@
     [self save];
 }
 
-- (NSArray *)workouts {
-    NSArray *workouts = [self objectForKey:FIELD_WORKOUTS];
+- (NSMutableArray *)workouts {
+    NSMutableArray *workouts = [self objectForKey:FIELD_WORKOUTS];
     [workouts $each:^(Workout *workout) {
         [workout fetchIfNeeded];
         object_setClass(workout, [Workout class]);
