@@ -37,11 +37,11 @@
 }
 
 - (Fixture *)createWorkouts {
-    workoutPushup = [Workout workoutWithName:@"Push up"];
+    workoutPushup = [Workout workoutWithName:@"Push up" andType:@"Machine" andBodyPart:@"Chest" andWeight:50 andSet:3 andRepeat:12];
     [workoutPushup save];
-    workoutShoulderPress = [Workout workoutWithName:@"Shoulder Press"];
+    workoutShoulderPress = [Workout workoutWithName:@"Shoulder Press" andType:@"Free weight" andBodyPart:@"Shoulder" andWeight:20 andSet:3 andRepeat:11];
     [workoutShoulderPress save];
-    workoutTreadmill = [Workout workoutWithName:@"Treadmill"];
+    workoutTreadmill = [Workout workoutWithName:@"Treadmill" andType:@"Machine" andBodyPart:@"Legs" andWeight:30 andSet:3 andRepeat:10];
     [workoutTreadmill save];
     return self;
 }

@@ -1,5 +1,8 @@
 #import "TodayWorkoutViewController.h"
 #import "GymateTableViewCell.h"
+#import "User.h"
+#import "Plan.h"
+#import "Workout.h"
 
 @interface TodayWorkoutViewController ()
 - (void) createCustomViews;
@@ -8,20 +11,17 @@
 @implementation TodayWorkoutViewController
 
 @synthesize workouts, dateTag, navBar;
+@synthesize plan;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-//        Plan *plan = Plan.findByUser();
-        
-    }
-    return self;
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewDidLoad];
+    User *user = [User loggedInUser];
+    self.plan = user.plan;
 }
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+    NSLog(@"view did load in today");
     tableViewCellLoader = [UINib nibWithNibName:@"GymateTableViewCell" bundle:[NSBundle mainBundle]];
     [workouts registerNib:tableViewCellLoader forCellReuseIdentifier:@"GymateTableViewCell"];
 }
@@ -39,19 +39,20 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 2;
+    return [plan.workouts count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    Workout *workout = [plan.workouts objectAtIndex:(NSUInteger) indexPath.row];
     GymateTableViewCell *cell = (GymateTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"GymateTableViewCell"];
+    cell.name.text = workout.name;
+    cell.bodyPart.text = workout.bodyPart;
+    cell.type.text = workout.type;
+    cell.weight.text = [NSString stringWithFormat:@"%dkg", workout.weight];
+    cell.set.text = [NSString stringWithFormat:@"%d", workout.set];
+    cell.repeat.text = [NSString stringWithFormat:@"%d", workout.repeat];
     return cell;
-}
-
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -63,6 +64,7 @@
     [workouts release];
     [dateTag release];
     [navBar release];
+    [plan release];
     [super dealloc];
 }
 

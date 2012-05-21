@@ -1,4 +1,6 @@
+#import <objc/runtime.h>
 #import "Plan.h"
+#import "Workout.h"
 
 @implementation Plan
 
@@ -17,7 +19,12 @@
 }
 
 - (NSArray *)workouts {
-    return [self objectForKey:FIELD_WORKOUTS];
+    NSArray *workouts = [self objectForKey:FIELD_WORKOUTS];
+    [workouts $each:^(Workout *workout) {
+        [workout fetchIfNeeded];
+        object_setClass(workout, [Workout class]);
+    }];
+    return workouts;
 }
 
 - (void)setWorkouts:(NSArray *)workouts {

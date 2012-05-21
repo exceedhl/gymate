@@ -12,18 +12,17 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        [self setBackground];
-
-        if ([self respondsToSelector:@selector(createCustomViews)]) {
-            [self performSelector:@selector(createCustomViews)];
-        }
     }
     return self;
 }
 
 - (void)awakeFromNib {
+    NSLog(@"awak from nib %@", [self class]);
     [super awakeFromNib];
     [self setBackground];
+    if ([self respondsToSelector:@selector(createCustomViews)]) {
+        [self performSelector:@selector(createCustomViews)];
+    }
 }
 
 - (IBAction)hideKeyboard:(id)sender {

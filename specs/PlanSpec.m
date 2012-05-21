@@ -36,7 +36,7 @@ describe(@"Plan", ^{
     });
 
     it(@"should be able to add workout", ^{
-        Workout *running = [Workout workoutWithName:@"Running"];
+        Workout *running = [Workout workoutWithName:@"Running" andType:@"Free form" andBodyPart:@"whole body" andWeight:50 andSet:3 andRepeat:5];
         [running save];
         [[f.adam plan] addWorkout:running];
         [[[[f.adam plan] should] have:4] workouts];
